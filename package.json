@@ -1,0 +1,73 @@
+{
+  "name": "mr-gpx-sync",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve mr-gpx-sync-app",
+    "build": "ng build mr-gpx-sync && ng build mr-gpx-sync-app",
+    "build:lib": "ng build mr-gpx-sync && npm run copy-to-node",
+    "build:app": "ng build mr-gpx-sync-app",
+    "copy-to-node": "recursive-copy -w dist/mr-gpx-sync node_modules/mr-gpx-sync",
+    "watch": "ng build mr-gpx-sync --watch",
+    "watch:app": "ng build mr-gpx-sync-app --watch --configuration development",
+    "test": "ng test",
+    "test:lib": "ng test mr-gpx-sync",
+    "test:app": "ng test mr-gpx-sync-app"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^20.1.0",
+    "@angular/cdk": "^20.1.0",
+    "@angular/common": "^20.1.0",
+    "@angular/compiler": "^20.1.0",
+    "@angular/core": "^20.1.0",
+    "@angular/forms": "^20.1.0",
+    "@angular/localize": "^20.1.0",
+    "@angular/material": "^20.1.0",
+    "@angular/platform-browser-dynamic": "^20.1.0",
+    "@angular/router": "^20.1.0",
+    "@fortawesome/angular-fontawesome": "2.0.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "bootstrap": "^5.2.3",
+    "d3": "^7.8.5",
+    "d3-brush": "^3.0.0",
+    "js-xxhash": "^4.0.0",
+    "moment": "^2.29.4",
+    "ng-zorro-antd": "^20.0.0",
+    "ngx-filesaver": "20.0.0",
+    "ol": "6.5.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.1.0",
+    "@angular/build": "^20.1.0",
+    "@angular/cli": "^20.1.0",
+    "@angular/compiler-cli": "^20.1.0",
+    "@types/d3": "^7.4.3",
+    "@types/jasmine": "~5.1.0",
+    "@types/ol": "^6.5.3",
+    "recursive-copy-cli": "1.0.20",
+    "jasmine-core": "~5.8.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^20.1.0",
+    "typescript": "~5.8.2"
+  }
+}

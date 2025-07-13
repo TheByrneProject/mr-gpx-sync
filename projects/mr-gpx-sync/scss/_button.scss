@@ -1,0 +1,15 @@
+
+.btn-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.btn-10x {
+  min-width: 20rem;
+
+  fa-icon {
+    font-size: 10em;
+  }
+}

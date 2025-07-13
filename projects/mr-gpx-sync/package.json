@@ -1,0 +1,26 @@
+{
+  "name": "mr-gpx-sync",
+  "version": "0.0.1",
+  "description": "A library for syncing GPX tracks with video timestamps",
+  "keywords": ["angular", "gpx", "sync", "video", "gps"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mr-gpx-sync.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^20.1.0",
+    "@angular/core": "^20.1.0",
+    "@angular/forms": "^20.1.0",
+    "@angular/material": "^20.1.0",
+    "@angular/cdk": "^20.1.0",
+    "moment": "^2.29.0",
+    "ol": "^8.0.0",
+    "rxjs": "~7.8.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
