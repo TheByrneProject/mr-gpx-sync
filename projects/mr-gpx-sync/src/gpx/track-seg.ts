@@ -20,6 +20,8 @@ export class TrackSeg {
   durationDisplay: string = '00:00';
   distance: number = 0;
   v: number = 0;
+  minV: number = 0;
+  maxV: number = 0;
 
   timeFormat: string = 'mm:ss';
   droppedPoints: number = 0;
@@ -34,6 +36,8 @@ export class TrackSeg {
     track.v = old.v;
     track.timeFormat = old.timeFormat;
     track.droppedPoints = old.droppedPoints;
+    track.minV = old.minV;
+    track.maxV = old.maxV;
 
     track.trkPts = [];
     for (let o of old.trkPts) {
@@ -136,6 +140,15 @@ export class TrackSeg {
       p1.dx = dx;
       p1.dt = dt;
       p1.v = calcPace(dt, dx);
+
+      if (p1.v < this.minV) {
+        this.minV = p1.v;
+      }
+      if (p1.v > this.maxV) {
+        this.maxV = p1.v;
+      }
+
+      console.log(p1.t + ' ' + p1.dx + ' ' + p1.dt + ' ' + p1.v);
     }
 
     // The last point of the track has a zero delta for time and distance.

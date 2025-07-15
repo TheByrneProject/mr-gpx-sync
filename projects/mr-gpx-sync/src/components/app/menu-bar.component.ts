@@ -1,37 +1,43 @@
 import { Component, HostBinding } from '@angular/core';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { MatMiniFabButton } from '@angular/material/button';
-import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { NzPopoverDirective } from 'ng-zorro-antd/popover';
 
 @Component({
   selector: 'mr-gpx-sync-menu-bar',
   template: `
-    <button matMiniFab [matMenuTriggerFor]="projectMenu">
-      <mat-icon>folder</mat-icon>
+    <button nz-popover [nzPopoverContent]="projectMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+      <fa-icon [icon]="['fas', 'folder']"></fa-icon>
     </button>
-    <button matMiniFab (click)="settings()">
-      <mat-icon>settings</mat-icon>
+    <button nz-popover [nzPopoverContent]="settingsMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+      <fa-icon [icon]="['fas', 'gear']"></fa-icon>
     </button>
-    <button matMiniFab (click)="about()">
-      <mat-icon>info</mat-icon>
+    <button nz-popover [nzPopoverContent]="aboutMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+      <fa-icon [icon]="['fas', 'info']"></fa-icon>
     </button>
 
-    <mat-menu #projectMenu="matMenu">
-      <button mat-menu-item (click)="newProject()">
-        <mat-icon>file</mat-icon>
-      </button>
-      <button mat-menu-item (click)="saveProject()">
-        <mat-icon>save</mat-icon>
-      </button>
-    </mat-menu>
+    <ng-template #projectMenu>
+      <div class="popover-menu">
+        <button class="btn btn-outline-secondary" (click)="newProject()">
+          <fa-icon [icon]="['fas', 'file']"></fa-icon>
+        </button>
+        <button class="btn btn-outline-secondary" (click)="saveProject()">
+          <fa-icon [icon]="['fas', 'save']"></fa-icon>
+        </button>
+      </div>
+    </ng-template>
+
+    <ng-template #settingsMenu>
+    </ng-template>
+
+    <ng-template #aboutMenu>
+      <div class="popover-menu">
+        v0.0.1
+      </div>
+    </ng-template>
   `,
   imports: [
-    MatIcon,
-    MatIconModule,
-    MatMiniFabButton,
-    MatMenu,
-    MatMenuItem,
-    MatMenuTrigger
+    FaIconComponent,
+    NzPopoverDirective
   ],
   styles: [
     ``

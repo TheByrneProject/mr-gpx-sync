@@ -38,7 +38,7 @@ export enum MapSelectMode {
 }
 
 @Component({
-  selector: 'mr-gpx-sync-openlayers-sync',
+  selector: 'mr-gpx-sync-openlayers',
   template: `
     <div [id]="target" class="w-100 h-100"></div>
   `,
@@ -342,13 +342,13 @@ export class OpenLayersComponent implements AfterViewInit, OnChanges, OnDestroy,
     this.overlaySource.clear();
     for (let p of this.selectedPoints) {
       let feature = new Feature({});
-      const circle = circular(p.point.getCoordinates(), this.selectedSize, 18);
+      const circle = circular(p.point.getCoordinates(), this.selectedSize, 32);
       feature.setGeometry(circle);
       this.overlaySource.addFeature(feature);
 
       if (this.resolution < 0.5) {
         feature = new Feature({});
-        const c = circular(p.point.getCoordinates(), this.pointSize, 8);
+        const c = circular(p.point.getCoordinates(), this.pointSize, 16);
         feature.setGeometry(c);
         this.overlaySource.addFeature(feature);
       }

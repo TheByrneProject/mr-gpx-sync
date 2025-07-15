@@ -15,12 +15,12 @@ import { TrackFile } from '../../gpx/track-file';
         <fa-icon [icon]="['fas', 'location-dot']"></fa-icon>
         Open GPX
       </button>
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column gap-3 align-items-center">
         <button class="btn btn-secondary btn-vertical btn-10x" (click)="openVideo()">
           <fa-icon [icon]="['fas', 'video']"></fa-icon>
           Open Video
         </button>
-        <div (click)="skipVideo()">
+        <div class="pointer" (click)="skipVideo()">
           (skip video)
         </div>
       </div>
