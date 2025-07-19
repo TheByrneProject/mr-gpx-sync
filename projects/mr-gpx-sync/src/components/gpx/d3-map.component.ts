@@ -23,7 +23,7 @@ import { take } from 'rxjs/operators';
     }
   `]
 })
-export class D3MapComponent implements OnInit, OnDestroy {
+export class MrGpxSyncD3Map implements OnInit, OnDestroy {
 
   @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column';
 
@@ -78,7 +78,9 @@ export class D3MapComponent implements OnInit, OnDestroy {
       if (trackFile.loaded) {
         this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.loaded: ${trackFile.tracks.length}`);
         this.loadTrack(trackFile.getTrack());
-      }/* else if (trackFile.getTrack().trkPts.length > 1) {
+      }
+
+      /* else if (trackFile.getTrack().trkPts.length > 1) {
         this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.!loaded: ${trackFile.tracks.length}`);
         if (this.map) {
           this.map.updateSize();
@@ -268,7 +270,7 @@ export class D3MapComponent implements OnInit, OnDestroy {
       .style('top', '0')
       .style('left', '0')
       .style('pointer-events', 'none')
-      .style('z-index', '1000');
+      .style('z-index', '1');
 
     // Helper function to convert lon/lat to pixel coordinates
     const lonLatToPixel = (lon: number, lat: number): [number, number] => {

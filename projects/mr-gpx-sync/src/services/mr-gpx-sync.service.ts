@@ -29,8 +29,6 @@ export class MrGpxSyncService {
   settings$: BehaviorSubject<Settings> = new BehaviorSubject<Settings>(new Settings());
   syncAction$: BehaviorSubject<MrGpxSyncEvent> = new BehaviorSubject<MrGpxSyncEvent>(new MrGpxSyncEvent());
 
-
-
   action$: BehaviorSubject<ActionEvent> = new BehaviorSubject<ActionEvent>(new ActionEvent());
 
   track$: BehaviorSubject<TrackFile> = new BehaviorSubject<TrackFile>(new TrackFile());
@@ -38,12 +36,13 @@ export class MrGpxSyncService {
   mapPoint$: BehaviorSubject<TrackPointEvent> = new BehaviorSubject<TrackPointEvent>(new TrackPointEvent());
   error$: Subject<ParseError> = new Subject<ParseError>();
 
-
   metric: boolean = true;
 
   id: number = 0;
   undo$: BehaviorSubject<Undo> = new BehaviorSubject<Undo>(new Undo());
   loading$: Subject<boolean> = new Subject<boolean>();
+
+  videoData: BehaviorSubject<any> = new BehaviorSubject<any>(undefined);
 
   constructor(private snackBar: MatSnackBar,
               private clipboard: Clipboard) {
@@ -53,6 +52,12 @@ export class MrGpxSyncService {
       settings = Object.assign(settings, localSettings);
       this.settings$.next(settings);
     }
+
+    this.action$.subscribe((event: ActionEvent) => {
+      if (event.name === 'open-video') {
+        this.videoData.next(event.data);
+      }
+    });
   }
 
   log(message: string, level: 'info' | 'warn' | 'error' = 'info') {
@@ -99,6 +104,7 @@ export class MrGpxSyncService {
   reset(): void {
     this.track$.next(new TrackFile());
     this.undo$.next(new Undo());
+    this.action$.next(new ActionEvent('close-video'));
   }
 
   getId(): number {

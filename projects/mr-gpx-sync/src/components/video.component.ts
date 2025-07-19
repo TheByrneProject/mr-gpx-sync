@@ -6,7 +6,7 @@ import { ActionEvent } from '../events/action-event';
 import { TrackFile } from '../gpx/track-file';
 import { TrackPoint } from '../gpx/track-point';
 import { TrackPointEvent } from '../events/track-point-event';
-import { MatIcon } from '@angular/material/icon';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'mr-gpx-sync-video',
@@ -14,29 +14,29 @@ import { MatIcon } from '@angular/material/icon';
     <div class="d-flex flex-column mt-auto mb-auto mh-100">
       <video #video controls autoplay style="width: 100%; max-height: calc(100% - 48px);"></video>
       <div id="video-controls" class="d-flex flex-row justify-content-between m-1">
-        <button mat-stroked-button color="primary">
-          <mat-icon (click)="firstFrame()">skip_previous</mat-icon>
+        <button class="btn btn-primary" (click)="firstFrame()">
+          <fa-icon [icon]="['fas', 'backward']"></fa-icon>
         </button>
-        <button mat-stroked-button color="primary">
-          <mat-icon (click)="previousFrame()">fast_rewind</mat-icon>
+        <button class="btn btn-primary" (click)="previousFrame()">
+          <fa-icon [icon]="['fas', 'backward-step']"></fa-icon>
         </button>
-        <button mat-stroked-button color="primary">
-          <mat-icon (click)="nextFrame()">fast_forward</mat-icon>
+        <button class="btn btn-primary" (click)="nextFrame()">
+          <fa-icon [icon]="['fas', 'forward-step']"></fa-icon>
         </button>
-        <button mat-stroked-button color="primary">
-          <mat-icon (click)="lastFrame()">skip_next</mat-icon>
+        <button class="btn btn-primary" (click)="lastFrame()">
+          <fa-icon [icon]="['fas', 'forward']"></fa-icon>
         </button>
       </div>
     </div>
   `,
   imports: [
-    MatIcon
+    FaIconComponent
   ],
   styles: []
 })
-export class VideoComponent implements AfterViewInit, OnInit {
+export class VideoComponent implements AfterViewInit {
 
-  @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column';
+  @HostBinding('class') classes: string = '';
 
   @ViewChild('video') videoEl!: ElementRef;
   video!: HTMLVideoElement;
@@ -81,10 +81,17 @@ export class VideoComponent implements AfterViewInit, OnInit {
 
   constructor(private mrGpxSyncService: MrGpxSyncService) {}
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.mrGpxSyncService.action$.subscribe((event: ActionEvent) => {
       if (event.name === 'open-video' && event.data) {
         this.openVideo(event.data);
+      } else if (event.name === 'close-video') {
+        this.closeVideo();
+      }
+    });
+    this.mrGpxSyncService.videoData.subscribe((data: any) => {
+      if (data) {
+        this.openVideo(data);
       }
     });
 
@@ -113,7 +120,12 @@ export class VideoComponent implements AfterViewInit, OnInit {
     });
   }
 
-  ngAfterViewInit(): void {}
+  closeVideo(): void {
+    if (this.video) {
+      this.video.pause();
+      this.video.src = '';
+    }
+  }
 
   openVideo(src: string): void {
     if (this.video) {

@@ -112,5 +112,6 @@ export class MrGpxSyncNewProject {
     const file: File = event.target.files[0];
     if (file) {
       this.mrGpxSyncService.action$.next(new ActionEvent('open-video', URL.createObjectURL(file)));
-    }}
+    }
+  }
 }

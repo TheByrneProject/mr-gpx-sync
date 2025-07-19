@@ -14,3 +14,10 @@ body {
   flex-wrap: nowrap;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.ol-zoom, .ol-rotate {
+  width: 100px;
+}
+.ol-attribution, .ol-overlaycontainer-stopevent {
+  display: none;
+}

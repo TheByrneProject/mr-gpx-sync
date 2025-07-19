@@ -8,39 +8,38 @@ import { Settings } from '../gpx/settings';
 import { TrackPointEvent } from '../events/track-point-event';
 import { ActionEvent } from '../events/action-event';
 import { TrackFile } from '../gpx/track-file';
-import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
-import { MatIcon } from '@angular/material/icon';
-import { MatTable } from '@angular/material/table';
-import { DecimalPipe } from '@angular/common';
+import { DecimalPipe, NgIf } from '@angular/common';
 import { SecondsToTime } from '../pipes';
-import { MatDivider } from '@angular/material/divider';
 
 @Component({
   selector: 'mr-gpx-sync-chart',
   template: `
     <ng-container *ngIf="data && data.length > 0">
       <div class="d-flex m-2" style="margin-left: 70px !important;">
+        <!--
         <mat-icon [matMenuTriggerFor]="pointMenu" class="me-3">my_location</mat-icon>
         <mat-menu #pointMenu="matMenu">
-          <button mat-menu-item (click)="changeDt()" [disabled]="selectedPoints.length !== 1" i18n>Change Dt</button>
-          <button mat-menu-item (click)="interpolate()" [disabled]="selectedPoints.length !== 1" i18n>Interpolate After
+          <button (click)="changeDt()" [disabled]="selectedPoints.length !== 1">Change Dt</button>
+          <button (click)="interpolate()" [disabled]="selectedPoints.length !== 1">Interpolate After
             (beta)
           </button>
-          <button mat-menu-item (click)="split()" [disabled]="selectedPoints.length !== 1" i18n>Split</button>
-          <button mat-menu-item (click)="updatePoint()" [disabled]="selectedPoints.length !== 1" i18n>Update Position
+          <button (click)="split()" [disabled]="selectedPoints.length !== 1">Split</button>
+          <button (click)="updatePoint()" [disabled]="selectedPoints.length !== 1">Update Position
           </button>
           <mat-divider></mat-divider>
-          <button mat-menu-item (click)="delete()" [disabled]="selectedPoints.length === 0" i18n>Delete</button>
+          <button (click)="delete()" [disabled]="selectedPoints.length === 0">Delete</button>
         </mat-menu>
 
         <mat-icon [matMenuTriggerFor]="chartMenu" class="me-3">show_chart</mat-icon>
         <mat-menu #chartMenu="matMenu">
-          <button mat-menu-item (click)="compress()" i18n>Compress</button>
+          <button (click)="compress()">Compress</button>
         </mat-menu>
+        -->
       </div>
-      <div class="d-flex flex-row flex-nowrap h-75">
+      <div class="d-flex flex-row flex-nowrap h-50">
         <div #zoomChart class="w-100 h-100 d-block"></div>
         <div class="w-25 h-100 y-auto">
+          <!--
           <table mat-table [dataSource]="tableData" (contentChanged)="contentChanged()" class="flex-grow-1 w-100">
             <ng-container matColumnDef="time">
               <th mat-header-cell *matHeaderCellDef>Time</th>
@@ -62,22 +61,18 @@ import { MatDivider } from '@angular/material/divider';
                 [class.selected]="isSelected(row.id)"
                 (click)="selectPoint(row)"></tr>
           </table>
+          -->
         </div>
       </div>
-      <div #fullChart class="w-100 h-25 d-block"></div>
+      <div #fullChart class="w-100 h-50 d-block"></div>
     </ng-container>
   `,
   imports: [
-    MatIcon,
-    MatMenu,
-    MatTable,
-    MatMenuTrigger,
     DecimalPipe,
     SecondsToTime,
-    MatDivider
+    NgIf,
   ],
-  styles: [
-    `
+  styles: [`
       #top-panel {
         height: 50%;
       }
@@ -86,8 +81,7 @@ import { MatDivider } from '@angular/material/divider';
         height: 50%;
         overflow-y: auto;
       }
-    `
-  ]
+  `]
 })
 export class ChartComponent implements OnInit {
 
@@ -201,7 +195,7 @@ export class ChartComponent implements OnInit {
       }
     }
 
-    //this.drawZoom(x0, x1);
+    this.drawZoom(x0, x1);
 
     this.clickEvent = false;
     this.internalZoom = true;
@@ -219,11 +213,11 @@ export class ChartComponent implements OnInit {
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
       if (this.initialized) {
-        // this.render();
-        // this.drawZoom(this.brushX0, this.brushX1);
+        this.render();
+        this.drawZoom(this.brushX0, this.brushX1);
       } else {
-        // this.render();
-        // this.drawZoomInit();
+        this.render();
+        this.drawZoomInit();
       }
     });
 
@@ -233,8 +227,8 @@ export class ChartComponent implements OnInit {
       this.mrGpxSyncService.log('TableComponent.track$ Updated: n=' + this.trackFile.getTrack().trkPts.length);
       this.data = [...this.trackFile.getTrack().trkPts];
       this.tableData = this.data.slice(0, 7);
-      // this.render();
-      // this.drawZoomInit();
+      this.render();
+      this.drawZoomInit();
     });
 
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
@@ -246,16 +240,16 @@ export class ChartComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    // this.render();
-    // this.drawZoomInit();
+    this.render();
+    this.drawZoomInit();
   }
 
   @ViewChild('fullChart') set setFullChart(fullChart: ElementRef) {
     this.fullChart = fullChart;
 
     if (this.fullChart && this.zoomChart) {
-      // this.render();
-      // this.drawZoomInit();
+      this.render();
+      this.drawZoomInit();
     }
   }
 
@@ -263,8 +257,8 @@ export class ChartComponent implements OnInit {
     this.zoomChart = zoomChart;
 
     if (this.fullChart && this.zoomChart) {
-      // this.render();
-      // this.drawZoomInit();
+      this.render();
+      this.drawZoomInit();
     }
   }
 
@@ -382,7 +376,7 @@ export class ChartComponent implements OnInit {
       this.fullSvg.select('#brush').call(this.brush.move, [this.fullX(t0), this.fullX(t1)]);
     }
   }
-/*
+
   render(): void {
     this.mrGpxSyncService.loading$.next(false);
 
@@ -411,18 +405,23 @@ export class ChartComponent implements OnInit {
       .attr('transform',
         'translate(' + margin.left + ',' + margin.top + ')');
 
+    let minEle: number = d3.min(this.data, this.elevation);
+    let maxEle: number = d3.max(this.data, this.elevation);
+    let minV: number = d3.min(this.data, this.pace);
+    let maxV: number = d3.max(this.data, this.pace);
+
     this.fullX = d3.scaleLinear().domain([this.data[0].t, this.data[this.data.length - 1].t]).range([0, this.fullWidth]);
     this.fullEle = d3.scaleLinear()
-      .domain([d3.min(this.data, this.elevation), d3.max(this.data, this.elevation)])
+      .domain([minEle, maxEle])
       .range([this.fullHeight, 0]);
     this.fullV = d3.scaleLinear()
-      .domain([d3.min(this.data, this.pace), d3.max(this.data, this.pace)])
+      .domain([minV, maxV])
       .range([this.fullHeight, 0]);
 
     // Add the X Axis
-    const xAxisGenerator = d3.axisBottom()
+    const xAxisGenerator = d3.axisBottom(this.fullX)
       .ticks(6)
-      .tickFormat(function(d: number) {
+      .tickFormat((d: any, i: number) => {
         const s = d % 60;
         const m = Math.floor(d / 60.0);
         return m + ':' + (s < 10 ? '0' + s : s);
@@ -486,8 +485,8 @@ export class ChartComponent implements OnInit {
       .attr('stroke', 'rgba(70, 130, 180, 1.0)')
       .attr('stroke-width', 2.5)
       .attr('d', d3.line()
-        .x(function(d: TrackPoint) { return self.fullX(d.t); })
-        .y(function(d: TrackPoint) { return self.fullEle(self.settings.getElevation(d.ele)); })
+        .x((d: any) => { return self.fullX(d.t); })
+        .y((d: any) => { return self.fullEle(self.settings.getElevation(d.ele)); })
       );
     line.append('path')
       .datum(this.data.slice(0, this.data.length - 1))
@@ -496,8 +495,8 @@ export class ChartComponent implements OnInit {
       .attr('stroke', 'url(#paceGradient)')
       .attr('stroke-width', 1.5)
       .attr('d', d3.line()
-        .x(function(d: TrackPoint) { return self.fullX(d.t); })
-        .y(function(d: TrackPoint) { return self.fullV(self.settings.getPace(d.v)); })
+        .x((d: any) => { return self.fullX(d.t); })
+        .y((d: any) => { return self.fullV(self.settings.getPace(d.v)); })
       );
 
     // Zoom
@@ -511,10 +510,10 @@ export class ChartComponent implements OnInit {
 
     this.zoomX = d3.scaleLinear().domain([this.data[0].t, this.data[this.data.length - 1].t]).range([0, this.zoomWidth]);
     this.zoomEle = d3.scaleLinear()
-      .domain([d3.min(this.data, this.elevation), d3.max(this.data, this.elevation)])
+      .domain([minEle, maxEle])
       .range([this.zoomHeight, 0]);
     this.zoomV = d3.scaleLinear()
-      .domain([d3.min(this.data, this.pace), d3.max(this.data, this.pace)])
+      .domain([minV, maxV])
       .range([this.zoomHeight, 0]);
 
     this.zoomSvg = d3.select(this.zoomChart.nativeElement).append('svg')
@@ -526,7 +525,7 @@ export class ChartComponent implements OnInit {
         'translate(' + zoomMargin.left + ',' + zoomMargin.top + ')');
 
     // Add the X Axis
-    const zoomXAxisGenerator = d3.axisBottom()
+    const zoomXAxisGenerator = d3.axisBottom(this.fullX)
       .ticks(6)
       .tickFormat(function(d: any) {
         const s = d % 60;
@@ -606,7 +605,7 @@ export class ChartComponent implements OnInit {
     this.zoomX.domain([t0, t1]);
 
     this.zoomSvg.select('#zoom-x-axis').remove();
-    const zoomXAxisGenerator = d3.axisBottom()
+    const zoomXAxisGenerator = d3.axisBottom(this.fullX)
       .ticks(6)
       .tickFormat(function(d: any) {
         const s = d % 60;
@@ -639,8 +638,8 @@ export class ChartComponent implements OnInit {
       .attr('stroke', 'rgba(70, 130, 180, 1.0)')
       .attr('stroke-width', 2.5)
       .attr('d', d3.line()
-        .x(function(d: TrackPoint) { return self.zoomX(d.t); })
-        .y(function(d: TrackPoint) { return self.zoomEle(self.settings.getElevation(d.ele)); })
+        .x((d: any) => { return self.zoomX(d.t); })
+        .y((d: any) => { return self.zoomEle(self.settings.getElevation(d.ele)); })
       );
     zoomLine.append('path')
       .datum(this.data.slice(0, this.data.length - 1))
@@ -649,8 +648,8 @@ export class ChartComponent implements OnInit {
       .attr('stroke', 'green')
       .attr('stroke-width', 1.5)
       .attr('d', d3.line()
-        .x(function(d: TrackPoint) { return self.zoomX(d.t); })
-        .y(function(d: TrackPoint) { return self.zoomV(self.settings.getPace(d.v)); })
+        .x((d: any) => { return self.zoomX(d.t); })
+        .y((d: any) => { return self.zoomV(self.settings.getPace(d.v)); })
       );
     zoomLine.selectAll('points')
       .data(this.trackFile.getTrack().getSubTrackByTimes(t0, t1))
@@ -677,14 +676,13 @@ export class ChartComponent implements OnInit {
         .attr('fill', 'darkred')
         .attr('stroke', 'red')
         .attr('stroke-width', 1)
-        .attr('cx', function(d: any) {
+        .attr('cx', (d: any) => {
           return self.zoomX(d.t);
         })
-        .attr('cy', function(d) {
+        .attr('cy', (d: any) => {
           return self.zoomV(self.settings.getPace(d.v));
         })
         .attr('r', 6);
     }
   }
- */
 }

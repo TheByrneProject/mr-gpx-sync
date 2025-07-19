@@ -1,5 +1,6 @@
 
 export * from './app';
+export * from './gpx';
 
 // Export all components
 export { ActionComponent } from './action.component';

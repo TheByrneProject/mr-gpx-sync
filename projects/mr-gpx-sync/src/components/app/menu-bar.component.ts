@@ -1,6 +1,9 @@
 import { Component, HostBinding } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { NzPopoverDirective } from 'ng-zorro-antd/popover';
+import { MrGpxSyncService } from '../../services';
+import { ActionEvent } from '../../events';
+
 
 @Component({
   selector: 'mr-gpx-sync-menu-bar',
@@ -47,7 +50,11 @@ export class MrGpxSyncMenuBar {
 
   @HostBinding('class') classes: string = 'd-flex flex-column';
 
-  newProject(): void {}
+  constructor(private mrGpxSyncService: MrGpxSyncService) {}
+
+  newProject(): void {
+    this.mrGpxSyncService.action$.next(new ActionEvent('nav-new-project'));
+  }
 
   settings(): void {}
 

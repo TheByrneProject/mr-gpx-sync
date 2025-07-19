@@ -1,0 +1,59 @@
+
+.window {
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+
+  .window-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  &.transparent {
+    .window-header {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .window-content {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.window-overlay {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 30%;
+  height: 20%;
+  background-color: white;
+  z-index: 10;
+}
+
+mr-gpx-sync-video-overlay {
+  position: absolute;
+  left: 50px;
+  bottom: 50vh;
+  width: 30%;
+  background-color: white;
+  z-index: 10;
+}

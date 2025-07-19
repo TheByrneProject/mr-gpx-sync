@@ -12,6 +12,10 @@ export class Settings {
 
   slowThreshold: number = 16.0;
 
+  videoWindowTop: string = '50vh';
+  videoWindowLeft: string = '60px';
+  videoWindowWidth: string = '20vw';
+
   updateUnits(): void {
     this.distanceUnits = this.metric ? 'km' : 'mi';
     this.shortDistanceUnits = this.metric ? 'm' : 'ft';

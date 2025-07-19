@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve mr-gpx-sync-app",
     "build": "ng build mr-gpx-sync && ng build mr-gpx-sync-app",
-    "build:lib": "ng build mr-gpx-sync && npm run copy-to-node",
+    "build:lib": "ng build mr-gpx-sync --configuration development && npm run copy-to-node",
     "build:app": "ng build mr-gpx-sync-app",
     "copy-to-node": "recursive-copy -w dist/mr-gpx-sync node_modules/mr-gpx-sync",
     "watch": "ng build mr-gpx-sync --watch",
