@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { Clipboard } from '@angular/cdk/clipboard';
 
 import { BehaviorSubject, Subject } from 'rxjs';
@@ -44,8 +43,7 @@ export class MrGpxSyncService {
 
   videoData: BehaviorSubject<any> = new BehaviorSubject<any>(undefined);
 
-  constructor(private snackBar: MatSnackBar,
-              private clipboard: Clipboard) {
+  constructor(private clipboard: Clipboard) {
     let localSettings: Settings = JSON.parse(<string>localStorage.getItem('com.thebyrneproject.mrgpxsync.settings'));
     if (localSettings) {
       let settings: Settings = new Settings();
@@ -56,6 +54,8 @@ export class MrGpxSyncService {
     this.action$.subscribe((event: ActionEvent) => {
       if (event.name === 'open-video') {
         this.videoData.next(event.data);
+      } else if (event.name === 'new-project') {
+        this.reset();
       }
     });
   }
@@ -318,11 +318,11 @@ export class MrGpxSyncService {
   }
 
   openSnackBar(msg: string = ''): void {
-    this.snackBar.open(msg, 'Dismiss', {
+    /*this.snackBar.open(msg, 'Dismiss', {
       horizontalPosition: 'end',
       verticalPosition: 'top',
       duration: 5000
-    });
+    });*/
 
     console.error(msg);
   }

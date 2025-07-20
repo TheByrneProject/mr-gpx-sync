@@ -4,6 +4,7 @@ import { MrGpxSyncService } from '../services/mr-gpx-sync.service';
 
 @Component({
   selector: 'tbp-loading',
+  standalone: true,
   template: ``
 })
 export class LoadingComponent implements OnInit {

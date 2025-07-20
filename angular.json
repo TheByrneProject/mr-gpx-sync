@@ -62,6 +62,16 @@
               {
                 "glob": "**/*",
                 "input": "projects/mr-gpx-sync-app/public"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/mr-gpx-sync/assets",
+                "output": "assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "dist/mr-gpx-sync/assets",
+                "output": "assets/"
               }
             ],
             "styles": [
@@ -73,13 +83,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "8kB",
+                  "maximumError": "16kB"
                 }
               ],
               "outputHashing": "all"
@@ -124,6 +134,11 @@
               {
                 "glob": "**/*",
                 "input": "projects/mr-gpx-sync-app/public"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/mr-gpx-sync/assets",
+                "output": "assets/"
               }
             ],
             "styles": [

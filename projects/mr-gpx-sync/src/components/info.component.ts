@@ -9,6 +9,7 @@ import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'mr-gpx-sync-info-sync',
+  standalone: true,
   template: `
     <div class="d-flex p-2">
       <div class="w-25 align-items-center label">Distance</div>

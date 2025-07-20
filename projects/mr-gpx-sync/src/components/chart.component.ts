@@ -8,13 +8,13 @@ import { Settings } from '../gpx/settings';
 import { TrackPointEvent } from '../events/track-point-event';
 import { ActionEvent } from '../events/action-event';
 import { TrackFile } from '../gpx/track-file';
-import { DecimalPipe, NgIf } from '@angular/common';
+import { DecimalPipe } from '@angular/common';
 import { SecondsToTime } from '../pipes';
 
 @Component({
   selector: 'mr-gpx-sync-chart',
   template: `
-    <ng-container *ngIf="data && data.length > 0">
+    @if (data && data.length > 0) {
       <div class="d-flex m-2" style="margin-left: 70px !important;">
         <!--
         <mat-icon [matMenuTriggerFor]="pointMenu" class="me-3">my_location</mat-icon>
@@ -38,39 +38,38 @@ import { SecondsToTime } from '../pipes';
       </div>
       <div class="d-flex flex-row flex-nowrap h-50">
         <div #zoomChart class="w-100 h-100 d-block"></div>
-        <div class="w-25 h-100 y-auto">
-          <!--
-          <table mat-table [dataSource]="tableData" (contentChanged)="contentChanged()" class="flex-grow-1 w-100">
-            <ng-container matColumnDef="time">
-              <th mat-header-cell *matHeaderCellDef>Time</th>
-              <td mat-cell *matCellDef="let element">{{ element.t | secToTime : trackFile.getTrack().timeFormat }}</td>
-            </ng-container>
-            <ng-container matColumnDef="ele">
-              <th mat-header-cell *matHeaderCellDef>Elev</th>
-              <td mat-cell *matCellDef="let element">{{ settings.getElevation(element.ele) | number : '1.0-1' }}</td>
-            </ng-container>
-            <ng-container matColumnDef="pace">
-              <th mat-header-cell *matHeaderCellDef>Pace</th>
-              <td mat-cell *matCellDef="let element">{{ settings.getPaceDisplay(element.v) }}</td>
-            </ng-container>
+        <!--
+      <div class="w-25 h-100 y-auto">
+        <table mat-table [dataSource]="tableData" (contentChanged)="contentChanged()" class="flex-grow-1 w-100">
+          <ng-container matColumnDef="time">
+            <th mat-header-cell *matHeaderCellDef>Time</th>
+            <td mat-cell *matCellDef="let element">{{ element.t | secToTime : trackFile.getTrack().timeFormat }}</td>
+          </ng-container>
+          <ng-container matColumnDef="ele">
+            <th mat-header-cell *matHeaderCellDef>Elev</th>
+            <td mat-cell *matCellDef="let element">{{ settings.getElevation(element.ele) | number : '1.0-1' }}</td>
+          </ng-container>
+          <ng-container matColumnDef="pace">
+            <th mat-header-cell *matHeaderCellDef>Pace</th>
+            <td mat-cell *matCellDef="let element">{{ settings.getPaceDisplay(element.v) }}</td>
+          </ng-container>
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row
-                [id]="'table-p-' + row.id"
-                *matRowDef="let row; columns: displayedColumns;"
-                [class.selected]="isSelected(row.id)"
-                (click)="selectPoint(row)"></tr>
-          </table>
-          -->
-        </div>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row
+              [id]="'table-p-' + row.id"
+              *matRowDef="let row; columns: displayedColumns;"
+              [class.selected]="isSelected(row.id)"
+              (click)="selectPoint(row)"></tr>
+        </table>
+      </div>
+        -->
       </div>
       <div #fullChart class="w-100 h-50 d-block"></div>
-    </ng-container>
+    }
   `,
   imports: [
     DecimalPipe,
-    SecondsToTime,
-    NgIf,
+    SecondsToTime
   ],
   styles: [`
       #top-panel {
@@ -467,17 +466,18 @@ export class ChartComponent implements OnInit {
       .extent( [ [0, 0], [this.fullWidth, this.fullHeight] ] )
       .on('end', this.brushed);
 
-    // Add area, line
+    // Add Elevation Area
     line.append('path')
       .datum(this.data)
-      .attr('fill', 'rgba(70, 130, 180, 0.2)')
+      .attr('fill', 'rgba(70, 130, 180, 1.0)')
       .attr('fill-opacity', 0.3)
       .attr('stroke', 'none')
       .attr('d', d3.area()
         .x(function(d: any) { return self.fullX(d.t); })
         .y0(this.fullHeight)
-        .y1(function(d: any) { return self.fullEle(d.ele); })
+        .y1(function(d: any) { return self.fullEle(self.settings.getElevation(d.ele)); })
       );
+    // Add Elevation Line
     line.append('path')
       .datum(this.data)
       .attr('class', 'line')
@@ -488,6 +488,7 @@ export class ChartComponent implements OnInit {
         .x((d: any) => { return self.fullX(d.t); })
         .y((d: any) => { return self.fullEle(self.settings.getElevation(d.ele)); })
       );
+    // Add Pace Line
     line.append('path')
       .datum(this.data.slice(0, this.data.length - 1))
       .attr('class', 'line')
@@ -623,7 +624,7 @@ export class ChartComponent implements OnInit {
     // Add area, line, points
     zoomLine.append('path')
       .datum(this.data)
-      .attr('fill', 'rgba(70, 130, 180, 0.2)')
+      .attr('fill', 'rgba(70, 130, 180, 1)')
       .attr('fill-opacity', 0.3)
       .attr('stroke', 'none')
       .attr('d', d3.area()

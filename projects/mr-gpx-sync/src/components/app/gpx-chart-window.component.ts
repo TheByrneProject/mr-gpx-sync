@@ -9,7 +9,7 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
       <fa-icon [icon]="['fas', 'ellipsis']" size="sm"></fa-icon>
     </div>
     <div class="window-content">
-      <mr-gpx-sync-chart style="width: 35vw; height: 30vh;"></mr-gpx-sync-chart>
+      <mr-gpx-sync-chart style="width: 35vw; height: 30vh;" class="p-3"></mr-gpx-sync-chart>
     </div>
   `,
   styles: [],
