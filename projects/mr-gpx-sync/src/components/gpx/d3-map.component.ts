@@ -52,6 +52,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     this.mrGpxSyncService.action$.subscribe((action: ActionEvent) => {
       if (action.name === 'set-map-type') {
         this.setMap(action.data.mapType);
+        this.render();
       }
     });
 
@@ -125,6 +126,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       this.map.getView().on('change:center', () => this.render());
       this.map.getView().on('change:resolution', () => this.render());
       this.map.getView().on('change:rotation', () => this.render());
+      this.map.on('click', () => {});
     });
   }
 
@@ -339,14 +341,14 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       let extent: Extent = this.map.getView().calculateExtent(this.map.getSize());
 
       // Create SVG path string
-      let pathData: [number, number][] = [];
+      let pathData: [number, number, number][] = [];
       let pathString = '';
       this.primaryTrack.trkPts.forEach((point: TrackPoint, i: number) => {
         let p: [number, number] = this.lonLatToPixel(point.lon, point.lat);
 
         const coordinate = fromLonLat([point.lon, point.lat]);
         if (coordinate[0] > extent[0] && coordinate[0] < extent[2] && coordinate[1] > extent[1] && coordinate[1] < extent[3]) {
-          pathData.push(p);
+          pathData.push([p[0], p[1], i]);
         }
 
         if (i === 0) {
@@ -371,7 +373,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     let scaleColor = scaleLinear([this.primaryTrack.minV, this.primaryTrack.maxV], ['green', 'red']);
 
     // @ts-ignore
-    if (this.map.getView().getResolution() && this.map.getView().getResolution() < 1.5) {
+    if (this.map.getView().getResolution() && this.map.getView().getResolution() < 1.0) {
       this.svg.append('g')
         .selectAll()
         .data(pathData)
@@ -385,8 +387,10 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
         .style('stroke', function(d: any, i: number) { return `${scaleColor(self.primaryTrack.trkPts[i].v)}`; })
         .style('stroke-width', 2)
         .style('stroke-opacity', 1)
+        .style('pointer-events', 'visible')
         .on('click', function(event: any, d: any) {
-          const p: TrackPoint = self.primaryTrack.trkPts[event.target.__data__];
+          console.log(d);
+          const p: TrackPoint = self.primaryTrack.trkPts[d[2]];
           self.mrGpxSyncService.setSelectedPoint(p, 'd3-map');
         });
     }
@@ -399,7 +403,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     if (!this.svg) {
       return;
     }
-    this.svg.selectAll('#selected-point').remove();
+    this.svg.select('#selected-points').remove();
     this.gSelectedPoints = this.svg.append('g').attr('id', 'selected-points');
     this.gSelectedPoints.selectAll('circle').remove();
 
