@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/mr-gpx-sync",
       "sourceRoot": "projects/mr-gpx-sync/src",
-      "prefix": "lib",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -45,7 +45,7 @@
       },
       "root": "projects/mr-gpx-sync-app",
       "sourceRoot": "projects/mr-gpx-sync-app/src",
-      "prefix": "app",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",

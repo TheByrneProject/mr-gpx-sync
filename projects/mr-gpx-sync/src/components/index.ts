@@ -1,6 +1,7 @@
 
 export * from './app';
 export * from './gpx';
+export * from './info';
 
 export { ChartComponent } from './chart.component';
 export { InfoComponent } from './info.component';

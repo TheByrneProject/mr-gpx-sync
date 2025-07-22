@@ -46,8 +46,7 @@ export class MrGpxSyncService {
   constructor(private clipboard: Clipboard) {
     let localSettings: Settings = JSON.parse(<string>localStorage.getItem('com.thebyrneproject.mrgpxsync.settings'));
     if (localSettings) {
-      let settings: Settings = new Settings();
-      settings = Object.assign(settings, localSettings);
+      let settings: Settings = new Settings(localSettings);
       this.settings$.next(settings);
     }
 
@@ -85,6 +84,11 @@ export class MrGpxSyncService {
   setMapPoint(p: TrackPoint, source: string = ''): void {
     // this.clipboard.copy(JSON.stringify(p));
     this.mapPoint$.next(new TrackPointEvent(TrackPoint.from(p), source));
+  }
+
+  updateSettings(settings: Settings): void {
+    localStorage.setItem('com.thebyrneproject.mrgpxsync.settings', JSON.stringify(settings));
+    this.settings$.next(settings);
   }
 
   setMetric(metric: boolean): void {

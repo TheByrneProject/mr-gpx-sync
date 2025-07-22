@@ -3,16 +3,18 @@ import { Router } from '@angular/router';
 import { FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
-import { MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings, TrackFile, ActionEvent } from 'mr-gpx-sync';
+import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings, TrackFile, DraggableDirective } from 'mr-gpx-sync';
+import {Undo} from "projects/mr-gpx-sync/src/events";
 
 @Component({
   selector: 'mr-gpx-sync-app',
   standalone: true,
-  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow],
+  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent],
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
-    <mr-gpx-sync-video-overlay [style.top]="settings.videoWindowTop" [style.left]="settings.videoWindowLeft"></mr-gpx-sync-video-overlay>
+    <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable [style.top]="settings.windows.videoWindow.top" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
+    <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
     
     @if (openedGpx) {
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
@@ -64,6 +66,10 @@ export class AppComponent {
 
     this.mrGpxSyncService.error$.subscribe((error: any) => {
       console.error(error);
+    });
+
+    this.mrGpxSyncService.undo$.subscribe((undo: Undo) => {
+      console.log(undo);
     });
   }
 

@@ -141,105 +141,11 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       this.secondaryTracks = [{trkPts: trkSeg.trkPts, i: 0, j: 0}];
     }
 
-    // Convert primaryTrack to GeoJSON features
-    //this.convertTrackToGeoJSON();
-    // Add selected points if any
-    //this.addSelectedPointsToGeoJSON();
-    // Fit map view to track bounds
     this.fitMapToTrack();
     this.render();
     this.map.updateSize();
   }
 
-  /**
-   * Convert primaryTrack points to GeoJSON LineString feature
-   */
-  convertTrackToGeoJSON(): void {
-    if (!this.primaryTrack || this.primaryTrack.trkPts.length === 0) {
-      this.features = {
-        type: 'FeatureCollection',
-        features: []
-      };
-      return;
-    }
-
-    // Convert track points to coordinate array [longitude, latitude]
-    const coordinates: number[][] = this.primaryTrack.trkPts.map(point => {
-      // Ensure coordinates are numbers (they might be strings from XML parsing)
-      const lon = typeof point.lon === 'string' ? parseFloat(point.lon) : point.lon;
-      const lat = typeof point.lat === 'string' ? parseFloat(point.lat) : point.lat;
-      return [lon, lat];
-    });
-
-    // Create GeoJSON LineString feature
-    /*
-    this.features = {
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature',
-          geometry: {
-            type: 'LineString',
-            coordinates: coordinates
-          },
-          properties: {
-            name: 'GPX Track',
-            pointCount: this.primaryTrack.trkPts.length,
-            isSecondary: false
-          }
-        }
-      ]
-    };*/
-
-    // If there are secondary tracks, add them as well
-    if (this.secondaryTracks && this.secondaryTracks.length > 0) {
-      this.secondaryTracks.forEach((track, index) => {
-        if (track.trkPts && track.trkPts.length > 0) {
-          const secondaryCoordinates = track.trkPts.map((point: TrackPoint) => [point.lon, point.lat]);
-          this.features.features.push({
-            type: 'Feature',
-            geometry: {
-              type: 'LineString',
-              coordinates: secondaryCoordinates
-            },
-            properties: {
-              name: `Secondary Track ${index + 1}`,
-              pointCount: track.trkPts.length,
-              isSecondary: true
-            }
-          });
-        }
-      });
-    }
-  }
-
-  /**
-   * Add selected points as point features to the GeoJSON
-   */
-  /*
-  addSelectedPointsToGeoJSON(): void {
-    if (!this.selectedPoints || this.selectedPoints.length === 0) {
-      return;
-    }
-
-    // Add selected points as Point features
-    this.selectedPoints.forEach((point, index) => {
-      this.features.features.push({
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [point.lon, point.lat]
-        },
-        properties: {
-          name: `Selected Point ${index + 1}`,
-          isSelected: true,
-          elevation: point.ele,
-          time: point.t
-        }
-      });
-    });
-  }
-*/
   /**
    * Fit the map view to the bounds of the current track
    */
@@ -285,15 +191,6 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
   }
 
   render(): void {
-    // Check if we have valid features to render
-    /*
-    if (!this.features || !this.features.features || this.features.features.length === 0) {
-      // Create a test track for debugging
-      //this.createTestTrack();
-      if (!this.features || !this.features.features || this.features.features.length === 0) {
-        return;
-      }
-    }*/
     if (!this.primaryTrack || this.primaryTrack.trkPts.length === 0) {
       return;
     }
@@ -318,57 +215,42 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       .style('pointer-events', 'none')
       .style('z-index', '1');
 
+    let gradient: any = this.svg.append('defs').append('radialGradient').attr('id', 'red-gradient');
+    gradient.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(255, 0, 0, 0.1)');
+    gradient.append('stop').attr('offset', '100%').attr('stop-color', 'rgba(255, 0, 0, 0.75)');
+
     this.gSelectedPoints = this.svg.append('g').attr('id', 'selected-points');
 
-    // Separate LineString and Point features
-    /*
-    const lineFeatures = this.features.features.filter((f: any) => f.geometry.type === 'LineString');
-    const pointFeatures = this.features.features.filter((f: any) => f.geometry.type === 'Point');
-*/
+    let extent: Extent = this.map.getView().calculateExtent(this.map.getSize());
 
-    // Render LineString features (tracks)
-    //his.primaryTrack.trkPts.forEach((point: TrackPoint, index: number) => {
-      //const coordinates = feature.geometry.coordinates;
+    // Create SVG path string
+    let pathData: [number, number, number][] = [];
+    let pathString = '';
+    this.primaryTrack.trkPts.forEach((point: TrackPoint, i: number) => {
+      let p: [number, number] = this.lonLatToPixel(point.lon, point.lat);
 
+      const coordinate = fromLonLat([point.lon, point.lat]);
+      if (coordinate[0] > extent[0] && coordinate[0] < extent[2] && coordinate[1] > extent[1] && coordinate[1] < extent[3]) {
+        pathData.push([p[0], p[1], i]);
+      }
 
-      // Convert coordinates to pixel positions
-      /*
-        pathData = coordinates.map((coord: [number, number], i: number) => {
-        const pixel = this.lonLatToPixel(coord[0], coord[1]);
+      if (i === 0) {
+        pathString += `M ${p[0]} ${p[1]}`;
+      } else {
+        pathString += ` L ${p[0]} ${p[1]}`;
+      }
+    });
 
-        return pixel;
-      });*/
-      let extent: Extent = this.map.getView().calculateExtent(this.map.getSize());
+    // Add path to SVG
+    const pathElement = this.svg.append('path')
+      .attr('class', 'track')
+      .attr('d', pathString)
+      .style('fill', 'none')
+      .style('stroke', '#0066cc')
+      .style('stroke-width', 4)
+      .style('opacity', 1.0);
 
-      // Create SVG path string
-      let pathData: [number, number, number][] = [];
-      let pathString = '';
-      this.primaryTrack.trkPts.forEach((point: TrackPoint, i: number) => {
-        let p: [number, number] = this.lonLatToPixel(point.lon, point.lat);
-
-        const coordinate = fromLonLat([point.lon, point.lat]);
-        if (coordinate[0] > extent[0] && coordinate[0] < extent[2] && coordinate[1] > extent[1] && coordinate[1] < extent[3]) {
-          pathData.push([p[0], p[1], i]);
-        }
-
-        if (i === 0) {
-          pathString += `M ${p[0]} ${p[1]}`;
-        } else {
-          pathString += ` L ${p[0]} ${p[1]}`;
-        }
-      });
-
-      // Add path to SVG
-      const pathElement = this.svg.append('path')
-        .attr('class', 'track')
-        .attr('d', pathString)
-        .style('fill', 'none')
-        .style('stroke', '#0066cc')
-        .style('stroke-width', 4)
-        .style('opacity', 1.0);
-    //});
-
-    const cr: number = Math.max(6, Math.min(12, this.el.nativeElement.offsetWidth / 200.0));
+    const cr: number = Math.max(3, Math.min(8, this.el.nativeElement.offsetWidth / 250.0));
     let self = this;
     let scaleColor = scaleLinear([this.primaryTrack.minV, this.primaryTrack.maxV], ['green', 'red']);
 
@@ -389,7 +271,6 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
         .style('stroke-opacity', 1)
         .style('pointer-events', 'visible')
         .on('click', function(event: any, d: any) {
-          console.log(d);
           const p: TrackPoint = self.primaryTrack.trkPts[d[2]];
           self.mrGpxSyncService.setSelectedPoint(p, 'd3-map');
         });
@@ -424,7 +305,8 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
         return pixel[1];
       })
       .attr('r', 20)
-      .style('fill', 'transparent')
+      .attr('class', 'selected-pulse')
+      .style('fill', 'url(#red-gradient)')
       .style('stroke', 'red')
       .style('stroke-width', 4)
       .style('opacity', 0.9);

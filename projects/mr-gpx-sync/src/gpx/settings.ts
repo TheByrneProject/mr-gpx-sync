@@ -1,20 +1,46 @@
 
 export class Settings {
 
-  paceMinPer: boolean = true;
-  metric: boolean = false;
-  distanceUnits: string = 'mi';
-  shortDistanceUnits: string = 'ft';
-  paceUnits: string = 'min / mi';
-  eleUnits: string = 'ft';
-  paceMinPerUnit: string = 'min / mi';
-  paceDisPerUnit: string = 'mph';
+  paceMinPer: boolean;
+  metric: boolean;
+  distanceUnits: string;
+  shortDistanceUnits: string;
+  paceUnits: string;
+  eleUnits: string;
+  paceMinPerUnit: string;
+  paceDisPerUnit: string;
 
-  slowThreshold: number = 16.0;
+  slowThreshold: number;
 
-  videoWindowTop: string = '50vh';
-  videoWindowLeft: string = '60px';
-  videoWindowWidth: string = '20vw';
+  windows: any;
+
+  constructor(source: any = {}) {
+    this.paceMinPer = source.paceMinPer ?? true;
+    this.metric = source.metric ?? false;
+    this.distanceUnits = source.distanceUnits ?? 'mi';
+    this.shortDistanceUnits = source.shortDistanceUnits ?? 'ft';
+    this.paceUnits = source.paceUnits ?? 'min / mi';
+    this.eleUnits = source.eleUnits ?? 'ft';
+    this.paceMinPerUnit = source.paceMinPerUnit ?? 'min / mi';
+    this.paceDisPerUnit = source.paceDisPerUnit ?? 'mph';
+    this.slowThreshold = source.slowThreshold ?? 16.0;
+    this.windows = source.windows ?? {};
+    if (!this.windows.videoWindow) {
+      this.windows.videoWindow = {top: '50vh', left: '60px', width: '20vw'};
+    }
+    if (!this.windows.infoWindow) {
+      this.windows.infoWindow = {top: '20vh', left: '70vw'};
+    }
+  }
+
+  setWindowPosition(windowName: string, top: string, left: string): void {
+    if (this.windows[windowName]) {
+      this.windows[windowName].top = top;
+      this.windows[windowName].left = left;
+    } else {
+      this.windows[windowName] = {top: top, left: left};
+    }
+  }
 
   updateUnits(): void {
     this.distanceUnits = this.metric ? 'km' : 'mi';

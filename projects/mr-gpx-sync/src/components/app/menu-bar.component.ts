@@ -3,17 +3,18 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import {NzPopoverDirective, NzPopoverModule} from 'ng-zorro-antd/popover';
 import { MrGpxSyncService } from '../../services';
 import { ActionEvent } from '../../events';
+import {Settings} from '../../gpx';
 
 @Component({
   selector: 'mr-gpx-sync-menu-bar',
   template: `
-    <button nz-popover nzPopoverContent="projectMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+    <button nz-popover [nzPopoverContent]="projectMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
       <fa-icon [icon]="['fas', 'folder']"></fa-icon>
     </button>
-    <button nz-popover nzPopoverContent="settingsMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+    <button nz-popover [nzPopoverContent]="settingsMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
       <fa-icon [icon]="['fas', 'gear']"></fa-icon>
     </button>
-    <button nz-popover nzPopoverContent="aboutMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
+    <button nz-popover [nzPopoverContent]="aboutMenu" nzPopoverPlacement="rightTop" class="btn btn-outline-secondary">
       <fa-icon [icon]="['fas', 'info']"></fa-icon>
     </button>
 
@@ -35,6 +36,10 @@ import { ActionEvent } from '../../events';
     </ng-template>
 
     <ng-template #settingsMenu>
+      <button class="btn btn-outline-secondary" (click)="resetSettings()">
+        <fa-icon [icon]="['fas', 'gear']"></fa-icon>
+        Reset Settings
+      </button>
     </ng-template>
 
     <ng-template #aboutMenu>
@@ -67,4 +72,8 @@ export class MrGpxSyncMenuBar {
   about(): void {}
 
   saveProject(): void {}
+
+  resetSettings(): void {
+    this.mrGpxSyncService.updateSettings(new Settings());
+  }
 }

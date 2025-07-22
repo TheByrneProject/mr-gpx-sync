@@ -11,3 +11,4 @@ export * from './error';
 export * from './events';
 export * from './pipes';
 export * from './utils';
+export * from './window';
