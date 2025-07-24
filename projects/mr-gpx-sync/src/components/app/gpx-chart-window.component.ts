@@ -20,5 +20,5 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 })
 export class MrGpxSyncChartWindow {
 
-  @HostBinding('class') classes: string = 'window transparent';
+  @HostBinding('class') classes: string = 'window transparent white';
 }

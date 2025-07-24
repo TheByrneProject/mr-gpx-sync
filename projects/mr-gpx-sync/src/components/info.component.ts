@@ -54,7 +54,7 @@ export class InfoComponent implements OnInit {
       this.settings = settings;
     });
     this.mrGpxSyncService.action$.subscribe((event: ActionEvent) => {
-      if (event.name === 'info-video') {
+      if (event.name === 'video-info') {
         this.videoDuration = event.data;
       }
     });

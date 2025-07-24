@@ -24,7 +24,6 @@ export class DraggableDirective {
   }
 
   dragStart(event: MouseEvent): void {
-    console.log('dragStart: ' + this.windowName);
     event.preventDefault();
     event.stopPropagation();
 
@@ -56,7 +55,7 @@ export class DraggableDirective {
     this.renderer.removeClass(this.el.nativeElement.querySelector('.drag-target'), 'dragging');
 
     let settings: Settings = this.mrGpxSyncService.settings$.getValue();
-    settings.setWindowPosition(this.windowName, `${this.el.nativeElement.style.left}px`, `${this.el.nativeElement.style.top}px`);
+    settings.setWindowPosition(this.windowName, `${this.el.nativeElement.style.left}`, `${this.el.nativeElement.style.top}`);
     this.mrGpxSyncService.updateSettings(settings);
   }
 }

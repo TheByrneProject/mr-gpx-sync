@@ -552,14 +552,16 @@ export class ChartComponent implements OnInit {
       .attr('text-anchor', 'middle')
       .attr('transform', 'rotate(-90)')
       .attr('y', -zoomMargin.left + 20)
-      .attr('x', -this.zoomHeight / 2)
+      .attr('x', -this.zoomHeight / 2 - 10)
+      .attr('class', 'axis-title')
       .text('Elevation (' + this.settings.eleUnits + ')');
     this.zoomSvg.append('text')
       .style('fill', 'white')
       .attr('text-anchor', 'middle')
       .attr('transform', 'rotate(-90)')
       .attr('y', this.zoomWidth + zoomMargin.left - 20)
-      .attr('x', -this.zoomHeight / 2)
+      .attr('x', -this.zoomHeight / 2 - 10)
+      .attr('class', 'axis-title')
       .text('Pace (' + this.settings.paceUnits + ')');
     this.zoomSvg.append('text')
       .style('fill', 'white')

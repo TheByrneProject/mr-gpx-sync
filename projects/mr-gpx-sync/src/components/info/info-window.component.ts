@@ -7,7 +7,12 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
   standalone: true,
   template: `
     <div class="window-header">
-      <fa-icon [icon]="['fas', 'ellipsis']" size="sm" class="drag-target"></fa-icon>
+      <button class="btn btn-ghost sm">
+        <fa-icon [icon]="['fas', 'ellipsis']" size="sm" class="drag-target"></fa-icon>
+      </button>
+      <button class="btn btn-ghost sm">
+        <fa-icon [icon]="['fas', 'pencil']" size="sm"></fa-icon>
+      </button>
     </div>
     <div class="window-content">
       <mr-gpx-sync-point-info></mr-gpx-sync-point-info>

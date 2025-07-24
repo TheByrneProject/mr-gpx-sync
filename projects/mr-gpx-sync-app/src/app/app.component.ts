@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import { FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
-import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings, TrackFile, DraggableDirective } from 'mr-gpx-sync';
-import {Undo} from "projects/mr-gpx-sync/src/events";
+import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
+  TrackFile, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
 
 @Component({
   selector: 'mr-gpx-sync-app',
   standalone: true,
-  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent],
+  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent],
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
@@ -17,15 +17,16 @@ import {Undo} from "projects/mr-gpx-sync/src/events";
     <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
     
     @if (openedGpx) {
+      <mr-gpx-sync-track-info-window class="white" style="top: 1rem; left: 50%; transform: translateX(-50%);"></mr-gpx-sync-track-info-window>
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
       <mr-gpx-sync-chart-window style="bottom: 2rem; right: 2rem;"></mr-gpx-sync-chart-window>
       
       <div class="window" style="top: 2rem; right: 2rem;">
         <div class="window-content p-3 gap-3 flex-row flex-nowrap" style="border-radius: 1rem;">
-          <button class="btn sm btn-outline-secondary" (click)="undo()">
+          <button class="btn sm btn-outline-secondary" [class.disabled]="undo.index === 0" (click)="doUndo()">
             <fa-icon [icon]="['fas', 'undo']"></fa-icon>
           </button>
-          <button class="btn sm btn-outline-secondary" (click)="redo()">
+          <button class="btn sm btn-outline-secondary" [class.disabled]="undo.index < undo.history.length - 1" (click)="doRedo()">
             <fa-icon [icon]="['fas', 'redo']"></fa-icon>
           </button>
         </div>
@@ -47,6 +48,7 @@ export class AppComponent {
 
   openedGpx: boolean = false;
   settings: Settings = new Settings();
+  undo: Undo = new Undo();
 
   constructor(private library: FaIconLibrary,
               private router: Router,
@@ -69,7 +71,7 @@ export class AppComponent {
     });
 
     this.mrGpxSyncService.undo$.subscribe((undo: Undo) => {
-      console.log(undo);
+      this.undo = undo;
     });
   }
 
@@ -104,11 +106,11 @@ export class AppComponent {
     }
   }
 
-  undo(): void {
+  doUndo(): void {
     this.mrGpxSyncService.undo();
   }
 
-  redo(): void {
+  doRedo(): void {
     this.mrGpxSyncService.redo();
   }
 }

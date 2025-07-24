@@ -80,6 +80,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/mr-gpx-sync/",
+              "deployUrl": "./",
               "budgets": [
                 {
                   "type": "initial",

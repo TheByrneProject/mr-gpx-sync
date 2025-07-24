@@ -14,7 +14,7 @@ import { Settings } from '../../gpx/settings';
     <div class="window-content p-3" style="width: fit-content;">
       <div class="d-flex flex-grow-1 flex-row align-items-center pointer" [class.d-none]="videoLoaded" (click)="openVideo()">
         <fa-icon [icon]="['fas', 'video']" size="2x"></fa-icon>
-        <div class="ms-2" style="font-size: 16px;">Open Video</div>
+        <div class="ms-2" style="font-size: 1rem;">Open Video</div>
       </div>
       <mr-gpx-sync-video class="d-flex" [class.d-none]="!videoLoaded" [style.width]="settings.windows.videoWindow.width"></mr-gpx-sync-video>
     </div>
@@ -29,7 +29,7 @@ import { Settings } from '../../gpx/settings';
 })
 export class MrGpxSyncVideoOverlay {
 
-  @HostBinding('class') classes: string = 'window';
+  @HostBinding('class') classes: string = 'window transparent white';
 
   settings!: Settings;
   videoLoaded: boolean = false;

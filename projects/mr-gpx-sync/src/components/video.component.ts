@@ -13,17 +13,17 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
   template: `
     <div class="d-flex flex-column mt-auto mb-auto mh-100">
       <video #video controls autoplay style="width: 100%; max-height: calc(100% - 48px);"></video>
-      <div id="video-controls" class="d-flex flex-row justify-content-between m-1">
-        <button class="btn btn-primary" (click)="firstFrame()">
+      <div id="video-controls" class="d-flex flex-row justify-content-between pt-1">
+        <button class="btn btn-secondary-outline btn-white" (click)="firstFrame()">
           <fa-icon [icon]="['fas', 'backward']"></fa-icon>
         </button>
-        <button class="btn btn-primary" (click)="previousFrame()">
+        <button class="btn btn-secondary-outline btn-white" (click)="previousFrame()">
           <fa-icon [icon]="['fas', 'backward-step']"></fa-icon>
         </button>
-        <button class="btn btn-primary" (click)="nextFrame()">
+        <button class="btn btn-secondary-outline btn-white" (click)="nextFrame()">
           <fa-icon [icon]="['fas', 'forward-step']"></fa-icon>
         </button>
-        <button class="btn btn-primary" (click)="lastFrame()">
+        <button class="btn btn-secondary-outline btn-white" (click)="lastFrame()">
           <fa-icon [icon]="['fas', 'forward']"></fa-icon>
         </button>
       </div>
@@ -142,7 +142,7 @@ export class VideoComponent implements AfterViewInit {
     }
 
     this.video.onloadedmetadata = (event: any) => {
-      this.mrGpxSyncService.action$.next(new ActionEvent('info-video', Math.ceil(event.target.duration)));
+      this.mrGpxSyncService.action$.next(new ActionEvent('video-info', Math.ceil(event.target.duration)));
     };
 
     this.video.addEventListener('seeked', this.seekListener);

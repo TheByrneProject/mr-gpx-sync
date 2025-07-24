@@ -33,7 +33,7 @@ export class Settings {
     }
   }
 
-  setWindowPosition(windowName: string, top: string, left: string): void {
+  setWindowPosition(windowName: string, left: string, top: string): void {
     if (this.windows[windowName]) {
       this.windows[windowName].top = top;
       this.windows[windowName].left = left;
@@ -77,7 +77,7 @@ export class Settings {
     return this.metric ? ele : ele * 3.28084;
   }
 
-  getElevationAsDisplay(ele: number | undefined): string {
+  getElevationAsDisplay(ele: number | undefined, digits: number = 1): string {
     if (!ele) {
       return '';
     }
