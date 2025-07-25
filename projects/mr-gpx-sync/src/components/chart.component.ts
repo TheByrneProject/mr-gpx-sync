@@ -10,6 +10,7 @@ import { ActionEvent } from '../events/action-event';
 import { TrackFile } from '../gpx/track-file';
 import { DecimalPipe } from '@angular/common';
 import { SecondsToTime } from '../pipes';
+import {TrackEvent} from '../events';
 
 @Component({
   selector: 'mr-gpx-sync-chart',
@@ -188,7 +189,7 @@ export class ChartComponent implements OnInit {
       const p: TrackPoint | undefined = this.trackFile.getTrack().getClosestPoint(t);
       if (this.initialized
           && p
-          && (!this.mrGpxSyncService.selectedPoint$.value.p || p.id !== this.mrGpxSyncService.selectedPoint$.value.p.id)) {
+          && (!this.mrGpxSyncService.selectedPoint$.value.p || p.id !== this.mrGpxSyncService.selectedPoint$.value.p[0].id)) {
         this.selectedPoints = [p];
         this.mrGpxSyncService.setSelectedPoint(TrackPoint.from(p), 'chart');
       }
@@ -220,8 +221,8 @@ export class ChartComponent implements OnInit {
       }
     });
 
-    this.mrGpxSyncService.track$.subscribe((trackFile: TrackFile) => {
-      this.trackFile = trackFile.loaded ? trackFile : new TrackFile();
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.trackFile = event.track.loaded ? event.track : new TrackFile();
 
       this.mrGpxSyncService.log('TableComponent.track$ Updated: n=' + this.trackFile.getTrack().trkPts.length);
       this.data = [...this.trackFile.getTrack().trkPts];
@@ -231,8 +232,8 @@ export class ChartComponent implements OnInit {
     });
 
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
-      if (e.source !== 'chart' && e?.p) {
-        this.selectPoint(e.p, false);
+      if (e.source !== 'chart' && e?.p?.length === 1) {
+        this.selectPoint(e.p[0], false);
       }
     });
   }

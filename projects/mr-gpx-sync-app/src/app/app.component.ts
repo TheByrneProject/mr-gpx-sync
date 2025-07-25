@@ -5,6 +5,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
   TrackFile, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
+import {TrackEvent} from "projects/mr-gpx-sync/src/events";
 
 @Component({
   selector: 'mr-gpx-sync-app',
@@ -13,10 +14,10 @@ import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
-    <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable [style.top]="settings.windows.videoWindow.top" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
-    <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
     
     @if (openedGpx) {
+      <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable [style.top]="settings.windows.videoWindow.top" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
+      <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
       <mr-gpx-sync-track-info-window class="white" style="top: 1rem; left: 50%; transform: translateX(-50%);"></mr-gpx-sync-track-info-window>
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
       <mr-gpx-sync-chart-window style="bottom: 2rem; right: 2rem;"></mr-gpx-sync-chart-window>
@@ -60,8 +61,8 @@ export class AppComponent {
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
     });
-    this.mrGpxSyncService.track$.subscribe((track: TrackFile) => {
-      if (track.loaded) {
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      if (event.track.loaded) {
         this.openedGpx = true;
       }
     });

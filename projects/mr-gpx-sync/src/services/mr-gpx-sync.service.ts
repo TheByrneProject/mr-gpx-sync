@@ -9,6 +9,7 @@ import { TrackPoint } from '../gpx/track-point';
 import { Undo } from '../events/undo';
 import { Settings } from '../gpx/settings';
 import { GpxEvent } from '../events/gpx-event';
+import { TrackEvent } from '../events/track-event';
 import { ActionEvent } from '../events/action-event';
 import { TrackPointEvent } from '../events/track-point-event';
 import { TrackFile } from '../gpx/track-file';
@@ -30,7 +31,7 @@ export class MrGpxSyncService {
 
   action$: BehaviorSubject<ActionEvent> = new BehaviorSubject<ActionEvent>(new ActionEvent());
 
-  track$: BehaviorSubject<TrackFile> = new BehaviorSubject<TrackFile>(new TrackFile());
+  track$: BehaviorSubject<TrackEvent> = new BehaviorSubject<TrackEvent>(new TrackEvent());
   selectedPoint$: BehaviorSubject<TrackPointEvent> = new BehaviorSubject<TrackPointEvent>(new TrackPointEvent());
   mapPoint$: BehaviorSubject<TrackPointEvent> = new BehaviorSubject<TrackPointEvent>(new TrackPointEvent());
   error$: Subject<ParseError> = new Subject<ParseError>();
@@ -71,19 +72,36 @@ export class MrGpxSyncService {
 
   setSelectedPoint(p: TrackPoint, source: string = ''): void {
     this.log('setSelectedPoint: ' + p.id + ' ' + source);
-    this.selectedPoint$.next(new TrackPointEvent(TrackPoint.from(p), source));
+    this.selectedPoint$.next(new TrackPointEvent([TrackPoint.from(p)], source));
+  }
+
+  appendSelectedPoint(p: TrackPoint, source: string = ''): void {
+    this.log('appendSelectedPoint: ' + p.id + ' ' + source);
+    if (this.selectedPoint$.getValue().p?.length > 0) {
+      this.selectedPoint$.next(new TrackPointEvent(this.getTrack().getSubTrackByIds(this.selectedPoint$.getValue().p[0].id, p.id), source));
+    } else {
+      this.selectedPoint$.next(new TrackPointEvent([TrackPoint.from(p)], source));
+    }
+  }
+
+  getTrackFile(): TrackFile {
+    return this.track$.getValue().getTrack();
+  }
+
+  getTrack(): TrackSeg {
+    return this.track$.getValue().getTrack().getTrack();
   }
 
   setSelectedPointClosestTo(c: Coordinate, source: string = ''): void {
     this.log('setSelectedPointClosestTo: ' + c[0] + ', ' + c[1] + ' ' + source);
 
-    const p: TrackPoint = this.track$.getValue().getTrack().getClosestPointLonLat(c[0], c[1]);
-    this.selectedPoint$.next(new TrackPointEvent(TrackPoint.from(p), source));
+    const p: TrackPoint = this.getTrack().getClosestPointLonLat(c[0], c[1]);
+    this.selectedPoint$.next(new TrackPointEvent([TrackPoint.from(p)], source));
   }
 
   setMapPoint(p: TrackPoint, source: string = ''): void {
     // this.clipboard.copy(JSON.stringify(p));
-    this.mapPoint$.next(new TrackPointEvent(TrackPoint.from(p), source));
+    this.mapPoint$.next(new TrackPointEvent([TrackPoint.from(p)], source));
   }
 
   updateSettings(settings: Settings): void {
@@ -106,7 +124,7 @@ export class MrGpxSyncService {
   }
 
   reset(): void {
-    this.track$.next(new TrackFile());
+    this.track$.next(new TrackEvent());
     this.undo$.next(new Undo());
     this.action$.next(new ActionEvent('close-video'));
   }
@@ -116,7 +134,7 @@ export class MrGpxSyncService {
     return this.id;
   }
 
-  setTrack(track: TrackFile): void {
+  setTrack(track: TrackFile, data: any = {}): void {
     track.id = this.getId();
 
     const undo: Undo = this.undo$.getValue();
@@ -125,12 +143,12 @@ export class MrGpxSyncService {
     this.undo$.next(undo);
 
     this.log('setTrack: undo.index=' + undo.index + ', id=' + track.id);
-    this.selectedPoint$.next(new TrackPointEvent());
-    this.track$.next(track);
+    //this.selectedPoint$.next(new TrackPointEvent());
+    this.track$.next(new TrackEvent(track, data));
   }
 
   setTrackSeg(trackSeg: TrackSeg): void {
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.track$.getValue().getTrack();
     trackSeg.analyze(this.settings$.getValue());
     track.tracks[0].trkSegs = [trackSeg];
     this.setTrack(track);
@@ -143,7 +161,7 @@ export class MrGpxSyncService {
     if (undo.index < undo.history.length - 1) {
       undo.index++;
       this.log('undo: undo.index=' + undo.index + ', id=' + undo.history[undo.index].id);
-      this.track$.next(TrackFile.from(undo.history[undo.index]));
+      this.track$.next(new TrackEvent(TrackFile.from(undo.history[undo.index])));
       this.selectedPoint$.next(new TrackPointEvent());
       this.undo$.next(undo);
     }
@@ -153,7 +171,7 @@ export class MrGpxSyncService {
     let undo: Undo = this.undo$.getValue();
     if (undo.index > 0) {
       undo.index--;
-      this.track$.next(undo.history[undo.index]);
+      this.track$.next(new TrackEvent(undo.history[undo.index]));
       this.selectedPoint$.next(new TrackPointEvent());
     }
   }
@@ -227,7 +245,7 @@ export class MrGpxSyncService {
   }
 
   appendPoint(appendTrackPoint: TrackPoint, dt: number): void {
-    const trackFile: TrackFile = this.track$.getValue();
+    const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     track.getEnd().dt = dt;
     appendTrackPoint.date = track.getEnd().date.clone().add(dt, 's');
@@ -239,7 +257,7 @@ export class MrGpxSyncService {
   }
 
   prependPoint(prependTrackPoint: TrackPoint, dt: number): void {
-    const trackFile: TrackFile = this.track$.getValue();
+    const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     prependTrackPoint.dt = dt;
     prependTrackPoint.date = track.getStart().date.clone().subtract(dt, 's');
@@ -253,7 +271,7 @@ export class MrGpxSyncService {
   appendTrack(appendTrackSeg: TrackSeg, dt: number): void {
     this.log(`appendTrack: ${dt}`);
 
-    const trackFile: TrackFile = this.track$.getValue();
+    const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     const endTime: Moment = track.getEndTime();
     for (let trkPt of appendTrackSeg.trkPts) {
@@ -270,7 +288,7 @@ export class MrGpxSyncService {
     this.log(`prependTrack: ${dt}`);
 
     let trkPts: TrackPoint[] = prependTrackSeg.trkPts;
-    const trackFile: TrackFile = this.track$.getValue();
+    const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     const endTime: Moment = prependTrackSeg.getEndTime();
     for (let trkPt of track.trkPts) {
@@ -339,14 +357,14 @@ export class MrGpxSyncService {
    */
   shiftTime(p1: TrackPoint, dt: number): void {
     this.log('shiftTime');
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.getTrackFile();
     track.getTrack().shiftTime(p1, dt);
     this.setTrack(track);
   }
 
   compress(newDuration: number): boolean {
     this.log('compress');
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.getTrackFile();
     const result: boolean = track.getTrack().compress(newDuration);
     this.setTrack(track);
     return result;
@@ -355,7 +373,7 @@ export class MrGpxSyncService {
 
   delete(points: TrackPoint[]): GpxEvent {
     this.log('delete: pSize=' + points.length);
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.getTrackFile();
     const result: GpxEvent = track.getTrack().delete(points);
     if (result.success) {
       if (points[0].id === 0) {
@@ -363,10 +381,10 @@ export class MrGpxSyncService {
         let p: TrackPoint = points[points.length - 1];
         let p2: TrackPoint | undefined = track.getTrack().get(p.id + 1);
         if (p2) {
-          this.selectedPoint$.next(new TrackPointEvent(TrackPoint.from(p2)));
+          this.selectedPoint$.next(new TrackPointEvent([TrackPoint.from(p2)]));
         }
       } else {
-        this.selectedPoint$.next(new TrackPointEvent(TrackPoint.from(points[0])));
+        this.selectedPoint$.next(new TrackPointEvent([track.getTrack().getPreviousByTime(points[0].t)]));
       }
       this.setTrack(track);
     } else {
@@ -377,7 +395,7 @@ export class MrGpxSyncService {
 
   interpolate(point: TrackPoint): GpxEvent {
     this.log('interpolate');
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.getTrackFile();
     const result: GpxEvent = track.getTrack().interpolate(point);
     if (result.success) {
       this.selectedPoint$.next(new TrackPointEvent(result.data));
@@ -390,7 +408,7 @@ export class MrGpxSyncService {
 
   updatePoint(point: TrackPoint): GpxEvent {
     this.log('updatePoint');
-    let track: TrackFile = this.track$.getValue();
+    let track: TrackFile = this.getTrackFile();
     const result: GpxEvent = track.getTrack().updatePoint(point);
     if (result.success) {
       this.setTrack(track);

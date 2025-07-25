@@ -4,6 +4,7 @@ import {MrGpxSyncService} from '../../services/mr-gpx-sync.service';
 import {ActionEvent} from '../../events/action-event';
 import {ElevationPipe} from '../../pipes';
 import {DecimalPipe} from '@angular/common';
+import {TrackEvent} from '../../events';
 
 @Component({
   selector: 'mr-gpx-sync-track-info',
@@ -81,8 +82,8 @@ export class TrackInfoComponent implements OnInit {
   constructor(private mrGpxSyncService: MrGpxSyncService) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.track$.subscribe((track: TrackFile) => {
-      this.track = track.loaded ? track : new TrackFile();
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.track = event.track.loaded ? event.track : new TrackFile();
     });
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve mr-gpx-sync-app",
+    "start": "ng serve mr-gpx-sync-app --configuration development",
     "build": "ng build mr-gpx-sync && ng build mr-gpx-sync-app",
     "build:lib": "ng build mr-gpx-sync --configuration development && npm run copy-to-node",
     "build:app": "ng build mr-gpx-sync-app",

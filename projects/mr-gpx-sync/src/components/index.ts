@@ -1,7 +1,8 @@
 
 export * from './app';
 export * from './gpx';
-export * from './info';
+export * from './point-info-edit';
+export * from './track-info';
 
 export { ChartComponent } from './chart.component';
 export { InfoComponent } from './info.component';

@@ -5,13 +5,14 @@ import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
 import { fromLonLat } from 'ol/proj';
-import {XYZ} from 'ol/source';
+import { XYZ } from 'ol/source';
 import { scaleLinear, select } from 'd3';
 import { Extent } from 'ol/extent';
-import { timer } from 'rxjs';
+import {Subscription, timer} from 'rxjs';
 import { take } from 'rxjs/operators';
-import {TrackPointEvent} from '../../events/track-point-event';
-import {ActionEvent} from '../../events/action-event';
+import { TrackPointEvent } from '../../events/track-point-event';
+import { ActionEvent } from '../../events/action-event';
+import { TrackEvent } from '../../events';
 
 @Component({
   selector: 'mr-gpx-sync-d3-map',
@@ -38,10 +39,13 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
   secondaryTracks: any[] = [];
   selectedPoints: TrackPoint[] = [];
 
+  trackEvent: TrackEvent = new TrackEvent();
+  firstRender: boolean = true;
   trackChanged: boolean = false;
   svg: any;
   gSelectedPoints: any;
   features: any; // GeoJSON features converted from primaryTrack
+  renderSubscription: Subscription;
 
   constructor(private el: ElementRef,
               private mrGpxSyncService: MrGpxSyncService) {}
@@ -57,10 +61,11 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     });
 
     // Subscribe to track changes
-    this.mrGpxSyncService.track$.subscribe((trackFile: TrackFile) => {
-      if (trackFile.loaded) {
-        this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.loaded: ${trackFile.tracks.length}`);
-        this.loadTrack(trackFile.getTrack());
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.trackEvent = event;
+      if (event.track.loaded) {
+        this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.loaded: ${event.track.tracks.length}`);
+        this.loadTrack(event.track.getTrack());
       }
 
       /* else if (trackFile.getTrack().trkPts.length > 1) {
@@ -72,8 +77,8 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       }*/
     });
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
-      if (e.p) {
-        this.selectedPoints = [e.p];
+      if (e.p?.length > 0) {
+        this.selectedPoints = e.p;
         this.renderSelectedPoints();
       } else {
         this.selectedPoints = [];
@@ -119,7 +124,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     });
 
     // Wait a bit for the DOM to be ready, then update size using RxJS timer
-    timer(100).pipe(take(1)).subscribe(() => {
+    //timer(100).pipe(take(1)).subscribe(() => {
       this.map.updateSize();
 
       // Add event listeners for map view changes to update SVG overlay
@@ -127,7 +132,17 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       this.map.getView().on('change:resolution', () => this.render());
       this.map.getView().on('change:rotation', () => this.render());
       this.map.on('click', () => {});
-    });
+    //});
+
+    if (this.primaryTrack.trkPts.length > 0) {
+      if (this.renderSubscription) {
+        this.renderSubscription.unsubscribe();
+      }
+
+      this.renderSubscription = timer(100).subscribe(() => {
+        this.render();
+      });
+    }
   }
 
   loadTrack(trkSeg: TrackSeg, primary: boolean = true): void {
@@ -141,9 +156,20 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       this.secondaryTracks = [{trkPts: trkSeg.trkPts, i: 0, j: 0}];
     }
 
-    this.fitMapToTrack();
-    this.render();
-    this.map.updateSize();
+    if (this.firstRender || this.trackEvent.data.recenter) {
+      this.fitMapToTrack();
+      this.map.updateSize();
+    }
+
+    if (this.renderSubscription) {
+      this.renderSubscription.unsubscribe();
+    }
+
+    this.renderSubscription = timer(100).subscribe(() => {
+      this.render();
+    });
+
+    this.firstRender = false;
   }
 
   /**
@@ -271,8 +297,13 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
         .style('stroke-opacity', 1)
         .style('pointer-events', 'visible')
         .on('click', function(event: any, d: any) {
-          const p: TrackPoint = self.primaryTrack.trkPts[d[2]];
-          self.mrGpxSyncService.setSelectedPoint(p, 'd3-map');
+          if (event.shiftKey) {
+            const p: TrackPoint = self.primaryTrack.trkPts[d[2]];
+            self.mrGpxSyncService.appendSelectedPoint(p, 'd3-map');
+          } else {
+            const p: TrackPoint = self.primaryTrack.trkPts[d[2]];
+            self.mrGpxSyncService.setSelectedPoint(p, 'd3-map');
+          }
         });
     }
 

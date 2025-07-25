@@ -148,7 +148,7 @@ export class TrackSeg {
         this.maxV = p1.v;
       }
 
-      console.log(p1.t + ' ' + p1.dx + ' ' + p1.dt + ' ' + p1.v);
+      //console.log(p1.t + ' ' + p1.dx + ' ' + p1.dt + ' ' + p1.v);
     }
 
     // The last point of the track has a zero delta for time and distance.
@@ -289,7 +289,11 @@ export class TrackSeg {
   }
 
   getSubTrackByIds(i0: number, i1: number): TrackPoint[] {
-    return this.trkPts.slice(i0, i1 + 1);
+    if (i0 < i1) {
+      return this.trkPts.slice(i0, i1 + 1);
+    } else {
+      return this.trkPts.slice(i1, i0 + 1);
+    }
   }
 
   /**
@@ -353,6 +357,7 @@ export class TrackSeg {
 
   delete(points: TrackPoint[]): GpxEvent {
     try {
+      console.log('delete');
       console.log(points);
       console.log(this.trkPts);
       this.trkPts.splice(points[0].id, points.length);

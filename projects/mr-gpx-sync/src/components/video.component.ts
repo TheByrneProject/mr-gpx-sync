@@ -7,6 +7,7 @@ import { TrackFile } from '../gpx/track-file';
 import { TrackPoint } from '../gpx/track-point';
 import { TrackPointEvent } from '../events/track-point-event';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import {TrackEvent} from '../events';
 
 @Component({
   selector: 'mr-gpx-sync-video',
@@ -52,7 +53,7 @@ export class VideoComponent implements AfterViewInit {
       if (p) {
         this.video.currentTime = p.t;
         this.currentPoint = p;
-        this.mrGpxSyncService.selectedPoint$.next(new TrackPointEvent(p, 'video'));
+        this.mrGpxSyncService.selectedPoint$.next(new TrackPointEvent([p], 'video'));
       }
 
       timer(500).subscribe(() => {
@@ -96,13 +97,14 @@ export class VideoComponent implements AfterViewInit {
     });
 
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
-      if (e.p && this.video && e.source !== 'video') {
+      if (e.p?.length === 1 && this.video && e.source !== 'video') {
         this.removeSeekListener();
+        let p: TrackPoint = e.p[0];
 
-        this.mrGpxSyncService.log('video.selectedPoint.subscribe: ' + e.p.t);
+        this.mrGpxSyncService.log('video.selectedPoint.subscribe: ' + p.t);
         this.video.pause();
-        this.video.currentTime = e.p.t;
-        this.currentPoint = e.p;
+        this.video.currentTime = p.t;
+        this.currentPoint = p;
 
         if (this.video.duration < this.currentPoint.t) {
           this.video.currentTime = this.video.duration;
@@ -115,8 +117,8 @@ export class VideoComponent implements AfterViewInit {
       }
     });
 
-    this.mrGpxSyncService.track$.subscribe((trackFile: TrackFile) => {
-      this.trackFile = trackFile.loaded ? trackFile : new TrackFile();
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.trackFile = event.track.loaded ? event.track : new TrackFile();
     });
   }
 

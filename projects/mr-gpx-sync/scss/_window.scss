@@ -92,3 +92,24 @@ mr-gpx-sync-video-overlay {
     cursor: grabbing;
   }
 }
+
+.ant-popover-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+
+.transparent .ant-popover-inner-content {
+  padding: 0;
+
+  .btn-ghost {
+    padding: 0.5rem;
+    color: gray;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.ww-400 {
+  min-width: 400px;
+}

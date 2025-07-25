@@ -1,9 +1,9 @@
 import { Component, HostBinding, OnInit } from "@angular/core";
+import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
 import {SecondsToTime} from '../../pipes';
 import {Settings, TrackFile, TrackPoint} from '../../gpx';
 import {MrGpxSyncService} from '../../services';
-import {TrackPointEvent} from '../../events';
-import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
+import {TrackEvent, TrackPointEvent} from '../../events';
 
 @Component({
   selector: 'mr-gpx-sync-point-info',
@@ -52,14 +52,14 @@ export class PointInfoComponent implements OnInit {
   constructor(private mrGpxSyncService: MrGpxSyncService) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.track$.subscribe((track: TrackFile) => {
-      this.track = track;
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.track = event.track;
     });
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
     });
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
-      this.p = e.p;
+      this.p = e.p.length > 0 ? e.p[0] : undefined;
     });
   }
 }

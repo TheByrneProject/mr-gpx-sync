@@ -3,6 +3,7 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { MrGpxSyncService } from '../../services';
 import { ActionEvent } from '../../events/action-event';
 import { TrackFile } from '../../gpx/track-file';
+import {TrackEvent} from '../../events';
 
 @Component({
   selector: 'nr-gpx-sync-new-project',
@@ -42,8 +43,8 @@ export class MrGpxSyncNewProject {
   ngOnInit(): void {
     this.mrGpxSyncService.reset();
 
-    this.mrGpxSyncService.track$.subscribe((track: TrackFile) => {
-      this.gpxLoaded = (track.loaded) ? 1 : 0;
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.gpxLoaded = (event.track.loaded) ? 1 : 0;
 
       if (this.gpxLoaded === 1 && this.videoLoaded > 0) {
         this.mrGpxSyncService.action$.next(new ActionEvent('gpx-video-loaded'));

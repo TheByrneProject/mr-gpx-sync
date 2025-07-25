@@ -6,6 +6,7 @@ import { TrackFile } from '../gpx/track-file';
 import { ActionEvent } from '../events/action-event';
 import { SecondsToTime } from '../pipes';
 import { DecimalPipe } from '@angular/common';
+import {TrackEvent} from '../events';
 
 @Component({
   selector: 'mr-gpx-sync-info-sync',
@@ -47,8 +48,8 @@ export class InfoComponent implements OnInit {
   constructor(private mrGpxSyncService: MrGpxSyncService) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.track$.subscribe((track: TrackFile) => {
-      this.track = track.loaded ? track : new TrackFile();
+    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.track = event.track.loaded ? event.track : new TrackFile();
     });
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
