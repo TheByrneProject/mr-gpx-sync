@@ -4,8 +4,7 @@ import { FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
-  TrackFile, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
-import {TrackEvent} from "projects/mr-gpx-sync/src/events";
+  TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
 
 @Component({
   selector: 'mr-gpx-sync-app',

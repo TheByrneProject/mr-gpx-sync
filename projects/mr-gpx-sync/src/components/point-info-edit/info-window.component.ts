@@ -4,6 +4,7 @@ import {NzPopoverDirective} from 'ng-zorro-antd/popover';
 import {PointInfoComponent} from './point-info.component';
 import {PointDtEditComponent} from './point-dt-edit.component';
 import {PointDeleteComponent} from './point-delete.component';
+import {SplitComponent} from './split.component';
 
 @Component({
   selector: 'mr-gpx-sync-info-window',
@@ -22,6 +23,8 @@ import {PointDeleteComponent} from './point-delete.component';
         <mr-gpx-sync-point-dt-edit (cancel)="mode = 'info'"></mr-gpx-sync-point-dt-edit>
       } @else if (mode === 'delete') {
         <mr-gpx-sync-point-delete (cancel)="mode = 'info'"></mr-gpx-sync-point-delete>
+      } @else if (mode === 'split') {
+        <mr-gpx-sync-point-split (cancel)="mode = 'info'"></mr-gpx-sync-point-split>
       } @else {
         <mr-gpx-sync-point-info></mr-gpx-sync-point-info>
       }
@@ -38,7 +41,7 @@ import {PointDeleteComponent} from './point-delete.component';
           dt
         </button>
         <button class="btn btn-ghost btn-sm btn-vertical">
-          <fa-icon [icon]="['fas', 'scissors']" size="1x"></fa-icon>
+          <fa-icon [icon]="['fas', 'scissors']" size="1x" (click)="mode = 'split'"></fa-icon>
           Split
         </button>
       </div>
@@ -50,7 +53,8 @@ import {PointDeleteComponent} from './point-delete.component';
     FaIconComponent,
     NzPopoverDirective,
     PointDtEditComponent,
-    PointDeleteComponent
+    PointDeleteComponent,
+    SplitComponent
   ]
 })
 export class InfoWindowComponent {

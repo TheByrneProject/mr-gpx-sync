@@ -15,14 +15,14 @@ export class Settings {
   windows: any;
 
   constructor(source: any = {}) {
-    this.paceMinPer = source.paceMinPer ?? true;
-    this.metric = source.metric ?? false;
+    this.paceMinPer = source.paceMinPer ?? false;
+    this.metric = source.metric ?? true;
     this.distanceUnits = source.distanceUnits ?? 'mi';
-    this.shortDistanceUnits = source.shortDistanceUnits ?? 'ft';
-    this.paceUnits = source.paceUnits ?? 'min / mi';
-    this.eleUnits = source.eleUnits ?? 'ft';
-    this.paceMinPerUnit = source.paceMinPerUnit ?? 'min / mi';
-    this.paceDisPerUnit = source.paceDisPerUnit ?? 'mph';
+    this.shortDistanceUnits = source.shortDistanceUnits ?? 'm';
+    this.paceUnits = source.paceUnits ?? 'min / km';
+    this.eleUnits = source.eleUnits ?? 'm';
+    this.paceMinPerUnit = source.paceMinPerUnit ?? 'min / km';
+    this.paceDisPerUnit = source.paceDisPerUnit ?? 'kph';
     this.slowThreshold = source.slowThreshold ?? 16.0;
     this.windows = source.windows ?? {};
     if (!this.windows.videoWindow) {

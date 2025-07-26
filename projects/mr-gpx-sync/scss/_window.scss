@@ -98,6 +98,11 @@ mr-gpx-sync-video-overlay {
   border-radius: 1rem;
 }
 
+.white .ant-popover-inner {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+}
+
 .transparent .ant-popover-inner-content {
   padding: 0;
 

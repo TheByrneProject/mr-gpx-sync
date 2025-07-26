@@ -105,7 +105,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     } else {
       view = new View({
         center: fromLonLat([-110, 41]), // Default center (longitude, latitude)
-        zoom: 10,
+        zoom: 12,
       });
     }
 
@@ -123,25 +123,16 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       view: view
     });
 
-    // Wait a bit for the DOM to be ready, then update size using RxJS timer
-    //timer(100).pipe(take(1)).subscribe(() => {
-      this.map.updateSize();
+    this.map.updateSize();
 
-      // Add event listeners for map view changes to update SVG overlay
-      this.map.getView().on('change:center', () => this.render());
-      this.map.getView().on('change:resolution', () => this.render());
-      this.map.getView().on('change:rotation', () => this.render());
-      this.map.on('click', () => {});
-    //});
+    // Add event listeners for map view changes to update SVG overlay
+    this.map.getView().on('change:center', () => this.render());
+    this.map.getView().on('change:resolution', () => this.render());
+    this.map.getView().on('change:rotation', () => this.render());
+    this.map.on('click', () => {});
 
     if (this.primaryTrack.trkPts.length > 0) {
-      if (this.renderSubscription) {
-        this.renderSubscription.unsubscribe();
-      }
-
-      this.renderSubscription = timer(100).subscribe(() => {
-        this.render();
-      });
+      this.renderDelay();
     }
   }
 
@@ -161,13 +152,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       this.map.updateSize();
     }
 
-    if (this.renderSubscription) {
-      this.renderSubscription.unsubscribe();
-    }
-
-    this.renderSubscription = timer(100).subscribe(() => {
-      this.render();
-    });
+    this.renderDelay();
 
     this.firstRender = false;
   }
@@ -214,6 +199,16 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     });
     this.map.getView().setZoom(14);
     console.log(this.map.getView().calculateExtent());
+  }
+
+  renderDelay(): void {
+    if (this.renderSubscription) {
+      this.renderSubscription.unsubscribe();
+    }
+
+    this.renderSubscription = timer(100).subscribe(() => {
+      this.render();
+    });
   }
 
   render(): void {

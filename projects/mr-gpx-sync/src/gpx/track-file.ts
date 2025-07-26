@@ -56,7 +56,7 @@ export class TrackFile {
     return undefined;
   }
 
-  writeGpx(): Document {
+  writeGpx(gpxName: string = 'untitled.gpx'): Document {
     const gpxFile: Document = document.implementation.createDocument(null, null, null);
 
     const gpx: Element = gpxFile.createElement('gpx');
@@ -72,7 +72,7 @@ export class TrackFile {
     const trkseg: Element = gpxFile.createElement('trkseg');
 
     const name: Element = gpxFile.createElement('name');
-    name.textContent = this.tracks[0].name;
+    name.textContent = this.fileName;
     trk.appendChild(name);
 
     for (const p of this.tracks[0].trkSegs[0].trkPts) {
