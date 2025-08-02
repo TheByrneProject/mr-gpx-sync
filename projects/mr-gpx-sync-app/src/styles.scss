@@ -21,3 +21,28 @@ body {
 .ol-attribution, .ol-overlaycontainer-stopevent {
   display: none;
 }
+
+.lang-window {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  z-index: 100;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.lang-menu {
+
+  .lang-item {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 700;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 1rem;
+    }
+  }
+}

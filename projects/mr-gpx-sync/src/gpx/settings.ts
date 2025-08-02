@@ -1,6 +1,7 @@
 
 export class Settings {
 
+  lang: string = 'en-US';
   paceMinPer: boolean;
   metric: boolean;
   distanceUnits: string;
@@ -15,6 +16,7 @@ export class Settings {
   windows: any;
 
   constructor(source: any = {}) {
+    this.lang = source.lang ?? 'en-US';
     this.paceMinPer = source.paceMinPer ?? false;
     this.metric = source.metric ?? true;
     this.distanceUnits = source.distanceUnits ?? 'mi';

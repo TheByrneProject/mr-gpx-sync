@@ -5,14 +5,31 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
   TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
+import {NzPopoverDirective} from "ng-zorro-antd/popover";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'mr-gpx-sync-app',
   standalone: true,
-  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent],
+  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent, NzPopoverDirective],
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
+    
+    <div class="lang-window">
+      <img src="assets/icons/{{settings.lang}}.svg" width="32" height="32" alt="" nz-popover [nzPopoverContent]="langMenu" nzPopoverPlacement="top" />
+      
+      <ng-template #langMenu>
+        <div class="d-flex flex-column lang-menu">
+          @for (lang of langs; track lang) {
+            <div class="d-flex flex-row gap-3 align-items-center lang-item" (click)="setLang(lang)">
+              <img src="assets/icons/{{lang}}.svg" width="32" height="32" alt="" />
+              <div>{{lang.substr(3, 2)}}</div>
+            </div>
+          }
+        </div>
+      </ng-template>
+    </div>
     
     @if (openedGpx) {
       <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable [style.top]="settings.windows.videoWindow.top" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
@@ -21,7 +38,7 @@ import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
       <mr-gpx-sync-chart-window style="bottom: 2rem; right: 2rem;"></mr-gpx-sync-chart-window>
       
-      <div class="window" style="top: 2rem; right: 2rem;">
+      <div class="window" style="top: 1rem; right: 5rem;">
         <div class="window-content p-3 gap-3 flex-row flex-nowrap" style="border-radius: 1rem;">
           <button class="btn sm btn-outline-secondary" [class.disabled]="undo.index === 0" (click)="doUndo()">
             <fa-icon [icon]="['fas', 'undo']"></fa-icon>
@@ -46,12 +63,15 @@ export class AppComponent {
 
   @HostBinding('class') classes: string = 'outlet-row';
 
+  langs: string[] = ['en-US', 'en-EN', 'fr-FR'];
+
   openedGpx: boolean = false;
   settings: Settings = new Settings();
   undo: Undo = new Undo();
 
   constructor(private library: FaIconLibrary,
               private router: Router,
+              private translateService: TranslateService,
               private mrGpxSyncService: MrGpxSyncService) {
     library.addIconPacks(fas, far);
   }
@@ -112,5 +132,11 @@ export class AppComponent {
 
   doRedo(): void {
     this.mrGpxSyncService.redo();
+  }
+
+  setLang(lang: string) {
+    this.translateService.use(lang);
+    this.settings.lang = lang;
+    this.mrGpxSyncService.updateSettings(this.settings);
   }
 }

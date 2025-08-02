@@ -1,6 +1,6 @@
 import { Component, HostBinding, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import { MrGpxSyncService } from '../../services';
-import { TrackFile, TrackPoint, TrackSeg } from '../../gpx';
+import { TrackPoint, TrackSeg } from '../../gpx';
 import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
@@ -9,7 +9,6 @@ import { XYZ } from 'ol/source';
 import { scaleLinear, select } from 'd3';
 import { Extent } from 'ol/extent';
 import {Subscription, timer} from 'rxjs';
-import { take } from 'rxjs/operators';
 import { TrackPointEvent } from '../../events/track-point-event';
 import { ActionEvent } from '../../events/action-event';
 import { TrackEvent } from '../../events';
@@ -67,14 +66,6 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
         this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.loaded: ${event.track.tracks.length}`);
         this.loadTrack(event.track.getTrack());
       }
-
-      /* else if (trackFile.getTrack().trkPts.length > 1) {
-        this.mrGpxSyncService.log(`D3MapComponent.track$.subscribe.!loaded: ${trackFile.tracks.length}`);
-        if (this.map) {
-          this.map.updateSize();
-        }
-        this.render();
-      }*/
     });
     this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
       if (e.p?.length > 0) {

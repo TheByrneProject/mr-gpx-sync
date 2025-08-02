@@ -6,6 +6,7 @@ import {NzPopoverDirective, NzPopoverModule} from 'ng-zorro-antd/popover';
 import { MrGpxSyncService } from '../../services';
 import {ActionEvent, TrackEvent} from '../../events';
 import {Settings, TrackFile} from '../../gpx';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'mr-gpx-sync-menu-bar',
@@ -24,7 +25,7 @@ import {Settings, TrackFile} from '../../gpx';
       <div class="popover-menu">
         <button class="btn btn-outline-secondary" (click)="newProject()">
           <fa-icon [icon]="['fas', 'file']"></fa-icon>
-          New Project
+          {{ 'menu.newProject' | translate }}
         </button>
         <button class="btn btn-outline-secondary" (click)="save()">
           <fa-icon [icon]="['fas', 'save']"></fa-icon>
@@ -75,7 +76,8 @@ import {Settings, TrackFile} from '../../gpx';
   imports: [
     FaIconComponent,
     NzPopoverModule,
-    NzPopoverDirective
+    NzPopoverDirective,
+    TranslatePipe
   ],
   styles: [
     ``
