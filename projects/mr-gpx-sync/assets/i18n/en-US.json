@@ -1,5 +1,14 @@
 {
   "menu": {
-    "newProject": "New Project"
+    "newProject": "New Project",
+    "saveToFile": "Save To File",
+    "saveToClipboard": "Save To Clipboard",
+    "openGPX": "Open GPX",
+    "openVideo": "Open Video",
+    "units": "Units",
+    "paceFormat": "Pace Format",
+    "metricUnit": "Metric",
+    "imperialUnit": "Imperial",
+    "resetSettings": "Reset Settings"
   }
 }

@@ -6,12 +6,12 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
   TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
 import {NzPopoverDirective} from "ng-zorro-antd/popover";
-import {TranslateService} from "@ngx-translate/core";
+import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'mr-gpx-sync-app',
   standalone: true,
-  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent, NzPopoverDirective],
+  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent, NzPopoverDirective, TranslatePipe],
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
@@ -36,7 +36,7 @@ import {TranslateService} from "@ngx-translate/core";
       <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
       <mr-gpx-sync-track-info-window class="white" style="top: 1rem; left: 50%; transform: translateX(-50%);"></mr-gpx-sync-track-info-window>
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
-      <mr-gpx-sync-chart-window style="bottom: 2rem; right: 2rem;"></mr-gpx-sync-chart-window>
+      <mr-gpx-sync-chart-window id="chartWindow" mrGpxSyncDraggable windowPosition="bottom-right" [style.bottom]="settings.windows.chartWindow.bottom" [style.right]="settings.windows.chartWindow.right"></mr-gpx-sync-chart-window>
       
       <div class="window" style="top: 1rem; right: 5rem;">
         <div class="window-content p-3 gap-3 flex-row flex-nowrap" style="border-radius: 1rem;">
@@ -52,7 +52,7 @@ import {TranslateService} from "@ngx-translate/core";
       <div class="window" style="top: 2rem; left: 5rem; border-radius: 1rem; background-color: white;">
         <div class="window-content align-items-center gap-3 pointer p-3" style="border-radius: 1rem;" (click)="openGpx(true)">
           <fa-icon [icon]="['fas', 'location-dot']" size="2x"></fa-icon>
-          <div class="">Open GPX</div>
+          <div class="">{{ 'menu.openGPX' | translate }}</div>
         </div>
         <input type="file" id="gpx-upload" (change)="openGpxFileWizard($event)" style="display: none;">
       </div>

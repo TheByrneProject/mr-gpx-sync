@@ -28,20 +28,40 @@ export class Settings {
     this.slowThreshold = source.slowThreshold ?? 16.0;
     this.windows = source.windows ?? {};
     if (!this.windows.videoWindow) {
-      this.windows.videoWindow = {top: '50vh', left: '60px', width: '20vw'};
+      this.windows.videoWindow = {position: 'top-left', top: '50vh', left: '60px', width: '20vw'};
     }
     if (!this.windows.infoWindow) {
-      this.windows.infoWindow = {top: '20vh', left: '70vw'};
+      this.windows.infoWindow = {position: 'top-left', top: '20vh', left: '70vw'};
+    }
+    if (!this.windows.chartWindow) {
+      this.windows.chartWindow = {position: 'bottom-right', bottom: '2rem', right: '2rem', width: '30vw', height: '25vh'};
     }
   }
 
-  setWindowPosition(windowName: string, left: string, top: string): void {
+  setWindowPosition(windowName: string, position: string = 'top-left', x: string, y: string): void {
     if (this.windows[windowName]) {
-      this.windows[windowName].top = top;
-      this.windows[windowName].left = left;
+      this.windows[windowName].position = position;
+
+      if (this.windows[windowName].position === 'top-left') {
+        this.windows[windowName].top = y;
+        this.windows[windowName].left = x;
+      } else if (this.windows[windowName].position === 'bottom-right') {
+        this.windows[windowName].bottom = y;
+        this.windows[windowName].right = x;
+      } else if (this.windows[windowName].position === 'bottom-left') {
+        this.windows[windowName].bottom = y;
+        this.windows[windowName].left = x;
+      } else if (this.windows[windowName].position === 'top-right') {
+        this.windows[windowName].top = y;
+        this.windows[windowName].right = x;
+      }
     } else {
-      this.windows[windowName] = {top: top, left: left};
+      this.windows[windowName] = {position: position, top: y, left: x};
     }
+  }
+
+  getWindowPosition(windowName: string): any {
+    return this.windows[windowName];
   }
 
   updateUnits(): void {

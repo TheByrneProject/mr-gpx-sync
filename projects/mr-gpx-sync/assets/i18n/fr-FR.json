@@ -1,5 +1,14 @@
 {
   "menu": {
-    "newProject": "New Projecto"
+    "newProject": "Nouveau Projet",
+    "saveToFile": "Enregistrer dans un Fichier",
+    "saveToClipboard": "Copier dans le Presse-papiers",
+    "openGPX": "Ouvrir un fichier GPX",
+    "openVideo": "Ouvrir une vidéo",
+    "units": "Unités",
+    "paceFormat": "Format du rythme",
+    "metricUnit": "Unité métrique",
+    "imperialUnit": "Unité impériale",
+    "resetSettings": "Réinitialiser les paramètres"
   }
 }

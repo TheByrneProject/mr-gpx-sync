@@ -94,7 +94,13 @@
                   "maximumError": "16kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "projects/mr-gpx-sync-app/src/environments/environment.ts",
+                  "with": "projects/mr-gpx-sync-app/src/environments/environment.prod.ts"
+                }
+              ]
             },
             "development": {
               "optimization": false,

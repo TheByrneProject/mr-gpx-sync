@@ -29,11 +29,11 @@ import {TranslatePipe} from '@ngx-translate/core';
         </button>
         <button class="btn btn-outline-secondary" (click)="save()">
           <fa-icon [icon]="['fas', 'save']"></fa-icon>
-          Save To File
+          {{ 'menu.saveToFile' | translate }}
         </button>
         <button class="btn btn-outline-secondary" (click)="saveToClipboard()">
           <fa-icon [icon]="['fas', 'copy']"></fa-icon>
-          Save To Clipboard
+          {{ 'menu.saveToClipboard' | translate }}
         </button>
       </div>
     </ng-template>
@@ -41,17 +41,17 @@ import {TranslatePipe} from '@ngx-translate/core';
     <ng-template #settingsMenu>
       <div class="d-flex flex-column gap-3">
         <div class="d-flex flex-row gap-3 align-items-center">
-          <div class="label">Units</div>
+          <div class="label">{{ 'menu.units' | translate }}</div>
           <button class="btn" [class.btn-primary]="settings.metric" [class.btn-secondary]="!settings.metric" (click)="setMetric(true)">
-            Metric
+            {{ 'menu.metricUnit' | translate }}
           </button>
           <button class="btn" [class.btn-primary]="!settings.metric" [class.btn-secondary]="settings.metric" (click)="setMetric(false)">
-            Imperial
+            {{ 'menu.imperialUnit' | translate }}
           </button>
         </div>
 
         <div class="d-flex flex-row gap-3 align-items-center">
-          <div class="label">Pace Format</div>
+          <div class="label">{{ 'menu.paceFormat' | translate }}</div>
           <button class="btn" [class.btn-primary]="settings.paceMinPer" [class.btn-secondary]="!settings.paceMinPer" (click)="setPaceMinPer(true)">
             {{settings.paceMinPerUnit}}
           </button>
@@ -62,7 +62,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 
         <button class="btn btn-outline-secondary" (click)="resetSettings()">
           <fa-icon [icon]="['fas', 'gear']"></fa-icon>
-          Reset Settings
+          {{ 'menu.resetSettings' | translate }}
         </button>
       </div>
     </ng-template>
