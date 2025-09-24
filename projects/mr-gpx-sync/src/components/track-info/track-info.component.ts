@@ -1,9 +1,9 @@
-import {Component, HostBinding, OnInit} from "@angular/core";
+import {Component, HostBinding, OnInit} from '@angular/core';
+import {DecimalPipe} from '@angular/common';
 import {Settings, TrackFile} from '../../gpx';
 import {MrGpxSyncService} from '../../services/mr-gpx-sync.service';
 import {ActionEvent} from '../../events/action-event';
 import {ElevationPipe} from '../../pipes';
-import {DecimalPipe} from '@angular/common';
 import {TrackEvent} from '../../events';
 
 @Component({
@@ -15,7 +15,7 @@ import {TrackEvent} from '../../events';
     </div>
     <div class="d-flex gap-2">
       <div class="align-items-center md label">Distance</div>
-      <div class="md">{{ track.getTrack().distance | number : '1.0-2' }} {{settings.distanceUnits}}</div>
+      <div class="md">{{ settings.getDistance(track.getTrack().distance) | number : '1.0-2' }} {{settings.distanceUnits}}</div>
     </div>
     <div class="d-flex gap-2">
       <div class="align-items-center md label">Duration</div>

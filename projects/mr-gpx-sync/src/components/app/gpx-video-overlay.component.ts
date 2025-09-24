@@ -11,12 +11,12 @@ import { Settings } from '../../gpx/settings';
     <div class="window-header">
       <fa-icon [icon]="['fas', 'ellipsis']" size="sm" class="drag-target"></fa-icon>
     </div>
-    <div class="window-content p-3" style="width: fit-content;">
+    <div class="window-content p-2" style="width: fit-content;">
       <div class="d-flex flex-grow-1 flex-row align-items-center pointer" [class.d-none]="videoLoaded" (click)="openVideo()">
         <fa-icon [icon]="['fas', 'video']" size="2x"></fa-icon>
         <div class="ms-2" style="font-size: 1rem;">Open Video</div>
       </div>
-      <mr-gpx-sync-video class="d-flex" [class.d-none]="!videoLoaded" [style.width]="settings.windows.videoWindow.width"></mr-gpx-sync-video>
+      <mr-gpx-sync-video class="d-flex" [class.d-none]="!videoLoaded"></mr-gpx-sync-video>
     </div>
 
     <input type="file" id="video-upload" (change)="openVideoFileWizard($event)" style="display: none;">

@@ -5,8 +5,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
   TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
-import {NzPopoverDirective} from "ng-zorro-antd/popover";
-import {TranslatePipe, TranslateService} from "@ngx-translate/core";
+import {NzPopoverDirective} from 'ng-zorro-antd/popover';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'mr-gpx-sync-app',
@@ -32,7 +32,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
     </div>
     
     @if (openedGpx) {
-      <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable [style.top]="settings.windows.videoWindow.top" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
+      <mr-gpx-sync-video-overlay id="videoWindow" mrGpxSyncDraggable windowPosition="bottom-left" [style.bottom]="settings.windows.videoWindow.bottom" [style.left]="settings.windows.videoWindow.left"></mr-gpx-sync-video-overlay>
       <mr-gpx-sync-info-window id="infoWindow" mrGpxSyncDraggable [style.top]="settings.windows.infoWindow.top" [style.left]="settings.windows.infoWindow.left"></mr-gpx-sync-info-window>
       <mr-gpx-sync-track-info-window class="white" style="top: 1rem; left: 50%; transform: translateX(-50%);"></mr-gpx-sync-track-info-window>
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
@@ -43,7 +43,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
           <button class="btn sm btn-outline-secondary" [class.disabled]="undo.index === 0" (click)="doUndo()">
             <fa-icon [icon]="['fas', 'undo']"></fa-icon>
           </button>
-          <button class="btn sm btn-outline-secondary" [class.disabled]="undo.index < undo.history.length - 1" (click)="doRedo()">
+          <button class="btn sm btn-outline-secondary" [class.disabled]="undo.history.length <= 1 || undo.index < undo.history.length - 1" (click)="doRedo()">
             <fa-icon [icon]="['fas', 'redo']"></fa-icon>
           </button>
         </div>

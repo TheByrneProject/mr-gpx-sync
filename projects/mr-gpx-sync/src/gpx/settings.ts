@@ -28,13 +28,13 @@ export class Settings {
     this.slowThreshold = source.slowThreshold ?? 16.0;
     this.windows = source.windows ?? {};
     if (!this.windows.videoWindow) {
-      this.windows.videoWindow = {position: 'top-left', top: '50vh', left: '60px', width: '20vw'};
+      this.windows.videoWindow = {position: 'bottom-left', bottom: '2rem', left: '4rem', height: '40vw'};
     }
     if (!this.windows.infoWindow) {
       this.windows.infoWindow = {position: 'top-left', top: '20vh', left: '70vw'};
     }
     if (!this.windows.chartWindow) {
-      this.windows.chartWindow = {position: 'bottom-right', bottom: '2rem', right: '2rem', width: '30vw', height: '25vh'};
+      this.windows.chartWindow = {position: 'bottom-right', bottom: '2rem', right: '2rem', width: '40vw', height: '30vh'};
     }
   }
 

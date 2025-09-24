@@ -68,10 +68,7 @@ import {TrackEvent} from '../events';
       <div #fullChart class="w-100 h-50 d-block"></div>
     }
   `,
-  imports: [
-    DecimalPipe,
-    SecondsToTime
-  ],
+  imports: [],
   styles: [`
       #top-panel {
         height: 50%;

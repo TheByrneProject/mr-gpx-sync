@@ -13,8 +13,8 @@ import {TrackEvent} from '../events';
   selector: 'mr-gpx-sync-video',
   template: `
     <div class="d-flex flex-column mt-auto mb-auto mh-100">
-      <video #video controls autoplay style="width: 100%; max-height: calc(100% - 48px);"></video>
-      <div id="video-controls" class="d-flex flex-row justify-content-between pt-1">
+      <video #video controls autoplay style="width: 100%; max-height: calc(100% - 48px); border-radius: 1rem;"></video>
+      <div id="video-controls" class="d-flex flex-row justify-content-between mt-2">
         <button class="btn btn-secondary-outline btn-white" (click)="firstFrame()">
           <fa-icon [icon]="['fas', 'backward']"></fa-icon>
         </button>

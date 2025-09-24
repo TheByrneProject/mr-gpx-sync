@@ -1,11 +1,9 @@
 import {Component, EventEmitter, HostBinding, OnInit, Output} from '@angular/core';
 import {DecimalPipe} from '@angular/common';
-import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
 import { Subscription } from 'rxjs';
 import { MrGpxSyncService } from '../../services';
 import {Settings, TrackPoint, TrackSeg} from '../../gpx';
 import {TrackPointEvent} from '../../events';
-import {SecondsToTime} from '../../pipes';
 
 @Component({
   selector: 'mr-gpx-sync-point-split',
@@ -35,8 +33,6 @@ import {SecondsToTime} from '../../pipes';
     </div>
   `,
   imports: [
-    SecondsToTime,
-    NzTooltipDirective,
     DecimalPipe
   ],
   styles: []
