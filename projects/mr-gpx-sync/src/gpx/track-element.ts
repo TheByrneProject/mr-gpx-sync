@@ -36,6 +36,9 @@ export class TrackElement {
     p.lat = e.getAttribute('lat') as unknown as number;
     p.ele = e.getElementsByTagName('ele')[0].textContent as unknown as number;
     p.date = moment(e.getElementsByTagName('time')[0].textContent);
+    if (p.date.isValid() === false) {
+      throw new Error('Point has invalid date: ' + (e.getElementsByTagName('time')[0].textContent));
+    }
     return p;
   }
 

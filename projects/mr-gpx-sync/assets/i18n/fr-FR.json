@@ -10,5 +10,11 @@
     "metricUnit": "Unité métrique",
     "imperialUnit": "Unité impériale",
     "resetSettings": "Réinitialiser les paramètres"
+  },
+  "map": {
+    "layers": "Couches",
+    "topo": "Topo",
+    "satellite": "Satellite",
+    "map": "Carte"
   }
 }

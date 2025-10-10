@@ -4,6 +4,7 @@ import {NgOptimizedImage} from '@angular/common';
 import {MrGpxSyncService} from '../../services/mr-gpx-sync.service';
 import {ActionEvent} from '../../events/action-event';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'mr-gpx-sync-map-type-window',
@@ -57,7 +58,7 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
       }
       <div class="img-btn-overlay">
         <fa-icon [icon]="['fas', 'layer-group']" size="xs"></fa-icon>
-        <div class="label">Layers</div>
+        <div class="label">{{ 'map.layers' | translate }}</div>
       </div>
     </div>
 
@@ -66,19 +67,19 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
         <div class="img-menu-item">
           <img ngSrc="assets/map-map.png" width="64" height="64" (click)="setMap('map')" alt="" />
           <div class="img-btn-overlay">
-            <div class="label">Map</div>
+            <div class="label">{{ 'map.map' | translate }}</div>
           </div>
         </div>
         <div class="img-menu-item">
           <img ngSrc="assets/map-satellite.png" width="64" height="64" (click)="setMap('satellite')" alt="" />
           <div class="img-btn-overlay">
-            <div class="label" style="color: rgba(255, 255, 255, 0.75);">Satellite</div>
+            <div class="label" style="color: rgba(255, 255, 255, 0.75);">{{ 'map.satellite' | translate }}</div>
           </div>
         </div>
         <div class="img-menu-item">
           <img ngSrc="assets/map-topo.png" width="64" height="64" (click)="setMap('topo')" alt="" />
           <div class="img-btn-overlay">
-            <div class="label">Topo</div>
+            <div class="label">{{ 'map.topo' | translate }}</div>
           </div>
         </div>
       </div>
@@ -88,7 +89,8 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
     NzPopoverDirective,
     NzPopoverModule,
     NgOptimizedImage,
-    FaIconComponent
+    FaIconComponent,
+    TranslatePipe
   ]
 })
 export class MrGpxSyncMapTypeWindow {

@@ -10,5 +10,11 @@
     "metricUnit": "Metric",
     "imperialUnit": "Imperial",
     "resetSettings": "Reset Settings"
+  },
+  "map": {
+    "layers": "Layers",
+    "topo": "Topo",
+    "satellite": "Satellite",
+    "map": "Map"
   }
 }

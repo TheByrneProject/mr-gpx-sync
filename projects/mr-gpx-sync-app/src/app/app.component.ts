@@ -1,12 +1,14 @@
-import { Component, HostBinding } from '@angular/core';
+import {ChangeDetectorRef, Component, HostBinding} from '@angular/core';
 import { Router } from '@angular/router';
 import { FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import {timer} from 'rxjs';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
   TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
 import {NzPopoverDirective} from 'ng-zorro-antd/popover';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'mr-gpx-sync-app',
@@ -70,7 +72,8 @@ export class AppComponent {
   undo: Undo = new Undo();
 
   constructor(private library: FaIconLibrary,
-              private router: Router,
+              private changeDetectorRef: ChangeDetectorRef,
+              private http: HttpClient,
               private translateService: TranslateService,
               private mrGpxSyncService: MrGpxSyncService) {
     library.addIconPacks(fas, far);
@@ -81,9 +84,7 @@ export class AppComponent {
       this.settings = settings;
     });
     this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
-      if (event.track.loaded) {
-        this.openedGpx = true;
-      }
+      this.openedGpx = !!event.track.loaded;
     });
 
     this.mrGpxSyncService.error$.subscribe((error: any) => {
@@ -108,6 +109,15 @@ export class AppComponent {
         console.error(error);
       }
     }
+  }
+
+  openLocalGpx(fileName): void {
+    this.mrGpxSyncService.loading$.next(true);
+    timer(25).subscribe(() => {
+      this.http.get('assets/' + fileName, {responseType: 'text'}).subscribe((response: string) => {
+        this.mrGpxSyncService.parseGpx(response);
+      });
+    });
   }
 
   openGpxFileWizard(event: any): void {
@@ -138,5 +148,6 @@ export class AppComponent {
     this.translateService.use(lang);
     this.settings.lang = lang;
     this.mrGpxSyncService.updateSettings(this.settings);
+    this.changeDetectorRef.detectChanges();
   }
 }

@@ -1,9 +1,10 @@
-import { Component, HostBinding } from '@angular/core';
+import {ChangeDetectorRef, Component, HostBinding} from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { ActionEvent } from '../../events';
 import { MrGpxSyncService } from '../../services';
 import { VideoComponent } from '../video.component';
 import { Settings } from '../../gpx/settings';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'mr-gpx-sync-video-overlay',
@@ -14,7 +15,7 @@ import { Settings } from '../../gpx/settings';
     <div class="window-content p-2" style="width: fit-content;">
       <div class="d-flex flex-grow-1 flex-row align-items-center pointer" [class.d-none]="videoLoaded" (click)="openVideo()">
         <fa-icon [icon]="['fas', 'video']" size="2x"></fa-icon>
-        <div class="ms-2" style="font-size: 1rem;">Open Video</div>
+        <div class="ms-2" style="font-size: 1rem;">{{ 'menu.openVideo' | translate }}</div>
       </div>
       <mr-gpx-sync-video class="d-flex" [class.d-none]="!videoLoaded"></mr-gpx-sync-video>
     </div>
@@ -23,7 +24,8 @@ import { Settings } from '../../gpx/settings';
   `,
   imports: [
     FaIconComponent,
-    VideoComponent
+    VideoComponent,
+    TranslatePipe
   ],
   styles: []
 })
@@ -34,11 +36,13 @@ export class MrGpxSyncVideoOverlay {
   settings!: Settings;
   videoLoaded: boolean = false;
 
-  constructor(private mrGpxSyncService: MrGpxSyncService) {}
+  constructor(private mrGpxSyncService: MrGpxSyncService,
+              private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
+      this.changeDetectorRef.detectChanges();
     });
 
     this.mrGpxSyncService.action$.subscribe((event: ActionEvent) => {
