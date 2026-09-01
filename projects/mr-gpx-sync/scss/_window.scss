@@ -118,3 +118,45 @@ mr-gpx-sync-video-overlay {
 .ww-400 {
   min-width: 400px;
 }
+
+mr-gpx-sync-info-window {
+  min-width: 325px;
+}
+
+/* Edit icon button: square, centered icon, small label below */
+.btn-edit-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid transparent;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.btn-edit-icon fa-icon,
+.btn-edit-icon .fa-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.btn-edit-icon > span {
+  font-size: 0.65rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+  display: block;
+}
+
+.btn-edit-icon.btn-ghost {
+  color: gray;
+}
+
+.btn-edit-icon.btn-ghost:hover {
+  color: black;
+  background: rgba(0,0,0,0.03);
+}

@@ -1,4 +1,4 @@
-import { Moment } from 'moment';
+import { Dayjs } from 'dayjs';
 
 import { TrackSeg } from './track-seg';
 
@@ -38,8 +38,8 @@ export class Track {
     }
   }
 
-  getStartTime(): Moment | undefined {
-    let startTime: Moment | undefined = undefined;
+  getStartTime(): Dayjs | undefined {
+    let startTime: Dayjs | undefined = undefined;
     for (let trkSeg of this.trkSegs) {
       startTime = !startTime || trkSeg.getStartTime().isBefore(startTime) ? trkSeg.getStartTime() : startTime;
     }

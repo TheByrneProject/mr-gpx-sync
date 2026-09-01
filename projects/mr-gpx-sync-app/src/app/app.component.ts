@@ -5,7 +5,7 @@ import {timer} from 'rxjs';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
-  TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo } from 'mr-gpx-sync';
+  TrackEvent, DraggableDirective, TrackInfoWindowComponent, Undo, AutoAdjustSpeedWindowComponent } from 'mr-gpx-sync';
 import {NzPopoverDirective} from 'ng-zorro-antd/popover';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
@@ -13,7 +13,7 @@ import {HttpClient} from '@angular/common/http';
 @Component({
   selector: 'mr-gpx-sync-app',
   standalone: true,
-  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent, NzPopoverDirective, TranslatePipe],
+  imports: [MrGpxSyncMenuBar, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncVideoOverlay, FaIconComponent, MrGpxSyncMapTypeWindow, DraggableDirective, InfoWindowComponent, TrackInfoWindowComponent, NzPopoverDirective, TranslatePipe, AutoAdjustSpeedWindowComponent],
   template: `
     <mr-gpx-sync-menu-bar></mr-gpx-sync-menu-bar>
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
@@ -39,6 +39,7 @@ import {HttpClient} from '@angular/common/http';
       <mr-gpx-sync-track-info-window class="white" style="top: 1rem; left: 50%; transform: translateX(-50%);"></mr-gpx-sync-track-info-window>
       <mr-gpx-sync-map-type-window style="top: 2rem; left: 4rem;"></mr-gpx-sync-map-type-window>
       <mr-gpx-sync-chart-window id="chartWindow" mrGpxSyncDraggable windowPosition="bottom-right" [style.bottom]="settings.windows.chartWindow.bottom" [style.right]="settings.windows.chartWindow.right"></mr-gpx-sync-chart-window>
+      <mr-gpx-sync-auto-adjust-speed-window></mr-gpx-sync-auto-adjust-speed-window>
       
       <div class="window" style="top: 1rem; right: 5rem;">
         <div class="window-content p-3 gap-3 flex-row flex-nowrap" style="border-radius: 1rem;">

@@ -1,6 +1,6 @@
 
 import Point from 'ol/geom/Point';
-import { Moment } from 'moment';
+import { Dayjs } from 'dayjs';
 
 import { TrackPoint } from './track-point';
 import { TrackElement } from './track-element';
@@ -133,10 +133,15 @@ export class TrackSeg {
         this.eleLoss += de;
       }
       dx = calcDistance(p1.lon, p1.lat, p2.lon, p2.lat);
+      if (Number.isNaN(dx)) {
+        this.trkPts.splice(i, 1);
+        i--;
+        continue;
+      }
       this.distance += dx;
-      dt = p2.date.diff(p1.date, 's');
+      dt = p2.date.diff(p1.date, 'second');
 
-      p1.t = i === 0 ? 0 : p1.date.diff(p0.date, 's');
+      p1.t = i === 0 ? 0 : p1.date.diff(p0.date, 'second');
       p1.dx = dx;
       p1.dt = dt;
       p1.v = calcPace(dt, dx);
@@ -148,13 +153,13 @@ export class TrackSeg {
         this.maxV = p1.v;
       }
 
-      //console.log(p1.t + ' ' + p1.dx + ' ' + p1.dt + ' ' + p1.v);
+      console.log(p1.t + ' ' + p1.dx + ' ' + p1.dt + ' ' + p1.v);
     }
 
     // The last point of the track has a zero delta for time and distance.
-    this.trkPts[this.trkPts.length - 1].t = this.trkPts[this.trkPts.length - 1].date.diff(p0.date, 's');
+    this.trkPts[this.trkPts.length - 1].t = this.trkPts[this.trkPts.length - 1].date.diff(p0.date, 'second');
 
-    this.setDuration(this.trkPts[this.trkPts.length - 1].date.diff(p0.date, 's'));
+    this.setDuration(this.trkPts[this.trkPts.length - 1].date.diff(p0.date, 'second'));
   }
 
   analyze(props: Settings): void {
@@ -182,11 +187,11 @@ export class TrackSeg {
     return this.trkPts.length > 1;
   }
 
-  getStartTime(): Moment {
+  getStartTime(): Dayjs {
     return this.trkPts[0].date;
   }
 
-  getEndTime(): Moment {
+  getEndTime(): Dayjs {
     return this.trkPts[this.trkPts.length - 1].date;
   }
 
@@ -317,7 +322,7 @@ export class TrackSeg {
       for (const p of this.trkPts) {
         if (process) {
           p.t += dt;
-          p.date = p.date.add(dt, 's');
+          p.date = p.date.add(dt, 'second');
         } else if ((!oneSecond && p1.id === p.id) || (oneSecond && p1.id + 1 === p.id)) {
           process = true;
           p.dt += dt;
@@ -326,7 +331,7 @@ export class TrackSeg {
       }
     } else {
       for (const p of this.trkPts) {
-        p.date = p.date.add(dt, 's');
+        p.date = p.date.add(dt, 'second');
       }
     }
   }
@@ -399,9 +404,9 @@ export class TrackSeg {
     newP.lat = y;
     newP.point = new Point([x, y]);
     newP.extensions = p.extensions;
-    let dt: number = this.trkPts[p.id + 1].date.diff(this.trkPts[p.id].date, 's');
+    let dt: number = this.trkPts[p.id + 1].date.diff(this.trkPts[p.id].date, 'second');
     dt = Math.floor(dt / 2.0);
-    newP.date = p.date.add(dt, 's');
+    newP.date = p.date.add(dt, 'second');
     // console.log(dt + ' ' + x + ' ' + y + ' ' + a0 + ' ' + a1 + ' ' + a2 + ' ' + a3);
 
     this.trkPts.splice(p.id + 1, 0, newP);
@@ -460,9 +465,9 @@ export class TrackSeg {
     newP.lat = y;
     newP.point = new Point([x, y]);
     newP.extensions = p.extensions;
-    let dt: number = this.trkPts[p.id + 1].date.diff(this.trkPts[p.id].date, 's');
+    let dt: number = this.trkPts[p.id + 1].date.diff(this.trkPts[p.id].date, 'second');
     dt = Math.floor(dt / 2.0);
-    newP.date = p.date.add(dt, 's');
+    newP.date = p.date.add(dt, 'second');
     console.log(dt + ' ' + x + ' ' + y + ' ' + a0 + ' ' + a1 + ' ' + a2 + ' ' + a3);
 
     this.trkPts.splice(p.id + 1, 0, newP);
@@ -496,7 +501,7 @@ export class TrackSeg {
   }
 
   appendTrackSeg(trkSeg: TrackSeg, newDt: number): void {
-    const oldDt: number = trkSeg.getStartTime().diff(this.getEndTime(), 's');
+    const oldDt: number = trkSeg.getStartTime().diff(this.getEndTime(), 'second');
     const dt: number = newDt - oldDt;
     trkSeg.shiftTime(undefined, dt);
     this.trkPts = [...this.trkPts, ...trkSeg.trkPts];
@@ -511,5 +516,114 @@ export class TrackSeg {
     this.getEnd().reset();
     this.resetIds();
     this.calcTrack();
+  }
+
+  /**
+   * Auto adjust the speed of the track so that it is as consistent as possible while forcing
+   * the given reference points to have the specified times. The overall track duration is kept
+   * the same as it was before (start and end times are unchanged unless explicitly included as
+   * reference points).
+   *
+   * Between consecutive reference points (including the implicit start/end), point times are
+   * redistributed proportionally to the cumulative distance so the velocity is as constant as
+   * possible within that span. Points that end up less than `minGap` seconds apart are removed
+   * so that no unrealistic velocity spikes are introduced.
+   *
+   * @param refs Reference points with the id of an existing track point and the desired time
+   *   (in seconds from the start of the track).
+   * @param minGap Minimum allowed time (seconds) between consecutive points, defaults to 3.
+   */
+  autoAdjustSpeed(refs: { id: number, t: number }[], minGap: number = 3, settings: Settings = new Settings()): GpxEvent {
+    try {
+      if (this.trkPts.length < 2) {
+        return GpxEvent.createEvent('Auto adjust speed failed.', false, new Error('Track has too few points.'));
+      }
+
+      const startId: number = this.trkPts[0].id;
+      const endId: number = this.trkPts[this.trkPts.length - 1].id;
+
+      // Merge user references with the forced start (t=0) and end (t=duration) points.
+      const refMap: Map<number, number> = new Map<number, number>();
+      refMap.set(startId, 0);
+      refMap.set(endId, this.duration);
+      for (const r of refs) {
+        if (r.id === startId || r.id === endId) {
+          continue;
+        }
+        refMap.set(r.id, r.t);
+      }
+
+      const sortedRefs: { id: number, t: number }[] = Array.from(refMap.entries())
+        .map(([id, t]) => ({ id, t }))
+        .sort((a, b) => a.id - b.id);
+
+      for (let i = 0; i < sortedRefs.length - 1; i++) {
+        if (sortedRefs[i].t >= sortedRefs[i + 1].t) {
+          return GpxEvent.createEvent('Auto adjust speed failed.', false, new Error('Reference point times must increase in order.'));
+        }
+      }
+
+      // Cumulative distance for every point in the track.
+      const cumDist: number[] = new Array(this.trkPts.length).fill(0);
+      for (let i = 1; i < this.trkPts.length; i++) {
+        cumDist[i] = cumDist[i - 1] + this.trkPts[i - 1].dx;
+      }
+
+      const startDate: Dayjs = this.trkPts[0].date;
+      const newTimes: number[] = new Array(this.trkPts.length).fill(0);
+
+      for (let r = 0; r < sortedRefs.length - 1; r++) {
+        const refA = sortedRefs[r];
+        const refB = sortedRefs[r + 1];
+        const distA: number = cumDist[refA.id];
+        const distB: number = cumDist[refB.id];
+        const distSpan: number = distB - distA;
+        const timeSpan: number = refB.t - refA.t;
+
+        for (let i = refA.id; i <= refB.id; i++) {
+          if (i === refA.id) {
+            newTimes[i] = refA.t;
+          } else if (i === refB.id) {
+            newTimes[i] = refB.t;
+          } else if (distSpan > 0) {
+            const frac: number = (cumDist[i] - distA) / distSpan;
+            newTimes[i] = refA.t + frac * timeSpan;
+          } else {
+            // No distance between reference points; distribute evenly over time.
+            const frac: number = (i - refA.id) / (refB.id - refA.id);
+            newTimes[i] = refA.t + frac * timeSpan;
+          }
+        }
+      }
+
+      for (let i = 0; i < this.trkPts.length; i++) {
+        this.trkPts[i].date = startDate.add(Math.round(newTimes[i]), 'second');
+      }
+
+      // Remove points that are too close in time to the previous kept point, unless they are
+      // reference points (which must keep their assigned time).
+      const refIds: Set<number> = new Set<number>(sortedRefs.map((r) => r.id));
+      const kept: TrackPoint[] = [this.trkPts[0]];
+      for (let i = 1; i < this.trkPts.length; i++) {
+        const p: TrackPoint = this.trkPts[i];
+        const last: TrackPoint = kept[kept.length - 1];
+        const dt: number = p.date.diff(last.date, 'second');
+
+        if (dt < minGap && !refIds.has(p.id) && i !== this.trkPts.length - 1) {
+          // Drop this point to open up a larger time delta.
+          continue;
+        }
+        kept.push(p);
+      }
+
+      this.trkPts = kept;
+      this.resetIds();
+      this.calcTrack();
+      this.analyze(settings);
+    } catch (error) {
+      return GpxEvent.createEvent('Auto adjust speed failed.', false, error);
+    }
+
+    return GpxEvent.createEvent('Auto adjusted speed.');
   }
 }

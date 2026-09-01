@@ -4,7 +4,7 @@ import { TrackPoint, TrackSeg } from '../../gpx';
 import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
-import { fromLonLat } from 'ol/proj';
+import { fromLonLat, toLonLat } from 'ol/proj';
 import { XYZ } from 'ol/source';
 import { scaleLinear, select } from 'd3';
 import { Extent } from 'ol/extent';
@@ -56,6 +56,12 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       if (action.name === 'set-map-type') {
         this.setMap(action.data.mapType);
         this.render();
+      } else if (action.name === 'draw-overlay') {
+        this.secondaryTracks = action.data.points ? [{ trkPts: action.data.points, i: 0, j: 0 }] : [];
+        this.renderDelay();
+      } else if (action.name === 'clear-overlay') {
+        this.secondaryTracks = [];
+        this.renderDelay();
       }
     });
 
@@ -120,7 +126,12 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
     this.map.getView().on('change:center', () => this.render());
     this.map.getView().on('change:resolution', () => this.render());
     this.map.getView().on('change:rotation', () => this.render());
-    this.map.on('click', () => {});
+    this.map.on('singleclick', (evt: any) => {
+      try {
+        const lonlat = toLonLat(evt.coordinate);
+        this.mrGpxSyncService.action$.next(new ActionEvent('map-click', { lon: lonlat[0], lat: lonlat[1] }, 'd3-map'));
+      } catch (e) {}
+    });
 
     if (this.primaryTrack.trkPts.length > 0) {
       this.renderDelay();
@@ -261,6 +272,49 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       .style('stroke', '#0066cc')
       .style('stroke-width', 4)
       .style('opacity', 1.0);
+
+    // Render any secondary tracks (overlays) in a different color
+    if (this.secondaryTracks && this.secondaryTracks.length > 0) {
+      for (const sec of this.secondaryTracks) {
+        let secPathData: [number, number][] = [];
+        let secPathString = '';
+        sec.trkPts.forEach((point: any, i: number) => {
+          const p = this.lonLatToPixel(point.lon, point.lat);
+          // Only include if on screen
+          const coordinate = fromLonLat([point.lon, point.lat]);
+          if (coordinate[0] > extent[0] && coordinate[0] < extent[2] && coordinate[1] > extent[1] && coordinate[1] < extent[3]) {
+            secPathData.push([p[0], p[1]]);
+          }
+          if (i === 0) {
+            secPathString += `M ${p[0]} ${p[1]}`;
+          } else {
+            secPathString += ` L ${p[0]} ${p[1]}`;
+          }
+        });
+
+        this.svg.append('path')
+          .attr('class', 'overlay-track')
+          .attr('d', secPathString)
+          .style('fill', 'none')
+          .style('stroke', 'red')
+          .style('stroke-width', 3)
+          .style('opacity', 0.9);
+
+        // draw overlay points
+        this.svg.append('g')
+          .selectAll()
+          .data(secPathData)
+          .enter()
+          .append('circle')
+          .attr('cx', (d: any) => d[0])
+          .attr('cy', (d: any) => d[1])
+          .attr('r', Math.max(3, Math.min(6, this.el.nativeElement.offsetWidth / 300.0)))
+          .style('fill', 'red')
+          .style('fill-opacity', 0.6)
+          .style('stroke', 'darkred')
+          .style('stroke-width', 1);
+      }
+    }
 
     const cr: number = Math.max(3, Math.min(8, this.el.nativeElement.offsetWidth / 250.0));
     let self = this;

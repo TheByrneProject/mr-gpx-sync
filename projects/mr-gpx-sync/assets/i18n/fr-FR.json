@@ -9,7 +9,8 @@
     "paceFormat": "Format du rythme",
     "metricUnit": "Unité métrique",
     "imperialUnit": "Unité impériale",
-    "resetSettings": "Réinitialiser les paramètres"
+    "resetSettings": "Réinitialiser les paramètres",
+    "autoAdjustSpeed": "Ajuster automatiquement la vitesse"
   },
   "map": {
     "layers": "Couches",

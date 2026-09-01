@@ -1,11 +1,11 @@
-import moment, { Moment } from 'moment';
+import dayjs, { Dayjs } from 'dayjs';
 import { Coordinate } from 'ol/coordinate';
 
 export class TrackElement {
   lon: number = 0;
   lat: number = 0;
   ele: number = 0;
-  date: Moment = moment();
+  date: Dayjs = dayjs();
   extensions!: Element;
 
   static createFromElement(e: Element | null): TrackElement {
@@ -35,7 +35,7 @@ export class TrackElement {
     p.lon = e.getAttribute('lon') as unknown as number;
     p.lat = e.getAttribute('lat') as unknown as number;
     p.ele = e.getElementsByTagName('ele')[0].textContent as unknown as number;
-    p.date = moment(e.getElementsByTagName('time')[0].textContent);
+    p.date = dayjs(e.getElementsByTagName('time')[0].textContent);
     if (p.date.isValid() === false) {
       throw new Error('Point has invalid date: ' + (e.getElementsByTagName('time')[0].textContent));
     }

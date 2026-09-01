@@ -83,7 +83,7 @@ export class TrackFile {
       trkpt.setAttribute('lat', p.lat.toString());
       trkpt.setAttribute('lon', p.lon.toString());
       ele.textContent = p.ele.toString();
-      time.textContent = p.date.format('YYYY-MM-DD[T]kk:mm:ss[Z]');
+      time.textContent = p.date.format('YYYY-MM-DD[T]HH:mm:ss[Z]');
 
       trkpt.appendChild(ele);
       trkpt.appendChild(time);

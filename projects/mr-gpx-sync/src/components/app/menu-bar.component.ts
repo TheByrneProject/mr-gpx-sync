@@ -17,6 +17,9 @@ import {TranslatePipe} from '@ngx-translate/core';
     <button nz-popover [nzPopoverContent]="settingsMenu" nzPopoverPlacement="rightTop" nzPopoverOverlayClassName="white" class="btn btn-outline-secondary">
       <fa-icon [icon]="['fas', 'gear']"></fa-icon>
     </button>
+    <button nz-popover [nzPopoverContent]="editMenu" nzPopoverPlacement="rightTop" nzPopoverOverlayClassName="white" class="btn btn-outline-secondary" [disabled]="!track.loaded">
+      <fa-icon [icon]="['fas', 'pen']"></fa-icon>
+    </button>
     <button nz-popover [nzPopoverContent]="aboutMenu" nzPopoverPlacement="rightTop" nzPopoverOverlayClassName="white" class="btn btn-outline-secondary">
       <fa-icon [icon]="['fas', 'info']"></fa-icon>
     </button>
@@ -34,6 +37,15 @@ import {TranslatePipe} from '@ngx-translate/core';
         <button class="btn btn-outline-secondary" (click)="saveToClipboard()">
           <fa-icon [icon]="['fas', 'copy']"></fa-icon>
           {{ 'menu.saveToClipboard' | translate }}
+        </button>
+      </div>
+    </ng-template>
+
+    <ng-template #editMenu>
+      <div class="popover-menu">
+        <button class="btn btn-outline-secondary" (click)="openAutoAdjustSpeed($event)">
+          <fa-icon [icon]="['fas', 'gauge']"></fa-icon>
+          Auto Adjust Speed
         </button>
       </div>
     </ng-template>
@@ -131,5 +143,15 @@ export class MrGpxSyncMenuBar {
 
   setPaceMinPer(paceMinPer: boolean): void {
     this.mrGpxSyncService.setPaceMinPer(paceMinPer);
+  }
+
+  openAutoAdjustSpeed(event: any): void {
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    console.log('openAutoAdjustSpeed called');
+    const actionEvent = new ActionEvent('open-auto-adjust-speed');
+    console.log('Emitting action event:', actionEvent);
+    this.mrGpxSyncService.action$.next(actionEvent);
   }
 }

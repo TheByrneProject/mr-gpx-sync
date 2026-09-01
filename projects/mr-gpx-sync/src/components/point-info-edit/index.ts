@@ -4,3 +4,4 @@ export { PointInfoComponent } from './point-info.component';
 export { PointDtEditComponent } from './point-dt-edit.component';
 export { PointDeleteComponent } from './point-delete.component';
 export { SplitComponent } from './split.component';
+export { AutoAdjustSpeedComponent } from './auto-adjust-speed.component';

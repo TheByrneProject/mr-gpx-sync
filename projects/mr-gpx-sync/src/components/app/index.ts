@@ -6,3 +6,4 @@ export { MrGpxSyncGpxVideo } from './gpx-video.component';
 export { MrGpxSyncVideoOverlay } from './gpx-video-overlay.component';
 export { MrGpxSyncChartWindow } from './gpx-chart-window.component';
 export { MrGpxSyncMapTypeWindow } from './map-type.component';
+export { AutoAdjustSpeedWindowComponent } from './auto-adjust-speed-window.component';

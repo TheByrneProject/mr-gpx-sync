@@ -9,7 +9,8 @@
     "paceFormat": "Pace Format",
     "metricUnit": "Metric",
     "imperialUnit": "Imperial",
-    "resetSettings": "Reset Settings"
+    "resetSettings": "Reset Settings",
+    "autoAdjustSpeed": "Auto Adjust Speed"
   },
   "map": {
     "layers": "Layers",

@@ -1,5 +1,5 @@
 import Point from 'ol/geom/Point';
-import { Moment } from 'moment';
+import { Dayjs } from 'dayjs';
 import { Coordinate } from 'ol/coordinate';
 
 import { TrackElement } from './track-element';
@@ -63,7 +63,7 @@ export class TrackPoint extends TrackElement {
     this.point = new Point([lon, lat]);
   }
 
-  updateTime(endTime: Moment, dt: number): void {
-    this.date = endTime.clone().add(this.t + dt, 's');
+  updateTime(endTime: Dayjs, dt: number): void {
+    this.date = endTime.add(this.t + dt, 'second');
   }
 }

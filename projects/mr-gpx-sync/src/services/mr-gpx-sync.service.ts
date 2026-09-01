@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
 
 import { BehaviorSubject, Subject } from 'rxjs';
-import { Moment } from 'moment';
+import { Dayjs } from 'dayjs';
 import { Coordinate } from 'ol/coordinate';
 
 import { TrackPoint } from '../gpx/track-point';
@@ -248,7 +248,7 @@ export class MrGpxSyncService {
     const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     track.getEnd().dt = dt;
-    appendTrackPoint.date = track.getEnd().date.clone().add(dt, 's');
+    appendTrackPoint.date = track.getEnd().date.add(dt, 'second');
     track.trkPts.push(appendTrackPoint);
     track.resetIds();
     track.calcTrack();
@@ -260,7 +260,7 @@ export class MrGpxSyncService {
     const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
     prependTrackPoint.dt = dt;
-    prependTrackPoint.date = track.getStart().date.clone().subtract(dt, 's');
+    prependTrackPoint.date = track.getStart().date.subtract(dt, 'second');
     track.trkPts = [prependTrackPoint, ...track.trkPts];
     track.resetIds();
     track.calcTrack();
@@ -273,7 +273,7 @@ export class MrGpxSyncService {
 
     const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
-    const endTime: Moment = track.getEndTime();
+    const endTime: Dayjs = track.getEndTime();
     for (let trkPt of appendTrackSeg.trkPts) {
       trkPt.updateTime(endTime, dt);
       track.trkPts.push(trkPt);
@@ -290,7 +290,7 @@ export class MrGpxSyncService {
     let trkPts: TrackPoint[] = prependTrackSeg.trkPts;
     const trackFile: TrackFile = this.getTrackFile();
     const track: TrackSeg = trackFile.getTrack();
-    const endTime: Moment = prependTrackSeg.getEndTime();
+    const endTime: Dayjs = prependTrackSeg.getEndTime();
     for (let trkPt of track.trkPts) {
       trkPt.updateTime(endTime, dt);
       trkPts.push(trkPt);
@@ -399,6 +399,19 @@ export class MrGpxSyncService {
     const result: GpxEvent = track.getTrack().interpolate(point);
     if (result.success) {
       this.selectedPoint$.next(new TrackPointEvent(result.data));
+      this.setTrack(track);
+    } else {
+      this.openSnackBar(result.message);
+    }
+    return result;
+  }
+
+  autoAdjustSpeed(refs: { id: number, t: number }[], minGap: number = 3): GpxEvent {
+    this.log('autoAdjustSpeed');
+    let track: TrackFile = this.getTrackFile();
+    const result: GpxEvent = track.getTrack().autoAdjustSpeed(refs, minGap, this.settings$.getValue());
+    if (result.success) {
+      this.selectedPoint$.next(new TrackPointEvent());
       this.setTrack(track);
     } else {
       this.openSnackBar(result.message);

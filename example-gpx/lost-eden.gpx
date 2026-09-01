@@ -1,0 +1,2361 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" creator="thebyrneproject.com" version="1.1"><trk><name>lost-eden.gpx</name><trkseg><trkpt lat="37.4627900" lon="-110.7452670"><ele>1128</ele><time>2026-05-07T14:15:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>132</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4627960" lon="-110.7452750"><ele>1128</ele><time>2026-05-07T14:15:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>132</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628260" lon="-110.7453100"><ele>1128</ele><time>2026-05-07T14:15:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>135</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628420" lon="-110.7453270"><ele>1128</ele><time>2026-05-07T14:15:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>135</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628700" lon="-110.7453870"><ele>1128</ele><time>2026-05-07T14:15:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628800" lon="-110.7454380"><ele>1128</ele><time>2026-05-07T14:15:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629090" lon="-110.7455000"><ele>1128</ele><time>2026-05-07T14:15:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629190" lon="-110.7455220"><ele>1128</ele><time>2026-05-07T14:15:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629210" lon="-110.7455340"><ele>1128</ele><time>2026-05-07T14:15:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629250" lon="-110.7455450"><ele>1128</ele><time>2026-05-07T14:15:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629370" lon="-110.7455890"><ele>1128</ele><time>2026-05-07T14:15:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629470" lon="-110.7456260"><ele>1128</ele><time>2026-05-07T14:15:35Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629500" lon="-110.7456360"><ele>1128</ele><time>2026-05-07T14:15:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629650" lon="-110.7457010"><ele>1128</ele><time>2026-05-07T14:15:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629730" lon="-110.7457340"><ele>1128</ele><time>2026-05-07T14:15:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629860" lon="-110.7458010"><ele>1128</ele><time>2026-05-07T14:15:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629920" lon="-110.7458460"><ele>1128</ele><time>2026-05-07T14:15:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630010" lon="-110.7458880"><ele>1128</ele><time>2026-05-07T14:15:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630090" lon="-110.7459350"><ele>1128</ele><time>2026-05-07T14:16:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630110" lon="-110.7459460"><ele>1128</ele><time>2026-05-07T14:16:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630160" lon="-110.7459990"><ele>1128</ele><time>2026-05-07T14:16:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630140" lon="-110.7460650"><ele>1128</ele><time>2026-05-07T14:16:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630150" lon="-110.7461050"><ele>1128</ele><time>2026-05-07T14:16:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630150" lon="-110.7461330"><ele>1128</ele><time>2026-05-07T14:16:23Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630130" lon="-110.7461500"><ele>1128</ele><time>2026-05-07T14:16:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630100" lon="-110.7461810"><ele>1128</ele><time>2026-05-07T14:16:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630040" lon="-110.7462080"><ele>1128</ele><time>2026-05-07T14:16:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4630040" lon="-110.7462150"><ele>1128</ele><time>2026-05-07T14:16:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629940" lon="-110.7462910"><ele>1128</ele><time>2026-05-07T14:16:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629890" lon="-110.7463190"><ele>1128</ele><time>2026-05-07T14:16:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629790" lon="-110.7463920"><ele>1128</ele><time>2026-05-07T14:16:46Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629720" lon="-110.7464310"><ele>1128</ele><time>2026-05-07T14:16:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629550" lon="-110.7464740"><ele>1128</ele><time>2026-05-07T14:16:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629520" lon="-110.7464880"><ele>1128</ele><time>2026-05-07T14:16:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629300" lon="-110.7465540"><ele>1128</ele><time>2026-05-07T14:17:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>145</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4629040" lon="-110.7466120"><ele>1128</ele><time>2026-05-07T14:17:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628960" lon="-110.7466480"><ele>1128</ele><time>2026-05-07T14:17:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628760" lon="-110.7467100"><ele>1128</ele><time>2026-05-07T14:17:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628620" lon="-110.7467590"><ele>1128</ele><time>2026-05-07T14:17:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628440" lon="-110.7468200"><ele>1128</ele><time>2026-05-07T14:17:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628380" lon="-110.7468400"><ele>1128</ele><time>2026-05-07T14:17:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628340" lon="-110.7468510"><ele>1128</ele><time>2026-05-07T14:17:29Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4628110" lon="-110.7469000"><ele>1128</ele><time>2026-05-07T14:17:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4627960" lon="-110.7469440"><ele>1128</ele><time>2026-05-07T14:17:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4627520" lon="-110.7469910"><ele>1128</ele><time>2026-05-07T14:17:44Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4627370" lon="-110.7470040"><ele>1128</ele><time>2026-05-07T14:17:46Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4626810" lon="-110.7470230"><ele>1128</ele><time>2026-05-07T14:17:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4626640" lon="-110.7470270"><ele>1128</ele><time>2026-05-07T14:17:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4626290" lon="-110.7470550"><ele>1128</ele><time>2026-05-07T14:18:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625660" lon="-110.7470700"><ele>1128</ele><time>2026-05-07T14:18:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625100" lon="-110.7471220"><ele>1128</ele><time>2026-05-07T14:18:11Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>145</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624830" lon="-110.7471520"><ele>1128</ele><time>2026-05-07T14:18:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624220" lon="-110.7472340"><ele>1128</ele><time>2026-05-07T14:18:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624120" lon="-110.7472540"><ele>1128</ele><time>2026-05-07T14:18:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623500" lon="-110.7472940"><ele>1128</ele><time>2026-05-07T14:18:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623270" lon="-110.7473130"><ele>1128</ele><time>2026-05-07T14:18:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622860" lon="-110.7473590"><ele>1128</ele><time>2026-05-07T14:18:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622510" lon="-110.7473980"><ele>1128</ele><time>2026-05-07T14:18:35Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621890" lon="-110.7474440"><ele>1128</ele><time>2026-05-07T14:18:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621430" lon="-110.7474860"><ele>1128</ele><time>2026-05-07T14:18:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621230" lon="-110.7474970"><ele>1128</ele><time>2026-05-07T14:18:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621120" lon="-110.7475120"><ele>1128</ele><time>2026-05-07T14:18:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620990" lon="-110.7475420"><ele>1128</ele><time>2026-05-07T14:18:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620810" lon="-110.7475770"><ele>1128</ele><time>2026-05-07T14:18:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620330" lon="-110.7476480"><ele>1128</ele><time>2026-05-07T14:18:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620080" lon="-110.7476850"><ele>1128</ele><time>2026-05-07T14:19:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4619940" lon="-110.7477080"><ele>1128</ele><time>2026-05-07T14:19:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4619520" lon="-110.7477700"><ele>1128</ele><time>2026-05-07T14:19:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618820" lon="-110.7478200"><ele>1128</ele><time>2026-05-07T14:19:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618440" lon="-110.7478290"><ele>1128</ele><time>2026-05-07T14:19:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618320" lon="-110.7478360"><ele>1128</ele><time>2026-05-07T14:19:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618000" lon="-110.7478710"><ele>1128</ele><time>2026-05-07T14:19:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>41</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.46173584860377" lon="-110.74795288456302"><ele>1128</ele><time>2026-05-07T14:19:48Z</time></trkpt><trkpt lat="37.46171729096348" lon="-110.74797242279182"><ele>1128</ele><time>2026-05-07T14:19:56Z</time></trkpt><trkpt lat="37.46169873332318" lon="-110.74799196102062"><ele>1128</ele><time>2026-05-07T14:20:04Z</time></trkpt><trkpt lat="37.46168012738481" lon="-110.74801142518187"><ele>1128</ele><time>2026-05-07T14:20:12Z</time></trkpt><trkpt lat="37.46166131186713" lon="-110.74803056794262"><ele>1128</ele><time>2026-05-07T14:20:20Z</time></trkpt><trkpt lat="37.46164249634946" lon="-110.74804971070337"><ele>1128</ele><time>2026-05-07T14:20:28Z</time></trkpt><trkpt lat="37.46162377071984" lon="-110.74806899274515"><ele>1128</ele><time>2026-05-07T14:20:36Z</time></trkpt><trkpt lat="37.46160505508698" lon="-110.74808829027684"><ele>1128</ele><time>2026-05-07T14:20:44Z</time></trkpt><trkpt lat="37.461602715632864" lon="-110.7480907024683"><ele>1128</ele><time>2026-05-07T14:20:45Z</time></trkpt><trkpt lat="37.4615840" lon="-110.7481100"><ele>1128</ele><time>2026-05-07T14:20:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>135</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4615700" lon="-110.7481160"><ele>1128</ele><time>2026-05-07T14:20:56Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4615370" lon="-110.7481490"><ele>1128</ele><time>2026-05-07T14:21:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4615030" lon="-110.7481710"><ele>1128</ele><time>2026-05-07T14:21:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614760" lon="-110.7482100"><ele>1128</ele><time>2026-05-07T14:21:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614170" lon="-110.7482520"><ele>1128</ele><time>2026-05-07T14:21:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614020" lon="-110.7482690"><ele>1128</ele><time>2026-05-07T14:21:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613820" lon="-110.7483110"><ele>1128</ele><time>2026-05-07T14:21:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613510" lon="-110.7483320"><ele>1128</ele><time>2026-05-07T14:21:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613430" lon="-110.7483420"><ele>1128</ele><time>2026-05-07T14:21:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613110" lon="-110.7483980"><ele>1128</ele><time>2026-05-07T14:21:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613020" lon="-110.7484040"><ele>1128</ele><time>2026-05-07T14:21:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612760" lon="-110.7484700"><ele>1128</ele><time>2026-05-07T14:21:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612630" lon="-110.7485040"><ele>1128</ele><time>2026-05-07T14:21:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612370" lon="-110.7485560"><ele>1128</ele><time>2026-05-07T14:21:46Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>145</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612280" lon="-110.7485740"><ele>1128</ele><time>2026-05-07T14:21:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612220" lon="-110.7485810"><ele>1128</ele><time>2026-05-07T14:21:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612060" lon="-110.7486130"><ele>1128</ele><time>2026-05-07T14:21:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611860" lon="-110.7486580"><ele>1128</ele><time>2026-05-07T14:21:56Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611660" lon="-110.7486830"><ele>1128</ele><time>2026-05-07T14:21:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611650" lon="-110.7486980"><ele>1128</ele><time>2026-05-07T14:22:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611480" lon="-110.7487850"><ele>1128</ele><time>2026-05-07T14:22:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611460" lon="-110.7488010"><ele>1128</ele><time>2026-05-07T14:22:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611500" lon="-110.7488380"><ele>1128</ele><time>2026-05-07T14:22:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611530" lon="-110.7488740"><ele>1128</ele><time>2026-05-07T14:22:11Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611530" lon="-110.7488900"><ele>1128</ele><time>2026-05-07T14:22:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611510" lon="-110.7489040"><ele>1128</ele><time>2026-05-07T14:22:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611500" lon="-110.7489810"><ele>1128</ele><time>2026-05-07T14:22:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611190" lon="-110.7490450"><ele>1128</ele><time>2026-05-07T14:22:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.46100825415231" lon="-110.74914865421385"><ele>1128</ele><time>2026-05-07T14:22:44Z</time></trkpt><trkpt lat="37.4609590" lon="-110.7491610"><ele>1128</ele><time>2026-05-07T14:22:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609370" lon="-110.7491590"><ele>1128</ele><time>2026-05-07T14:22:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608690" lon="-110.7491430"><ele>1128</ele><time>2026-05-07T14:23:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608230" lon="-110.7491400"><ele>1128</ele><time>2026-05-07T14:23:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4607840" lon="-110.7491320"><ele>1128</ele><time>2026-05-07T14:23:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4607420" lon="-110.7491300"><ele>1128</ele><time>2026-05-07T14:23:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4606910" lon="-110.7491240"><ele>1128</ele><time>2026-05-07T14:23:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4606510" lon="-110.7491220"><ele>1128</ele><time>2026-05-07T14:23:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605990" lon="-110.7491120"><ele>1128</ele><time>2026-05-07T14:23:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605500" lon="-110.7491100"><ele>1128</ele><time>2026-05-07T14:23:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605150" lon="-110.7490790"><ele>1128</ele><time>2026-05-07T14:23:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604900" lon="-110.7490770"><ele>1128</ele><time>2026-05-07T14:23:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>140</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604760" lon="-110.7490820"><ele>1128</ele><time>2026-05-07T14:23:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>141</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604310" lon="-110.7490900"><ele>1128</ele><time>2026-05-07T14:23:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603840" lon="-110.7490800"><ele>1128</ele><time>2026-05-07T14:23:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603770" lon="-110.7490780"><ele>1128</ele><time>2026-05-07T14:23:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603430" lon="-110.7490740"><ele>1128</ele><time>2026-05-07T14:23:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602970" lon="-110.7490890"><ele>1128</ele><time>2026-05-07T14:24:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602860" lon="-110.7490910"><ele>1128</ele><time>2026-05-07T14:24:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602520" lon="-110.7491000"><ele>1128</ele><time>2026-05-07T14:24:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602060" lon="-110.7491370"><ele>1128</ele><time>2026-05-07T14:24:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601730" lon="-110.7491680"><ele>1128</ele><time>2026-05-07T14:24:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>144</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601700" lon="-110.7491740"><ele>1128</ele><time>2026-05-07T14:24:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601490" lon="-110.7491880"><ele>1128</ele><time>2026-05-07T14:24:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601220" lon="-110.7492030"><ele>1128</ele><time>2026-05-07T14:24:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600970" lon="-110.7492110"><ele>1128</ele><time>2026-05-07T14:24:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>142</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600770" lon="-110.7492180"><ele>1128</ele><time>2026-05-07T14:24:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600690" lon="-110.7492270"><ele>1128</ele><time>2026-05-07T14:24:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600350" lon="-110.7492670"><ele>1128</ele><time>2026-05-07T14:24:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600080" lon="-110.7492630"><ele>1128</ele><time>2026-05-07T14:24:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599850" lon="-110.7492700"><ele>1128</ele><time>2026-05-07T14:24:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>138</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599360" lon="-110.7493240"><ele>1128</ele><time>2026-05-07T14:24:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>134</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599280" lon="-110.7493240"><ele>1128</ele><time>2026-05-07T14:24:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599150" lon="-110.7493400"><ele>1128</ele><time>2026-05-07T14:24:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598750" lon="-110.7493410"><ele>1128</ele><time>2026-05-07T14:24:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598530" lon="-110.7493630"><ele>1128</ele><time>2026-05-07T14:24:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>134</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598450" lon="-110.7493700"><ele>1128</ele><time>2026-05-07T14:24:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>134</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597980" lon="-110.7494180"><ele>1128</ele><time>2026-05-07T14:25:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597750" lon="-110.7494750"><ele>1128</ele><time>2026-05-07T14:25:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597740" lon="-110.7494870"><ele>1128</ele><time>2026-05-07T14:25:05Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597540" lon="-110.7495050"><ele>1128</ele><time>2026-05-07T14:25:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>136</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597430" lon="-110.7495230"><ele>1128</ele><time>2026-05-07T14:25:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597180" lon="-110.7495360"><ele>1128</ele><time>2026-05-07T14:25:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>137</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596700" lon="-110.7495570"><ele>1128</ele><time>2026-05-07T14:25:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>139</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596420" lon="-110.7495820"><ele>1128</ele><time>2026-05-07T14:25:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>143</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596290" lon="-110.7496000"><ele>1128</ele><time>2026-05-07T14:25:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596190" lon="-110.7496010"><ele>1128</ele><time>2026-05-07T14:25:23Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>40</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595840" lon="-110.7495930"><ele>1128</ele><time>2026-05-07T14:25:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595790" lon="-110.7495940"><ele>1128</ele><time>2026-05-07T14:25:29Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595450" lon="-110.7495910"><ele>1128</ele><time>2026-05-07T14:25:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595380" lon="-110.7496130"><ele>1128</ele><time>2026-05-07T14:25:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595380" lon="-110.7496260"><ele>1128</ele><time>2026-05-07T14:25:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595270" lon="-110.7496310"><ele>1128</ele><time>2026-05-07T14:25:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595160" lon="-110.7496340"><ele>1128</ele><time>2026-05-07T14:25:46Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595010" lon="-110.7496530"><ele>1128</ele><time>2026-05-07T14:25:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594950" lon="-110.7496870"><ele>1128</ele><time>2026-05-07T14:25:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594810" lon="-110.7497100"><ele>1128</ele><time>2026-05-07T14:25:56Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594620" lon="-110.7497290"><ele>1128</ele><time>2026-05-07T14:25:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594430" lon="-110.7497640"><ele>1128</ele><time>2026-05-07T14:26:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594490" lon="-110.7498190"><ele>1128</ele><time>2026-05-07T14:26:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594430" lon="-110.7498670"><ele>1128</ele><time>2026-05-07T14:26:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594410" lon="-110.7498670"><ele>1128</ele><time>2026-05-07T14:26:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594360" lon="-110.7498740"><ele>1128</ele><time>2026-05-07T14:26:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594230" lon="-110.7499140"><ele>1128</ele><time>2026-05-07T14:26:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.459221616665516" lon="-110.75003962689426"><ele>1128</ele><time>2026-05-07T14:26:58Z</time></trkpt><trkpt lat="37.45920407777701" lon="-110.7500384179295"><ele>1128</ele><time>2026-05-07T14:27:02Z</time></trkpt><trkpt lat="37.4591690" lon="-110.7500360"><ele>1128</ele><time>2026-05-07T14:27:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591550" lon="-110.7500380"><ele>1128</ele><time>2026-05-07T14:27:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591200" lon="-110.7500290"><ele>1128</ele><time>2026-05-07T14:27:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591070" lon="-110.7500160"><ele>1128</ele><time>2026-05-07T14:27:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590890" lon="-110.7500010"><ele>1128</ele><time>2026-05-07T14:27:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590700" lon="-110.7500190"><ele>1128</ele><time>2026-05-07T14:27:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590580" lon="-110.7500370"><ele>1128</ele><time>2026-05-07T14:27:29Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590530" lon="-110.7500430"><ele>1128</ele><time>2026-05-07T14:27:30Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590370" lon="-110.7500720"><ele>1128</ele><time>2026-05-07T14:27:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590070" lon="-110.7500890"><ele>1128</ele><time>2026-05-07T14:27:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589680" lon="-110.7501050"><ele>1128</ele><time>2026-05-07T14:27:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589600" lon="-110.7501050"><ele>1128</ele><time>2026-05-07T14:27:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589360" lon="-110.7501380"><ele>1128</ele><time>2026-05-07T14:27:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589210" lon="-110.7501810"><ele>1128</ele><time>2026-05-07T14:27:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589180" lon="-110.7501990"><ele>1128</ele><time>2026-05-07T14:28:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589070" lon="-110.7502020"><ele>1128</ele><time>2026-05-07T14:28:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4588560" lon="-110.7501980"><ele>1128</ele><time>2026-05-07T14:28:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4588130" lon="-110.7501680"><ele>1128</ele><time>2026-05-07T14:28:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587890" lon="-110.7501490"><ele>1128</ele><time>2026-05-07T14:28:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587730" lon="-110.7501550"><ele>1128</ele><time>2026-05-07T14:28:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587370" lon="-110.7501730"><ele>1128</ele><time>2026-05-07T14:28:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587160" lon="-110.7501750"><ele>1128</ele><time>2026-05-07T14:28:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4586420" lon="-110.7501610"><ele>1128</ele><time>2026-05-07T14:28:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585840" lon="-110.7501770"><ele>1128</ele><time>2026-05-07T14:28:30Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585530" lon="-110.7501810"><ele>1128</ele><time>2026-05-07T14:28:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585290" lon="-110.7502020"><ele>1128</ele><time>2026-05-07T14:28:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585410" lon="-110.7502630"><ele>1128</ele><time>2026-05-07T14:28:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584920" lon="-110.7503070"><ele>1128</ele><time>2026-05-07T14:28:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584770" lon="-110.7503360"><ele>1128</ele><time>2026-05-07T14:28:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584690" lon="-110.7503390"><ele>1128</ele><time>2026-05-07T14:28:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585330" lon="-110.7504980"><ele>1128</ele><time>2026-05-07T14:28:57Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585260" lon="-110.7505170"><ele>1128</ele><time>2026-05-07T14:28:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584910" lon="-110.7505440"><ele>1128</ele><time>2026-05-07T14:29:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584840" lon="-110.7505490"><ele>1128</ele><time>2026-05-07T14:29:05Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584690" lon="-110.7505600"><ele>1128</ele><time>2026-05-07T14:29:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584380" lon="-110.7506080"><ele>1128</ele><time>2026-05-07T14:29:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584290" lon="-110.7506310"><ele>1128</ele><time>2026-05-07T14:29:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584180" lon="-110.7506460"><ele>1128</ele><time>2026-05-07T14:29:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584160" lon="-110.7506570"><ele>1128</ele><time>2026-05-07T14:29:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584030" lon="-110.7506800"><ele>1128</ele><time>2026-05-07T14:29:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583970" lon="-110.7506830"><ele>1128</ele><time>2026-05-07T14:29:23Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583730" lon="-110.7506930"><ele>1128</ele><time>2026-05-07T14:29:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583420" lon="-110.7507180"><ele>1128</ele><time>2026-05-07T14:29:30Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583320" lon="-110.7507180"><ele>1128</ele><time>2026-05-07T14:29:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583270" lon="-110.7507230"><ele>1128</ele><time>2026-05-07T14:29:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583230" lon="-110.7507300"><ele>1128</ele><time>2026-05-07T14:29:33Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583140" lon="-110.7507740"><ele>1128</ele><time>2026-05-07T14:29:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582950" lon="-110.7508500"><ele>1128</ele><time>2026-05-07T14:29:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582800" lon="-110.7508680"><ele>1128</ele><time>2026-05-07T14:29:44Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582530" lon="-110.7509100"><ele>1128</ele><time>2026-05-07T14:29:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582520" lon="-110.7509360"><ele>1128</ele><time>2026-05-07T14:29:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582470" lon="-110.7509400"><ele>1128</ele><time>2026-05-07T14:29:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582110" lon="-110.7509900"><ele>1128</ele><time>2026-05-07T14:29:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581860" lon="-110.7510490"><ele>1128</ele><time>2026-05-07T14:30:05Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581800" lon="-110.7510550"><ele>1128</ele><time>2026-05-07T14:30:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581860" lon="-110.7510760"><ele>1128</ele><time>2026-05-07T14:30:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581700" lon="-110.7511240"><ele>1128</ele><time>2026-05-07T14:30:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581960" lon="-110.7512060"><ele>1128</ele><time>2026-05-07T14:30:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581850" lon="-110.7512310"><ele>1128</ele><time>2026-05-07T14:30:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581550" lon="-110.7512630"><ele>1128</ele><time>2026-05-07T14:30:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581330" lon="-110.7512820"><ele>1128</ele><time>2026-05-07T14:30:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580950" lon="-110.7513150"><ele>1128</ele><time>2026-05-07T14:30:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580730" lon="-110.7513360"><ele>1128</ele><time>2026-05-07T14:30:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580040" lon="-110.7513480"><ele>1128</ele><time>2026-05-07T14:30:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578580" lon="-110.7513320"><ele>1128</ele><time>2026-05-07T14:31:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578180" lon="-110.7512510"><ele>1128</ele><time>2026-05-07T14:31:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578100" lon="-110.7512240"><ele>1128</ele><time>2026-05-07T14:31:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578050" lon="-110.7512040"><ele>1128</ele><time>2026-05-07T14:31:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578100" lon="-110.7511920"><ele>1128</ele><time>2026-05-07T14:31:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578410" lon="-110.7511800"><ele>1128</ele><time>2026-05-07T14:31:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578540" lon="-110.7511460"><ele>1128</ele><time>2026-05-07T14:31:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578590" lon="-110.7511320"><ele>1128</ele><time>2026-05-07T14:31:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578620" lon="-110.7510780"><ele>1128</ele><time>2026-05-07T14:31:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578590" lon="-110.7510220"><ele>1128</ele><time>2026-05-07T14:31:33Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578680" lon="-110.7509840"><ele>1128</ele><time>2026-05-07T14:31:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578620" lon="-110.7509620"><ele>1128</ele><time>2026-05-07T14:31:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578370" lon="-110.7508280"><ele>1128</ele><time>2026-05-07T14:31:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>145</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578330" lon="-110.7508090"><ele>1128</ele><time>2026-05-07T14:31:44Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578260" lon="-110.7507890"><ele>1128</ele><time>2026-05-07T14:31:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578270" lon="-110.7507350"><ele>1128</ele><time>2026-05-07T14:31:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578470" lon="-110.7506790"><ele>1128</ele><time>2026-05-07T14:31:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>146</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578710" lon="-110.7506610"><ele>1128</ele><time>2026-05-07T14:31:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>147</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4578920" lon="-110.7506610"><ele>1128</ele><time>2026-05-07T14:31:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4579250" lon="-110.7506610"><ele>1128</ele><time>2026-05-07T14:31:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4579320" lon="-110.7506530"><ele>1128</ele><time>2026-05-07T14:31:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4579550" lon="-110.7506320"><ele>1128</ele><time>2026-05-07T14:32:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4579780" lon="-110.7506210"><ele>1128</ele><time>2026-05-07T14:32:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580490" lon="-110.7505760"><ele>1128</ele><time>2026-05-07T14:32:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580600" lon="-110.7505780"><ele>1128</ele><time>2026-05-07T14:32:11Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4580970" lon="-110.7505590"><ele>1128</ele><time>2026-05-07T14:32:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581500" lon="-110.7505640"><ele>1128</ele><time>2026-05-07T14:32:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581760" lon="-110.7505640"><ele>1128</ele><time>2026-05-07T14:32:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581800" lon="-110.7505550"><ele>1128</ele><time>2026-05-07T14:32:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4581970" lon="-110.7505620"><ele>1128</ele><time>2026-05-07T14:32:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4582040" lon="-110.7505570"><ele>1128</ele><time>2026-05-07T14:32:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583150" lon="-110.7505780"><ele>1128</ele><time>2026-05-07T14:32:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583280" lon="-110.7505760"><ele>1128</ele><time>2026-05-07T14:32:29Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583410" lon="-110.7505740"><ele>1128</ele><time>2026-05-07T14:32:30Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583520" lon="-110.7505800"><ele>1128</ele><time>2026-05-07T14:32:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4583760" lon="-110.7505910"><ele>1128</ele><time>2026-05-07T14:32:33Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4584000" lon="-110.7505880"><ele>1128</ele><time>2026-05-07T14:32:35Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585380" lon="-110.7506090"><ele>1128</ele><time>2026-05-07T14:32:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4585720" lon="-110.7506170"><ele>1128</ele><time>2026-05-07T14:32:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587080" lon="-110.7506990"><ele>1128</ele><time>2026-05-07T14:32:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587590" lon="-110.7507320"><ele>1128</ele><time>2026-05-07T14:32:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4587920" lon="-110.7507490"><ele>1128</ele><time>2026-05-07T14:32:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4588360" lon="-110.7508170"><ele>1128</ele><time>2026-05-07T14:32:57Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4588670" lon="-110.7508700"><ele>1128</ele><time>2026-05-07T14:32:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589240" lon="-110.7509400"><ele>1128</ele><time>2026-05-07T14:33:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589530" lon="-110.7509620"><ele>1128</ele><time>2026-05-07T14:33:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4589760" lon="-110.7509750"><ele>1128</ele><time>2026-05-07T14:33:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590210" lon="-110.7510090"><ele>1128</ele><time>2026-05-07T14:33:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590300" lon="-110.7510080"><ele>1128</ele><time>2026-05-07T14:33:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590590" lon="-110.7510050"><ele>1128</ele><time>2026-05-07T14:33:11Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590870" lon="-110.7509920"><ele>1128</ele><time>2026-05-07T14:33:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590980" lon="-110.7509920"><ele>1128</ele><time>2026-05-07T14:33:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591120" lon="-110.7509890"><ele>1128</ele><time>2026-05-07T14:33:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591610" lon="-110.7509940"><ele>1128</ele><time>2026-05-07T14:33:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591640" lon="-110.7509630"><ele>1128</ele><time>2026-05-07T14:33:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591800" lon="-110.7509570"><ele>1128</ele><time>2026-05-07T14:33:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592300" lon="-110.7509680"><ele>1128</ele><time>2026-05-07T14:33:29Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592650" lon="-110.7509810"><ele>1128</ele><time>2026-05-07T14:33:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592970" lon="-110.7509570"><ele>1128</ele><time>2026-05-07T14:33:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593550" lon="-110.7509640"><ele>1128</ele><time>2026-05-07T14:33:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593710" lon="-110.7509220"><ele>1128</ele><time>2026-05-07T14:33:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593740" lon="-110.7508990"><ele>1128</ele><time>2026-05-07T14:33:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593870" lon="-110.7508930"><ele>1128</ele><time>2026-05-07T14:33:44Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594140" lon="-110.7509020"><ele>1128</ele><time>2026-05-07T14:33:46Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594490" lon="-110.7509050"><ele>1128</ele><time>2026-05-07T14:33:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594680" lon="-110.7508950"><ele>1128</ele><time>2026-05-07T14:33:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595170" lon="-110.7508940"><ele>1128</ele><time>2026-05-07T14:33:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595390" lon="-110.7508540"><ele>1128</ele><time>2026-05-07T14:33:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595230" lon="-110.7508240"><ele>1128</ele><time>2026-05-07T14:34:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595230" lon="-110.7508150"><ele>1128</ele><time>2026-05-07T14:34:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595180" lon="-110.7508000"><ele>1128</ele><time>2026-05-07T14:34:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595000" lon="-110.7507480"><ele>1128</ele><time>2026-05-07T14:34:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595030" lon="-110.7507370"><ele>1128</ele><time>2026-05-07T14:34:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595110" lon="-110.7507350"><ele>1128</ele><time>2026-05-07T14:34:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595090" lon="-110.7506840"><ele>1128</ele><time>2026-05-07T14:34:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594610" lon="-110.7505900"><ele>1128</ele><time>2026-05-07T14:34:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594250" lon="-110.7505110"><ele>1128</ele><time>2026-05-07T14:34:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593970" lon="-110.7504570"><ele>1128</ele><time>2026-05-07T14:34:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593160" lon="-110.7503210"><ele>1128</ele><time>2026-05-07T14:34:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591940" lon="-110.7501050"><ele>1128</ele><time>2026-05-07T14:34:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591680" lon="-110.7500350"><ele>1128</ele><time>2026-05-07T14:34:35Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591650" lon="-110.7500150"><ele>1128</ele><time>2026-05-07T14:34:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590800" lon="-110.7498330"><ele>1128</ele><time>2026-05-07T14:34:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590540" lon="-110.7497900"><ele>1128</ele><time>2026-05-07T14:34:44Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590490" lon="-110.7497690"><ele>1128</ele><time>2026-05-07T14:34:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590270" lon="-110.7496690"><ele>1128</ele><time>2026-05-07T14:34:50Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590240" lon="-110.7496530"><ele>1128</ele><time>2026-05-07T14:34:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590390" lon="-110.7496210"><ele>1128</ele><time>2026-05-07T14:34:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590660" lon="-110.7495780"><ele>1128</ele><time>2026-05-07T14:35:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4590730" lon="-110.7495150"><ele>1128</ele><time>2026-05-07T14:35:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591190" lon="-110.7494990"><ele>1128</ele><time>2026-05-07T14:35:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591240" lon="-110.7494890"><ele>1128</ele><time>2026-05-07T14:35:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591360" lon="-110.7494800"><ele>1128</ele><time>2026-05-07T14:35:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4591650" lon="-110.7494600"><ele>1128</ele><time>2026-05-07T14:35:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592210" lon="-110.7494410"><ele>1128</ele><time>2026-05-07T14:35:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592580" lon="-110.7494330"><ele>1128</ele><time>2026-05-07T14:35:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4592910" lon="-110.7493880"><ele>1128</ele><time>2026-05-07T14:35:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593240" lon="-110.7493620"><ele>1128</ele><time>2026-05-07T14:35:39Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593600" lon="-110.7493260"><ele>1128</ele><time>2026-05-07T14:35:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4593990" lon="-110.7492940"><ele>1128</ele><time>2026-05-07T14:35:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594310" lon="-110.7493120"><ele>1128</ele><time>2026-05-07T14:35:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594380" lon="-110.7493070"><ele>1128</ele><time>2026-05-07T14:35:56Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594550" lon="-110.7493110"><ele>1128</ele><time>2026-05-07T14:35:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4594850" lon="-110.7493260"><ele>1128</ele><time>2026-05-07T14:36:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595290" lon="-110.7493540"><ele>1128</ele><time>2026-05-07T14:36:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595360" lon="-110.7493590"><ele>1128</ele><time>2026-05-07T14:36:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>148</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595640" lon="-110.7493600"><ele>1128</ele><time>2026-05-07T14:36:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595690" lon="-110.7493570"><ele>1128</ele><time>2026-05-07T14:36:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4595940" lon="-110.7493510"><ele>1128</ele><time>2026-05-07T14:36:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596000" lon="-110.7493560"><ele>1128</ele><time>2026-05-07T14:36:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596260" lon="-110.7494220"><ele>1128</ele><time>2026-05-07T14:36:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596510" lon="-110.7494420"><ele>1128</ele><time>2026-05-07T14:36:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4596830" lon="-110.7494900"><ele>1128</ele><time>2026-05-07T14:36:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597040" lon="-110.7495120"><ele>1128</ele><time>2026-05-07T14:36:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4597710" lon="-110.7495060"><ele>1128</ele><time>2026-05-07T14:36:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598020" lon="-110.7495040"><ele>1128</ele><time>2026-05-07T14:36:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598240" lon="-110.7495110"><ele>1128</ele><time>2026-05-07T14:36:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598410" lon="-110.7495050"><ele>1128</ele><time>2026-05-07T14:36:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4598740" lon="-110.7495010"><ele>1128</ele><time>2026-05-07T14:36:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599110" lon="-110.7495050"><ele>1128</ele><time>2026-05-07T14:36:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4599230" lon="-110.7495080"><ele>1128</ele><time>2026-05-07T14:36:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600430" lon="-110.7494520"><ele>1128</ele><time>2026-05-07T14:37:05Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4600980" lon="-110.7494260"><ele>1128</ele><time>2026-05-07T14:37:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601640" lon="-110.7494040"><ele>1128</ele><time>2026-05-07T14:37:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4601790" lon="-110.7493950"><ele>1128</ele><time>2026-05-07T14:37:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602050" lon="-110.7493760"><ele>1128</ele><time>2026-05-07T14:37:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602400" lon="-110.7493540"><ele>1128</ele><time>2026-05-07T14:37:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602800" lon="-110.7493540"><ele>1128</ele><time>2026-05-07T14:37:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4602820" lon="-110.7493590"><ele>1128</ele><time>2026-05-07T14:37:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603140" lon="-110.7493820"><ele>1128</ele><time>2026-05-07T14:37:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603190" lon="-110.7494240"><ele>1128</ele><time>2026-05-07T14:37:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603400" lon="-110.7494320"><ele>1128</ele><time>2026-05-07T14:37:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603720" lon="-110.7494720"><ele>1128</ele><time>2026-05-07T14:37:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4603830" lon="-110.7495060"><ele>1128</ele><time>2026-05-07T14:37:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604010" lon="-110.7495550"><ele>1128</ele><time>2026-05-07T14:37:57Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604120" lon="-110.7496120"><ele>1128</ele><time>2026-05-07T14:38:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604210" lon="-110.7496310"><ele>1128</ele><time>2026-05-07T14:38:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604490" lon="-110.7496350"><ele>1128</ele><time>2026-05-07T14:38:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604630" lon="-110.7496240"><ele>1128</ele><time>2026-05-07T14:38:15Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4604960" lon="-110.7496140"><ele>1128</ele><time>2026-05-07T14:38:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605140" lon="-110.7496220"><ele>1128</ele><time>2026-05-07T14:38:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605430" lon="-110.7496260"><ele>1128</ele><time>2026-05-07T14:38:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4605840" lon="-110.7496290"><ele>1128</ele><time>2026-05-07T14:38:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4606020" lon="-110.7496360"><ele>1128</ele><time>2026-05-07T14:38:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4606440" lon="-110.7496530"><ele>1128</ele><time>2026-05-07T14:38:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4606740" lon="-110.7496590"><ele>1128</ele><time>2026-05-07T14:38:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4607260" lon="-110.7496700"><ele>1128</ele><time>2026-05-07T14:38:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4607930" lon="-110.7496690"><ele>1128</ele><time>2026-05-07T14:38:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608570" lon="-110.7496650"><ele>1128</ele><time>2026-05-07T14:39:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608660" lon="-110.7496620"><ele>1128</ele><time>2026-05-07T14:39:02Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608770" lon="-110.7496490"><ele>1128</ele><time>2026-05-07T14:39:04Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608890" lon="-110.7496330"><ele>1128</ele><time>2026-05-07T14:39:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608960" lon="-110.7496280"><ele>1128</ele><time>2026-05-07T14:39:08Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4608950" lon="-110.7496190"><ele>1128</ele><time>2026-05-07T14:39:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609060" lon="-110.7496060"><ele>1128</ele><time>2026-05-07T14:39:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609490" lon="-110.7495690"><ele>1128</ele><time>2026-05-07T14:39:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609620" lon="-110.7495420"><ele>1128</ele><time>2026-05-07T14:39:19Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609890" lon="-110.7495110"><ele>1128</ele><time>2026-05-07T14:39:23Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>157</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609870" lon="-110.7494910"><ele>1128</ele><time>2026-05-07T14:39:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>158</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609830" lon="-110.7494860"><ele>1128</ele><time>2026-05-07T14:39:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>158</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4609880" lon="-110.7494720"><ele>1128</ele><time>2026-05-07T14:39:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>158</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610120" lon="-110.7494230"><ele>1128</ele><time>2026-05-07T14:39:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>157</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610140" lon="-110.7493920"><ele>1128</ele><time>2026-05-07T14:39:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610240" lon="-110.7493650"><ele>1128</ele><time>2026-05-07T14:39:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610270" lon="-110.7493480"><ele>1128</ele><time>2026-05-07T14:39:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610390" lon="-110.7493220"><ele>1128</ele><time>2026-05-07T14:39:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>157</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610570" lon="-110.7493110"><ele>1128</ele><time>2026-05-07T14:39:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610630" lon="-110.7492990"><ele>1128</ele><time>2026-05-07T14:39:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4610800" lon="-110.7492670"><ele>1128</ele><time>2026-05-07T14:39:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611120" lon="-110.7492120"><ele>1128</ele><time>2026-05-07T14:39:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>157</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611150" lon="-110.7492040"><ele>1128</ele><time>2026-05-07T14:39:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>157</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611390" lon="-110.7492060"><ele>1128</ele><time>2026-05-07T14:39:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611440" lon="-110.7491920"><ele>1128</ele><time>2026-05-07T14:39:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611540" lon="-110.7491880"><ele>1128</ele><time>2026-05-07T14:39:53Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611860" lon="-110.7491170"><ele>1128</ele><time>2026-05-07T14:39:58Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4611910" lon="-110.7491090"><ele>1128</ele><time>2026-05-07T14:39:59Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.46125092704103" lon="-110.74888534522736"><ele>1128</ele><time>2026-05-07T14:40:37Z</time></trkpt><trkpt lat="37.46126117975651" lon="-110.74885144156615"><ele>1128</ele><time>2026-05-07T14:40:45Z</time></trkpt><trkpt lat="37.461271492373534" lon="-110.74881756769078"><ele>1128</ele><time>2026-05-07T14:40:53Z</time></trkpt><trkpt lat="37.46128238465196" lon="-110.74878398205043"><ele>1128</ele><time>2026-05-07T14:41:01Z</time></trkpt><trkpt lat="37.461285107721565" lon="-110.74877558564035"><ele>1128</ele><time>2026-05-07T14:41:03Z</time></trkpt><trkpt lat="37.4612960" lon="-110.7487420"><ele>1128</ele><time>2026-05-07T14:41:11Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613020" lon="-110.7487360"><ele>1128</ele><time>2026-05-07T14:41:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613120" lon="-110.7487200"><ele>1128</ele><time>2026-05-07T14:41:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613180" lon="-110.7487030"><ele>1128</ele><time>2026-05-07T14:41:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613350" lon="-110.7486930"><ele>1128</ele><time>2026-05-07T14:41:18Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613470" lon="-110.7486720"><ele>1128</ele><time>2026-05-07T14:41:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613490" lon="-110.7486640"><ele>1128</ele><time>2026-05-07T14:41:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613550" lon="-110.7486580"><ele>1128</ele><time>2026-05-07T14:41:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>36</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613560" lon="-110.7486440"><ele>1128</ele><time>2026-05-07T14:41:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613550" lon="-110.7486260"><ele>1128</ele><time>2026-05-07T14:41:26Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613460" lon="-110.7485670"><ele>1128</ele><time>2026-05-07T14:41:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613510" lon="-110.7485600"><ele>1128</ele><time>2026-05-07T14:41:32Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613140" lon="-110.7484940"><ele>1128</ele><time>2026-05-07T14:41:37Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613050" lon="-110.7484810"><ele>1128</ele><time>2026-05-07T14:41:38Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612890" lon="-110.7484520"><ele>1128</ele><time>2026-05-07T14:41:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612850" lon="-110.7484270"><ele>1128</ele><time>2026-05-07T14:41:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612520" lon="-110.7484120"><ele>1128</ele><time>2026-05-07T14:41:43Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612350" lon="-110.7483890"><ele>1128</ele><time>2026-05-07T14:41:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612230" lon="-110.7483610"><ele>1128</ele><time>2026-05-07T14:41:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612250" lon="-110.7482970"><ele>1128</ele><time>2026-05-07T14:41:52Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612400" lon="-110.7482790"><ele>1128</ele><time>2026-05-07T14:41:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612700" lon="-110.7482690"><ele>1128</ele><time>2026-05-07T14:41:56Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>151</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612790" lon="-110.7481910"><ele>1128</ele><time>2026-05-07T14:42:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612820" lon="-110.7481170"><ele>1128</ele><time>2026-05-07T14:42:06Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612800" lon="-110.7480320"><ele>1128</ele><time>2026-05-07T14:42:12Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4612820" lon="-110.7480100"><ele>1128</ele><time>2026-05-07T14:42:14Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>37</gpxtpx:atemp>
+      <gpxtpx:hr>149</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613060" lon="-110.7479510"><ele>1128</ele><time>2026-05-07T14:42:20Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613180" lon="-110.7479460"><ele>1128</ele><time>2026-05-07T14:42:21Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>150</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4613940" lon="-110.7479590"><ele>1128</ele><time>2026-05-07T14:42:25Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614270" lon="-110.7479590"><ele>1128</ele><time>2026-05-07T14:42:27Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614360" lon="-110.7479610"><ele>1128</ele><time>2026-05-07T14:42:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4614720" lon="-110.7479630"><ele>1128</ele><time>2026-05-07T14:42:31Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4615430" lon="-110.7479770"><ele>1128</ele><time>2026-05-07T14:42:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4615980" lon="-110.7479600"><ele>1128</ele><time>2026-05-07T14:42:42Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4616250" lon="-110.7479520"><ele>1128</ele><time>2026-05-07T14:42:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4616760" lon="-110.7479410"><ele>1128</ele><time>2026-05-07T14:42:51Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4616990" lon="-110.7479260"><ele>1128</ele><time>2026-05-07T14:42:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4617220" lon="-110.7479120"><ele>1128</ele><time>2026-05-07T14:42:57Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4617750" lon="-110.7478760"><ele>1128</ele><time>2026-05-07T14:43:03Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618010" lon="-110.7478490"><ele>1128</ele><time>2026-05-07T14:43:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618370" lon="-110.7478100"><ele>1128</ele><time>2026-05-07T14:43:13Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4618570" lon="-110.7477940"><ele>1128</ele><time>2026-05-07T14:43:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>152</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4619010" lon="-110.7477650"><ele>1128</ele><time>2026-05-07T14:43:22Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>153</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4619430" lon="-110.7477310"><ele>1128</ele><time>2026-05-07T14:43:28Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4619840" lon="-110.7477030"><ele>1128</ele><time>2026-05-07T14:43:34Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620210" lon="-110.7476680"><ele>1128</ele><time>2026-05-07T14:43:40Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620300" lon="-110.7476600"><ele>1128</ele><time>2026-05-07T14:43:41Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620690" lon="-110.7476220"><ele>1128</ele><time>2026-05-07T14:43:47Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4620840" lon="-110.7476090"><ele>1128</ele><time>2026-05-07T14:43:49Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621270" lon="-110.7475740"><ele>1128</ele><time>2026-05-07T14:43:55Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4621730" lon="-110.7475550"><ele>1128</ele><time>2026-05-07T14:44:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622140" lon="-110.7475260"><ele>1128</ele><time>2026-05-07T14:44:07Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622300" lon="-110.7475130"><ele>1128</ele><time>2026-05-07T14:44:09Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622400" lon="-110.7475070"><ele>1128</ele><time>2026-05-07T14:44:10Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>154</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4622920" lon="-110.7474710"><ele>1128</ele><time>2026-05-07T14:44:16Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623020" lon="-110.7474660"><ele>1128</ele><time>2026-05-07T14:44:17Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623340" lon="-110.7474100"><ele>1128</ele><time>2026-05-07T14:44:23Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>38</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623410" lon="-110.7474040"><ele>1128</ele><time>2026-05-07T14:44:24Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4623800" lon="-110.7473770"><ele>1128</ele><time>2026-05-07T14:44:30Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624210" lon="-110.7473370"><ele>1128</ele><time>2026-05-07T14:44:36Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624430" lon="-110.7473110"><ele>1128</ele><time>2026-05-07T14:44:39Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624780" lon="-110.7472750"><ele>1128</ele><time>2026-05-07T14:44:45Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4624940" lon="-110.7472550"><ele>1128</ele><time>2026-05-07T14:44:48Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625310" lon="-110.7472060"><ele>1128</ele><time>2026-05-07T14:44:54Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>156</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625510" lon="-110.7471790"><ele>1128</ele><time>2026-05-07T14:44:57Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625650" lon="-110.7471630"><ele>1128</ele><time>2026-05-07T14:45:00Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt><trkpt lat="37.4625720" lon="-110.7471540"><ele>1128</ele><time>2026-05-07T14:45:01Z</time><extensions xmlns="http://www.topografix.com/GPX/1/1">
+     <gpxtpx:TrackPointExtension xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+      <gpxtpx:atemp>39</gpxtpx:atemp>
+      <gpxtpx:hr>155</gpxtpx:hr>
+     </gpxtpx:TrackPointExtension>
+    </extensions></trkpt></trkseg></trk></gpx>
