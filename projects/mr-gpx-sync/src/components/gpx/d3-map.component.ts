@@ -160,7 +160,7 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
   }
 
   /**
-   * Fit the map view to the bounds of the current track
+   * Fit the map view to the bounds of the current track with 10% buffer
    */
   fitMapToTrack(): void {
     if (!this.primaryTrack || this.primaryTrack.trkPts.length === 0) {
@@ -180,6 +180,18 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       maxLat = Math.max(maxLat, point.lat);
     });
 
+    // Calculate 10% buffer around the bounds
+    const lonRange = maxLon - minLon;
+    const latRange = maxLat - minLat;
+    const lonBuffer = lonRange * 0.1;
+    const latBuffer = latRange * 0.1;
+
+    // Apply buffer to create expanded bounds
+    minLon -= lonBuffer;
+    maxLon += lonBuffer;
+    minLat -= latBuffer;
+    maxLat += latBuffer;
+
     // Convert to map projection coordinates
     const bottomLeft = fromLonLat([minLon, minLat]);
     const topRight = fromLonLat([maxLon, maxLat]);
@@ -191,16 +203,14 @@ export class MrGpxSyncD3Map implements OnInit, OnDestroy {
       topRight[0],
       topRight[1]
     ];
-    console.log(this.map.getView().getZoom());
-    console.log(this.map.getView().calculateExtent());
 
-    // Fit the view to the extent with appropriate settings
+    // Fit the view to the extent - let OpenLayers calculate the optimal zoom
+    // Do NOT override the zoom after fitting, as that defeats the purpose
     this.map.getView().fit(extent, {
       size: this.map.getSize(),
-      padding: [20, 20, 20, 20]
+      padding: [50, 50, 50, 50], // Small padding in pixels for comfort
+      maxZoom: 18 // Prevent zooming in too far
     });
-    this.map.getView().setZoom(14);
-    console.log(this.map.getView().calculateExtent());
   }
 
   renderDelay(): void {
