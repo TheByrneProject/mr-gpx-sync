@@ -74,8 +74,14 @@ export class NormalizeElevationComponent implements OnInit {
     
     // Get current settings
     this.settings = this.mrGpxSyncService.settings$.getValue();
+    console.log('Normalize Elevation: Settings loaded', { 
+      metric: this.settings.metric, 
+      eleUnits: this.settings.eleUnits 
+    });
     
     const points: TrackPoint[] = trackFile.getTrack().trkPts;
+    console.log('Normalize Elevation: Points loaded', { count: points?.length, points });
+    
     if (!points || points.length === 0) {
       this.averageElevationMeters = 0;
       this.targetElevationMeters = 0;
@@ -90,8 +96,12 @@ export class NormalizeElevationComponent implements OnInit {
       if (point && typeof point.ele === 'number' && !Number.isNaN(point.ele)) {
         totalElevation += point.ele;
         validCount++;
+      } else if (point) {
+        console.warn('Point has invalid elevation:', { ele: point.ele, type: typeof point.ele, isNaN: Number.isNaN(point.ele) });
       }
     }
+
+    console.log('Normalize Elevation: Calculation', { totalElevation, validCount, validPoints: validCount > 0 });
 
     if (validCount === 0) {
       console.warn('No valid elevation points found');
@@ -102,7 +112,13 @@ export class NormalizeElevationComponent implements OnInit {
       this.targetElevationMeters = this.averageElevationMeters;
     }
     
+    console.log('Normalize Elevation: Average calculated', { averageElevationMeters: this.averageElevationMeters });
     this.updateDisplayValues();
+    console.log('Normalize Elevation: Display values updated', { 
+      averageElevationDisplay: this.averageElevationDisplay,
+      targetElevationDisplay: this.targetElevationDisplay,
+      eleUnits: this.settings.eleUnits
+    });
   }
 
   private updateDisplayValues(): void {

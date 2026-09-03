@@ -32,9 +32,19 @@ export class TrackElement {
       p.extensions = e.getElementsByTagName('extensions')[0];
     }
 
-    p.lon = e.getAttribute('lon') as unknown as number;
-    p.lat = e.getAttribute('lat') as unknown as number;
-    p.ele = e.getElementsByTagName('ele')[0].textContent as unknown as number;
+    p.lon = parseFloat(e.getAttribute('lon') || '0');
+    p.lat = parseFloat(e.getAttribute('lat') || '0');
+    const eleText = e.getElementsByTagName('ele')[0].textContent;
+    p.ele = parseFloat(eleText || '0');
+    
+    // Log if elevation parsing failed or resulted in 0
+    if (!eleText || isNaN(p.ele)) {
+      console.warn('Failed to parse elevation from element:', eleText);
+      p.ele = 0;
+    } else if (p.ele === 0) {
+      console.info('Point has elevation of 0:', eleText);
+    }
+    
     p.date = dayjs(e.getElementsByTagName('time')[0].textContent);
     if (p.date.isValid() === false) {
       throw new Error('Point has invalid date: ' + (e.getElementsByTagName('time')[0].textContent));
