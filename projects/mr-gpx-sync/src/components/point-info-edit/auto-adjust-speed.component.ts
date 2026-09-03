@@ -2,6 +2,7 @@ import { Component, EventEmitter, HostBinding, OnInit, OnDestroy, Output, Change
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { DecimalPipe } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 import { MrGpxSyncService } from '../../services';
 import { TrackFile, TrackPoint, TrackSeg, Settings } from '../../gpx';
 import { SecondsToTime } from '../../pipes';
@@ -19,7 +20,7 @@ interface ReferencePoint {
   template: `
     <div class="d-flex flex-column gap-3 p-3">
       <div>
-        <h5>Auto Adjust Speed</h5>
+        <h5>{{ 'autoAdjustSpeed.title' | translate }}</h5>
         <p class="small text-muted">Manually add reference points by selecting a point and clicking "Add Reference Point"</p>
       </div>
 
@@ -138,7 +139,8 @@ interface ReferencePoint {
     FaIconComponent,
     FormsModule,
     DecimalPipe,
-    SecondsToTime
+    SecondsToTime,
+    TranslatePipe
   ]
 })
 export class AutoAdjustSpeedComponent implements OnInit, OnDestroy {

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, HostBinding, OnInit, Output } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 import { MrGpxSyncService } from '../../services';
 import { TrackFile, Settings } from '../../gpx';
 import { TrackPoint } from '../../gpx';
@@ -10,12 +11,12 @@ import { TrackPoint } from '../../gpx';
   template: `
     <div class="d-flex flex-column gap-3 p-2">
       <div>
-        <div class="sm label">Current average elevation</div>
+        <div class="sm label">{{ 'trackInfo.currentAverageElevation' | translate }}</div>
         <div class="mb-2 text-white">{{ averageElevationDisplay | number: '1.1-1' }} {{ settings.eleUnits }}</div>
       </div>
 
       <div>
-        <div class="sm label">Normalize to ({{ settings.eleUnits }})</div>
+        <div class="sm label">{{ 'trackInfo.normalizeTo' | translate }} ({{ settings.eleUnits }})</div>
         <input
           type="number"
           [value]="targetElevationDisplay"
@@ -49,7 +50,7 @@ import { TrackPoint } from '../../gpx';
       color: white;
     }
   `],
-  imports: [DecimalPipe]
+  imports: [DecimalPipe, TranslatePipe]
 })
 export class NormalizeElevationComponent implements OnInit {
   @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column ww-400';

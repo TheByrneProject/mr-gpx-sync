@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit, HostListener } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { EditOptionsComponent } from './edit-options.component';
@@ -69,9 +69,9 @@ type ViewType = 'track' | 'point' | 'multi-point';
         @if (currentView === 'track') {
           <mr-gpx-sync-track-info-view (showEdit)="mode = 'edit'"></mr-gpx-sync-track-info-view>
         } @else if (currentView === 'point') {
-          <mr-gpx-sync-point-info-view (showEdit)="mode = 'edit'"></mr-gpx-sync-point-info-view>
+          <mr-gpx-sync-point-info-view (showEdit)="mode = 'edit'" (deselect)="deselectPoints()"></mr-gpx-sync-point-info-view>
         } @else if (currentView === 'multi-point') {
-          <mr-gpx-sync-multi-point-info-view (showEdit)="mode = 'edit'"></mr-gpx-sync-multi-point-info-view>
+          <mr-gpx-sync-multi-point-info-view (showEdit)="mode = 'edit'" (deselect)="deselectPoints()"></mr-gpx-sync-multi-point-info-view>
         }
       }
     </div>
@@ -148,6 +148,19 @@ export class InfoWindowComponent implements OnInit {
       // Reset mode when view changes
       this.mode = 'info';
     });
+  }
+
+  @HostListener('window:keydown.escape')
+  onEscapeKeydown(): void {
+    // If in info mode with selected points, deselect them
+    if (this.mode === 'info' && this.selectedPointCount > 0) {
+      this.deselectPoints();
+    }
+  }
+
+  deselectPoints(): void {
+    // Clear selected points by emitting an empty TrackPointEvent
+    this.mrGpxSyncService.selectedPoint$.next(new TrackPointEvent());
   }
 }
 

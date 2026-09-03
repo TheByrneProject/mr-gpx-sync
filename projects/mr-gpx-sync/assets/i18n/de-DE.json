@@ -1,0 +1,29 @@
+{
+  "menu": {
+    "newProject": "Neues Projekt",
+    "saveToFile": "In Datei speichern",
+    "saveToClipboard": "In Zwischenablage kopieren",
+    "openGPX": "GPX-Datei öffnen",
+    "openVideo": "Video öffnen",
+    "units": "Einheiten",
+    "paceFormat": "Pace-Format",
+    "metricUnit": "Metrisch",
+    "imperialUnit": "Britisch-amerikanisch",
+    "resetSettings": "Einstellungen zurücksetzen",
+    "autoAdjustSpeed": "Geschwindigkeit automatisch anpassen"
+  },
+  "map": {
+    "layers": "Ebenen",
+    "topo": "Topo",
+    "satellite": "Satellit",
+    "map": "Karte"
+  },
+  "trackInfo": {
+    "title": "Spurinformationen",
+    "currentAverageElevation": "Aktuelle Durchschnittshöhe",
+    "normalizeTo": "Normalisieren auf"
+  },
+  "autoAdjustSpeed": {
+    "title": "Geschwindigkeit automatisch anpassen"
+  }
+}

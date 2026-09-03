@@ -1,6 +1,7 @@
 import { Component, HostBinding, OnInit, EventEmitter, Output } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { DecimalPipe } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 import { SecondsToTime } from '../../pipes';
 import { Settings, TrackFile } from '../../gpx';
 import { MrGpxSyncService } from '../../services';
@@ -12,7 +13,7 @@ import { TrackEvent } from '../../events';
   template: `
     <div class="d-flex flex-column h-100">
       <div class="d-flex justify-content-between align-items-center p-2 border-bottom">
-        <div class="label">Track Information</div>
+        <div class="label">{{ 'trackInfo.title' | translate }}</div>
         <button class="btn btn-ghost sm" (click)="showEdit.emit()" title="Edit track">
           <fa-icon [icon]="['fas', 'pencil']" size="sm"></fa-icon>
         </button>
@@ -65,7 +66,7 @@ import { TrackEvent } from '../../events';
       color: white;
     }
   `],
-  imports: [SecondsToTime, FaIconComponent, DecimalPipe]
+  imports: [SecondsToTime, FaIconComponent, DecimalPipe, TranslatePipe]
 })
 export class TrackInfoViewComponent implements OnInit {
   @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column';

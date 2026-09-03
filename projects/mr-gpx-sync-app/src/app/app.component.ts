@@ -66,7 +66,7 @@ export class AppComponent {
 
   @HostBinding('class') classes: string = 'outlet-row';
 
-  langs: string[] = ['en-US', 'en-EN', 'fr-FR'];
+  langs: string[] = ['en-US', 'en-EN', 'fr-FR', 'de-DE'];
 
   openedGpx: boolean = false;
   settings: Settings = new Settings();

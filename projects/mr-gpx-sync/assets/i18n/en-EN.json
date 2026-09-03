@@ -17,5 +17,13 @@
     "topo": "Topo",
     "satellite": "Satellite",
     "map": "Map"
+  },
+  "trackInfo": {
+    "title": "Track Information",
+    "currentAverageElevation": "Current average elevation",
+    "normalizeTo": "Normalize to"
+  },
+  "autoAdjustSpeed": {
+    "title": "Auto Adjust Speed"
   }
 }

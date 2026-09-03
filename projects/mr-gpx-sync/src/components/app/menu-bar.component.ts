@@ -45,7 +45,7 @@ import {TranslatePipe} from '@ngx-translate/core';
       <div class="popover-menu">
         <button class="btn btn-outline-secondary" (click)="openAutoAdjustSpeed($event)">
           <fa-icon [icon]="['fas', 'gauge']"></fa-icon>
-          Auto Adjust Speed
+          {{ 'menu.autoAdjustSpeed' | translate }}
         </button>
       </div>
     </ng-template>

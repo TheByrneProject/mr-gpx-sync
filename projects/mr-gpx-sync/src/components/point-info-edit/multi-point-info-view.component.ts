@@ -13,9 +13,14 @@ import { TrackEvent, TrackPointEvent } from '../../events';
     <div class="d-flex flex-column h-100">
       <div class="d-flex justify-content-between align-items-center p-2 border-bottom">
         <div class="label">{{ points.length }} Points Selected</div>
-        <button class="btn btn-ghost sm" (click)="showEdit.emit()" title="Edit options">
-          <fa-icon [icon]="['fas', 'pencil']" size="sm"></fa-icon>
-        </button>
+        <div class="d-flex gap-1">
+          <button class="btn btn-ghost sm" (click)="showEdit.emit()" title="Edit options">
+            <fa-icon [icon]="['fas', 'pencil']" size="sm"></fa-icon>
+          </button>
+          <button class="btn btn-ghost sm" (click)="deselect.emit()" title="Deselect points (Esc)">
+            <fa-icon [icon]="['fas', 'x']" size="sm"></fa-icon>
+          </button>
+        </div>
       </div>
       <div class="flex-grow-1 d-flex flex-column gap-2 p-2">
         <div class="d-flex p-2">
@@ -70,6 +75,7 @@ import { TrackEvent, TrackPointEvent } from '../../events';
 export class MultiPointInfoViewComponent implements OnInit {
   @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column';
   @Output() showEdit = new EventEmitter<void>();
+  @Output() deselect = new EventEmitter<void>();
 
   track: TrackFile = new TrackFile();
   settings: Settings = new Settings();
