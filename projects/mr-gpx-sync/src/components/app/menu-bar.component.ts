@@ -81,7 +81,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 
     <ng-template #aboutMenu>
       <div class="popover-menu">
-        v0.0.1
+        v0.1.0
       </div>
     </ng-template>
   `,

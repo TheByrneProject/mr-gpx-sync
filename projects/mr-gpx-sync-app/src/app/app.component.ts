@@ -1,7 +1,7 @@
-import {ChangeDetectorRef, Component, HostBinding} from '@angular/core';
+import {ChangeDetectorRef, Component, HostBinding, OnInit, OnDestroy, effect} from '@angular/core';
 import { Router } from '@angular/router';
 import { FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import {timer} from 'rxjs';
+import {timer, Subscription} from 'rxjs';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { InfoWindowComponent, MrGpxSyncMenuBar, MrGpxSyncService, MrGpxSyncD3Map, MrGpxSyncChartWindow, MrGpxSyncMapTypeWindow, MrGpxSyncVideoOverlay, Settings,
@@ -19,7 +19,7 @@ import {HttpClient} from '@angular/common/http';
     <mr-gpx-sync-d3-map></mr-gpx-sync-d3-map>
     
     <div class="lang-window">
-      <img src="assets/icons/{{settings.lang}}.svg" width="32" height="32" alt="" nz-popover [nzPopoverContent]="langMenu" nzPopoverPlacement="top" />
+      <img src="assets/icons/{{settings.lang}}.svg" width="32" height="32" alt="" nz-popover [nzPopoverContent]="langMenu" nzPopoverPlacement="bottomRight" />
       
       <ng-template #langMenu>
         <div class="d-flex flex-column lang-menu">
@@ -62,7 +62,7 @@ import {HttpClient} from '@angular/common/http';
     }
   `
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
 
   @HostBinding('class') classes: string = 'outlet-row';
 
@@ -71,6 +71,8 @@ export class AppComponent {
   openedGpx: boolean = false;
   settings: Settings = new Settings();
   undo: Undo = new Undo();
+
+  private subscriptions: Subscription[] = [];
 
   constructor(private library: FaIconLibrary,
               private changeDetectorRef: ChangeDetectorRef,
@@ -81,20 +83,32 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
+    const settingsSub = this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
+      this.changeDetectorRef.markForCheck();
     });
-    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
-      this.openedGpx = !!event.track.loaded;
-    });
+    this.subscriptions.push(settingsSub);
 
-    this.mrGpxSyncService.error$.subscribe((error: any) => {
+    const trackSub = this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+      this.openedGpx = !!event.track.loaded;
+      this.changeDetectorRef.markForCheck();
+    });
+    this.subscriptions.push(trackSub);
+
+    const errorSub = this.mrGpxSyncService.error$.subscribe((error: any) => {
       console.error(error);
     });
+    this.subscriptions.push(errorSub);
 
-    this.mrGpxSyncService.undo$.subscribe((undo: Undo) => {
+    const undoSub = this.mrGpxSyncService.undo$.subscribe((undo: Undo) => {
       this.undo = undo;
+      this.changeDetectorRef.markForCheck();
     });
+    this.subscriptions.push(undoSub);
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 
   openGpx(file: boolean, appendMode?: string): void {

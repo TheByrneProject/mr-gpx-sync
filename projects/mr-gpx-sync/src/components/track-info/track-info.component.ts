@@ -1,10 +1,11 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
+import {Component, HostBinding, OnInit, ChangeDetectorRef, OnDestroy} from '@angular/core';
 import {DecimalPipe} from '@angular/common';
 import {Settings, TrackFile} from '../../gpx';
 import {MrGpxSyncService} from '../../services/mr-gpx-sync.service';
 import {ActionEvent} from '../../events/action-event';
 import {ElevationPipe} from '../../pipes';
 import {TrackEvent} from '../../events';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'mr-gpx-sync-track-info',
@@ -71,7 +72,7 @@ import {TrackEvent} from '../../events';
     }
   `]
 })
-export class TrackInfoComponent implements OnInit {
+export class TrackInfoComponent implements OnInit, OnDestroy {
 
   @HostBinding('class') classes: string = 'd-flex flex-shrink-0 align-items-center gap-5 p-2';
 
@@ -79,19 +80,33 @@ export class TrackInfoComponent implements OnInit {
   settings: Settings = new Settings();
   track: TrackFile = new TrackFile();
 
-  constructor(private mrGpxSyncService: MrGpxSyncService) {}
+  private subscriptions: Subscription[] = [];
+
+  constructor(private mrGpxSyncService: MrGpxSyncService, private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+    const trackSub = this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
       this.track = event.track.loaded ? event.track : new TrackFile();
+      this.changeDetectorRef.markForCheck();
     });
-    this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
+    this.subscriptions.push(trackSub);
+
+    const settingsSub = this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
+      this.changeDetectorRef.markForCheck();
     });
-    this.mrGpxSyncService.action$.subscribe((event: ActionEvent) => {
+    this.subscriptions.push(settingsSub);
+
+    const actionSub = this.mrGpxSyncService.action$.subscribe((event: ActionEvent) => {
       if (event.name === 'video-info') {
         this.videoDuration = event.data;
+        this.changeDetectorRef.markForCheck();
       }
     });
+    this.subscriptions.push(actionSub);
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 }

@@ -28,37 +28,45 @@ export class DraggableDirective {
     timer(50).subscribe(() => {
       let settings: Settings = this.mrGpxSyncService.settings$.getValue();
       let move: boolean = false;
-      let x: string = settings.getWindowPosition(this.windowName).left;
-      let y: string = settings.getWindowPosition(this.windowName).top;
+      const windowPos = settings.getWindowPosition(this.windowName);
+      let x: string = windowPos.left || windowPos.right || '0';
+      let y: string = '';
+      
+      // Determine y based on positioning mode
+      if (this.windowPosition === 'top-left' || this.windowPosition === 'top-right') {
+        y = windowPos.top || '0';
+      } else {
+        y = windowPos.bottom || '0';
+      }
 
       if (this.el.nativeElement.offsetLeft + this.el.nativeElement.offsetWidth > window.innerWidth) {
         if (this.windowPosition === 'top-left' || this.windowPosition === 'bottom-left') {
           x = (window.innerWidth - this.el.nativeElement.offsetWidth - 32) + 'px';
-          this.renderer.setStyle(window, 'left', x);
+          this.renderer.setStyle(this.el.nativeElement, 'left', x);
         } else {
           x = '32px';
-          this.renderer.setStyle(window, 'right', x);
+          this.renderer.setStyle(this.el.nativeElement, 'right', x);
         }
         move = true;
       } else if (this.el.nativeElement.offsetLeft < 0) {
         this.windowPosition = 'top-left';
         x = '64px';
-        this.renderer.setStyle(window, 'left', x);
+        this.renderer.setStyle(this.el.nativeElement, 'left', x);
         move = true;
       }
       if (this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight > window.innerHeight) {
         if (this.windowPosition === 'top-left' || this.windowPosition === 'top-right') {
           y = (window.innerHeight - this.el.nativeElement.offsetHeight - 32) + 'px';
-          this.renderer.setStyle(window, 'top', y);
+          this.renderer.setStyle(this.el.nativeElement, 'top', y);
         } else {
           y = '32px';
-          this.renderer.setStyle(window, 'bottom', y);
+          this.renderer.setStyle(this.el.nativeElement, 'bottom', y);
         }
         move = true;
       } else if (this.el.nativeElement.offsetTop < 0) {
         this.windowPosition = 'top-left';
         y = '32px';
-        this.renderer.setStyle(window, 'top', y);
+        this.renderer.setStyle(this.el.nativeElement, 'top', y);
         move = true;
       }
 
@@ -87,11 +95,24 @@ export class DraggableDirective {
   }
 
   dragMove(event: MouseEvent, initialX: number, initialY: number): void {
-    const window: HTMLElement = this.el.nativeElement;
+    const windowEl: HTMLElement = this.el.nativeElement;
     const x: number = event.clientX - initialX;
     const y: number = event.clientY - initialY;
-    this.renderer.setStyle(window, 'left', x + 'px');
-    this.renderer.setStyle(window, 'top', y + 'px');
+    
+    // Apply styles based on window position
+    if (this.windowPosition === 'top-left') {
+      this.renderer.setStyle(windowEl, 'left', x + 'px');
+      this.renderer.setStyle(windowEl, 'top', y + 'px');
+    } else if (this.windowPosition === 'top-right') {
+      this.renderer.setStyle(windowEl, 'right', (window.innerWidth - x - windowEl.offsetWidth) + 'px');
+      this.renderer.setStyle(windowEl, 'top', y + 'px');
+    } else if (this.windowPosition === 'bottom-left') {
+      this.renderer.setStyle(windowEl, 'left', x + 'px');
+      this.renderer.setStyle(windowEl, 'bottom', (window.innerHeight - y - windowEl.offsetHeight) + 'px');
+    } else if (this.windowPosition === 'bottom-right') {
+      this.renderer.setStyle(windowEl, 'right', (window.innerWidth - x - windowEl.offsetWidth) + 'px');
+      this.renderer.setStyle(windowEl, 'bottom', (window.innerHeight - y - windowEl.offsetHeight) + 'px');
+    }
   }
 
   dragEnd(event: MouseEvent): void {
@@ -101,7 +122,27 @@ export class DraggableDirective {
     this.renderer.removeClass(this.el.nativeElement.querySelector('.drag-target'), 'dragging');
 
     let settings: Settings = this.mrGpxSyncService.settings$.getValue();
-    settings.setWindowPosition(this.windowName, this.windowPosition, `${this.el.nativeElement.style.left}`, `${this.el.nativeElement.style.top}`);
+    const windowEl = this.el.nativeElement;
+    
+    // Save position based on window position mode
+    let x = '';
+    let y = '';
+    
+    if (this.windowPosition === 'top-left') {
+      x = windowEl.style.left;
+      y = windowEl.style.top;
+    } else if (this.windowPosition === 'top-right') {
+      x = windowEl.style.right;
+      y = windowEl.style.top;
+    } else if (this.windowPosition === 'bottom-left') {
+      x = windowEl.style.left;
+      y = windowEl.style.bottom;
+    } else if (this.windowPosition === 'bottom-right') {
+      x = windowEl.style.right;
+      y = windowEl.style.bottom;
+    }
+    
+    settings.setWindowPosition(this.windowName, this.windowPosition, x, y);
     this.mrGpxSyncService.updateSettings(settings);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit, HostListener } from '@angular/core';
+import { Component, HostBinding, OnInit, HostListener, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { EditOptionsComponent } from './edit-options.component';
@@ -13,6 +13,7 @@ import { NormalizeElevationComponent } from './normalize-elevation.component';
 import { AutoAdjustSpeedComponent } from './auto-adjust-speed.component';
 import { MrGpxSyncService } from '../../services';
 import { TrackPointEvent } from '../../events';
+import { Subscription } from 'rxjs';
 
 type ViewType = 'track' | 'point' | 'multi-point';
 
@@ -123,17 +124,19 @@ type ViewType = 'track' | 'point' | 'multi-point';
     AutoAdjustSpeedComponent
   ]
 })
-export class InfoWindowComponent implements OnInit {
+export class InfoWindowComponent implements OnInit, OnDestroy {
   @HostBinding('class') classes: string = 'window transparent white';
 
   mode: string = 'info';
   currentView: ViewType = 'track';
   selectedPointCount: number = 0;
 
-  constructor(private mrGpxSyncService: MrGpxSyncService) {}
+  private subscriptions: Subscription[] = [];
+
+  constructor(private mrGpxSyncService: MrGpxSyncService, private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
+    const sub = this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
       this.selectedPointCount = e.p?.length || 0;
       
       // Automatically switch view based on selection
@@ -147,7 +150,13 @@ export class InfoWindowComponent implements OnInit {
       
       // Reset mode when view changes
       this.mode = 'info';
+      this.changeDetectorRef.markForCheck();
     });
+    this.subscriptions.push(sub);
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 
   @HostListener('window:keydown.escape')

@@ -36,7 +36,7 @@ import { TrackPoint } from '../../gpx';
       padding: 0.35rem 0.5rem;
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 0.25rem;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.25);
       color: white;
     }
     .input::placeholder {
@@ -123,9 +123,9 @@ export class NormalizeElevationComponent implements OnInit {
   }
 
   private updateDisplayValues(): void {
-    // Convert meters to display units
-    this.averageElevationDisplay = this.settings.getElevation(this.averageElevationMeters);
-    this.targetElevationDisplay = this.settings.getElevation(this.targetElevationMeters);
+    // Convert meters to display units and round to nearest tenth
+    this.averageElevationDisplay = Math.round(this.settings.getElevation(this.averageElevationMeters) * 10) / 10;
+    this.targetElevationDisplay = Math.round(this.settings.getElevation(this.targetElevationMeters) * 10) / 10;
   }
 
   setTargetElevation(event: Event): void {

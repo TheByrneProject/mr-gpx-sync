@@ -1,9 +1,10 @@
-import { Component, HostBinding, OnInit } from "@angular/core";
+import { Component, HostBinding, OnInit, OnDestroy, ChangeDetectorRef } from "@angular/core";
 import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
 import {SecondsToTime} from '../../pipes';
 import {Settings, TrackFile, TrackPoint} from '../../gpx';
 import {MrGpxSyncService} from '../../services';
 import {TrackEvent, TrackPointEvent} from '../../events';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'mr-gpx-sync-point-info',
@@ -40,7 +41,7 @@ import {TrackEvent, TrackPointEvent} from '../../events';
     }
   `]
 })
-export class PointInfoComponent implements OnInit {
+export class PointInfoComponent implements OnInit, OnDestroy {
 
   @HostBinding('class') classes: string = 'd-flex flex-grow-1 flex-column';
 
@@ -49,17 +50,31 @@ export class PointInfoComponent implements OnInit {
 
   p!: TrackPoint;
 
-  constructor(private mrGpxSyncService: MrGpxSyncService) {}
+  private subscriptions: Subscription[] = [];
+
+  constructor(private mrGpxSyncService: MrGpxSyncService, private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
+    const trackSub = this.mrGpxSyncService.track$.subscribe((event: TrackEvent) => {
       this.track = event.track;
+      this.changeDetectorRef.markForCheck();
     });
-    this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
+    this.subscriptions.push(trackSub);
+
+    const settingsSub = this.mrGpxSyncService.settings$.subscribe((settings: Settings) => {
       this.settings = settings;
+      this.changeDetectorRef.markForCheck();
     });
-    this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
+    this.subscriptions.push(settingsSub);
+
+    const pointSub = this.mrGpxSyncService.selectedPoint$.subscribe((e: TrackPointEvent) => {
       this.p = e.p.length > 0 ? e.p[0] : undefined;
+      this.changeDetectorRef.markForCheck();
     });
+    this.subscriptions.push(pointSub);
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 }
